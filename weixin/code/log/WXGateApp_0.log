@@ -1,0 +1,528 @@
+
+2013-06-10 22:26:03,512  INFO process start: WXGateApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:26:03,513  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:26:03,513  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:26:05,973  INFO my endpoint is tcp://127.0.0.1:6713 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:26:05,986  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:26:05,986  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:26:05,986  INFO regist_name_service, service name:WXGateApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:26:05,986  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:26:05,993  INFO my pid is :1004 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:26:05,999  INFO process WXGateApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:26:05,999  INFO ReceiveWXMessageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:02,118  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\wx_gateway\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:33:02,124  INFO process WXGateApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:33:05,361  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:05,362  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:05,364  INFO work_thread_<WorkThread(Thread-2, started daemon 5876)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:33:05,367  INFO ReceiveWXMessageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:05,367  INFO work_thread_<WorkThread(Thread-3, started daemon 4344)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:33:25,450  INFO process start: WXGateApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:33:25,450  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:33:25,450  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:33:27,756  INFO my endpoint is tcp://127.0.0.1:6804 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:33:27,773  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:27,775  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:27,776  INFO regist_name_service, service name:WXGateApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:33:27,776  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:27,786  INFO my pid is :1003 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:33:28,796  INFO ReceiveWXMessageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:28,796  INFO process WXGateApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:45:32,506  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\wx_gateway\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:45:32,519  INFO process WXGateApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:45:36,476  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:36,477  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:36,479  INFO work_thread_<WorkThread(Thread-2, started daemon 5284)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:45:36,483  INFO ReceiveWXMessageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:36,483  INFO work_thread_<WorkThread(Thread-3, started daemon 6056)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:45:54,334  INFO process start: WXGateApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:45:54,335  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:45:54,335  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:45:56,602  INFO my endpoint is tcp://127.0.0.1:6104 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:45:56,618  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:56,619  INFO regist_name_service, service name:WXGateApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:45:56,619  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:56,621  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:56,630  INFO my pid is :1003 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:45:56,641  INFO ReceiveWXMessageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:56,641  INFO process WXGateApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:48:12,187  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\wx_gateway\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:48:12,191  INFO process WXGateApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:48:16,220  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:16,220  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:16,220  INFO work_thread_<WorkThread(Thread-2, started daemon 7200)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:48:16,223  INFO ReceiveWXMessageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:16,224  INFO work_thread_<WorkThread(Thread-3, started daemon 4348)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:48:32,545  INFO process start: WXGateApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:48:32,545  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:48:32,545  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:48:35,075  INFO my endpoint is tcp://127.0.0.1:6324 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:48:35,088  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:35,089  INFO regist_name_service, service name:WXGateApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:48:35,089  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:35,091  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:35,098  INFO my pid is :1005 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:48:35,108  INFO process WXGateApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:48:35,108  INFO ReceiveWXMessageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:34,441  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\wx_gateway\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:50:34,446  INFO process WXGateApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:50:38,476  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:38,476  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:38,477  INFO work_thread_<WorkThread(Thread-2, started daemon 6364)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:50:38,479  INFO ReceiveWXMessageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:38,480  INFO work_thread_<WorkThread(Thread-3, started daemon 8256)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:50:55,953  INFO process start: WXGateApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:50:55,954  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:50:55,954  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:50:58,313  INFO my endpoint is tcp://127.0.0.1:6636 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:50:58,328  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:58,331  INFO regist_name_service, service name:WXGateApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:50:58,329  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:58,332  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:58,338  INFO my pid is :1002 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:50:58,345  INFO process WXGateApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:50:58,345  INFO ReceiveWXMessageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:18,755  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\wx_gateway\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:57:18,759  INFO process WXGateApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:57:22,802  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:22,805  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:22,805  INFO work_thread_<WorkThread(Thread-2, started daemon 9020)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:57:22,805  INFO ReceiveWXMessageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:22,806  INFO work_thread_<WorkThread(Thread-3, started daemon 3080)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:57:40,381  INFO process start: WXGateApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:57:40,381  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:57:40,381  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:57:42,375  INFO my endpoint is tcp://127.0.0.1:6157 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:57:42,388  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:42,392  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:42,392  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:42,394  INFO regist_name_service, service name:WXGateApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:57:42,407  INFO my pid is :1002 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:57:42,426  INFO process WXGateApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:57:42,426  INFO ReceiveWXMessageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:01,829  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\wx_gateway\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:59:01,845  INFO process WXGateApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:59:06,677  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:06,678  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:06,680  INFO ReceiveWXMessageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:06,680  INFO work_thread_<WorkThread(Thread-2, started daemon 9176)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:59:06,680  INFO work_thread_<WorkThread(Thread-3, started daemon 3564)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:59:23,986  INFO process start: WXGateApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:59:23,986  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:59:23,987  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:59:26,517  INFO my endpoint is tcp://127.0.0.1:6651 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:59:26,530  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:26,532  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:26,532  INFO regist_name_service, service name:WXGateApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:59:26,532  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:26,539  INFO my pid is :1005 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:59:26,545  INFO process WXGateApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:59:26,545  INFO ReceiveWXMessageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:11,017  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\wx_gateway\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:06:11,039  INFO process WXGateApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:06:15,059  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:15,059  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:15,061  INFO work_thread_<WorkThread(Thread-2, started daemon 7684)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:06:15,062  INFO ReceiveWXMessageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:15,062  INFO work_thread_<WorkThread(Thread-3, started daemon 3916)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:06:33,582  INFO process start: WXGateApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:06:33,582  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:06:33,582  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:06:35,690  INFO my endpoint is tcp://127.0.0.1:6579 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:06:35,703  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:35,703  INFO regist_name_service, service name:WXGateApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:06:35,703  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:35,704  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:35,710  INFO my pid is :1002 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:06:35,719  INFO process WXGateApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:06:35,719  INFO ReceiveWXMessageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:17:45,848  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\wx_gateway\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:17:45,869  INFO process WXGateApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:17:49,884  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:49,884  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:49,885  INFO work_thread_<WorkThread(Thread-2, started daemon 7540)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:17:49,891  INFO ReceiveWXMessageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:49,891  INFO work_thread_<WorkThread(Thread-3, started daemon 3308)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:18:08,164  INFO process start: WXGateApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:18:08,164  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:18:08,164  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:18:10,934  INFO my endpoint is tcp://127.0.0.1:6611 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:18:10,944  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:10,944  INFO regist_name_service, service name:WXGateApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:18:10,944  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:10,946  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:10,953  INFO my pid is :1006 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:18:10,967  INFO process WXGateApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:18:10,967  INFO ReceiveWXMessageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:32,891  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\wx_gateway\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:18:32,901  INFO process WXGateApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:18:36,961  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:36,961  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:36,961  INFO work_thread_<WorkThread(Thread-2, started daemon 9100)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:18:36,966  INFO ReceiveWXMessageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:36,967  INFO work_thread_<WorkThread(Thread-3, started daemon 8416)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:18:54,164  INFO process start: WXGateApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:18:54,164  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:18:54,164  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:18:56,223  INFO my endpoint is tcp://127.0.0.1:6387 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:18:56,236  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:56,237  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:56,237  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:56,239  INFO regist_name_service, service name:WXGateApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:18:56,250  INFO my pid is :1002 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:18:57,256  INFO process WXGateApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:18:57,256  INFO ReceiveWXMessageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:10,536  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\wx_gateway\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:22:10,555  INFO process WXGateApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:22:14,592  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:14,592  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:14,592  INFO work_thread_<WorkThread(Thread-2, started daemon 7388)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:22:14,595  INFO ReceiveWXMessageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:14,595  INFO work_thread_<WorkThread(Thread-3, started daemon 9140)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:22:32,552  INFO process start: WXGateApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:22:32,552  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:22:32,552  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:22:34,622  INFO my endpoint is tcp://127.0.0.1:6180 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:22:34,634  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:34,635  INFO regist_name_service, service name:WXGateApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:22:34,635  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:34,637  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:34,645  INFO my pid is :1003 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:22:35,648  INFO process WXGateApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:22:35,648  INFO ReceiveWXMessageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:12,118  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\wx_gateway\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:24:12,122  INFO process WXGateApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:24:15,934  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:15,934  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:15,937  INFO ReceiveWXMessageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:15,936  INFO work_thread_<WorkThread(Thread-2, started daemon 7152)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:24:15,937  INFO work_thread_<WorkThread(Thread-3, started daemon 8908)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:24:55,203  INFO process start: WXGateApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:24:55,203  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:24:55,204  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:24:57,293  INFO my endpoint is tcp://127.0.0.1:6363 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:24:57,305  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:57,306  INFO regist_name_service, service name:WXGateApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:24:57,306  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:57,306  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:57,313  INFO my pid is :1004 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:24:57,321  INFO process WXGateApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:24:57,321  INFO ReceiveWXMessageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:33:30,503  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\wx_gateway\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:33:30,506  INFO process WXGateApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:33:34,565  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:34,566  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:34,568  INFO work_thread_<WorkThread(Thread-2, started daemon 2796)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:33:34,572  INFO ReceiveWXMessageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:34,572  INFO work_thread_<WorkThread(Thread-3, started daemon 2792)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]

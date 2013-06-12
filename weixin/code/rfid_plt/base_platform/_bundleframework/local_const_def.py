@@ -1,0 +1,18 @@
+#coding=gbk
+
+# 当进程中部署了callacp，那么使用如下pid作为其固定的pid
+CALLACPSRV_PID = 2
+
+
+# get_pid的选项
+FIRSTLOCAL_PID = 0
+ONLYLOCAL_PID = 1
+RANDOM_PID = 2
+MASTER_PID = 3
+
+INVALID_PID = 0
+
+EIPC_PROTOCOL = 'EIPC PROTOCOL'
+CALLACP_PROTOCOL = 'CALLACP PROTOCOL'
+
+NAME_SERVER_PORT = 6000

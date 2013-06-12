@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install_info>
+	<apps>
+		<app service_name="Monitor" run_on_master="1" run_on_slave="1" instance_num="1" exclude="1" program="rfid_plt/monitor/monitor_app.py"/>
+		<app service_name="FtpServerApp" run_on_master="0" run_on_slave="0" instance_num="1" exclude="0" program="rfid_plt/ftp_server/ftp_server_app.py"/>
+		<app service_name="WebGate" run_on_master="1" run_on_slave="1" instance_num="1" exclude="0" program="rfid_oss/web_gate/web_gate_app.py"/>
+		<app service_name="WXGateApp" run_on_master="1" run_on_slave="1" instance_num="1" exclude="0" program="wx_cloud/wx_gateway/wx_gate_app.py"/>
+		<app service_name="SubscriberManApp" run_on_master="1" run_on_slave="1" instance_num="1" exclude="0" program="wx_cloud/subscriber_manager/subscriber_man_app.py"/>
+		<app service_name="PortalManApp" run_on_master="1" run_on_slave="1" instance_num="1" exclude="0" program="wx_cloud/portal_manager/portal_man_app.py"/>
+		<app service_name="EventCenterApp" run_on_master="1" run_on_slave="1" instance_num="1" exclude="0" program="wx_cloud/event_center/event_center_app.py"/>
+		<app service_name="TestCaseApp" run_on_master="0" run_on_slave="0" instance_num="1" exclude="0" program=""/>
+
+	</apps>
+	<bins>
+
+	</bins>
+</install_info>

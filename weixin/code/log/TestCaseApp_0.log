@@ -1,0 +1,1394 @@
+
+2013-06-10 22:28:42,638  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:28:42,638  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:28:42,638  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:28:44,351  INFO my endpoint is tcp://127.0.0.1:6392 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:28:44,358  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:28:44,359  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:28:44,359  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:28:44,359  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:28:44,368  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:28:44,374  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:28:44,374  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:28:44,687  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:28:48,663  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:28:48,664  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:28:48,664  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:28:48,664  INFO work_thread_<WorkThread(Thread-4, started daemon 6616)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:28:48,665  INFO work_thread_<WorkThread(Thread-3, started daemon 7072)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:30:48,861  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:30:48,861  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:30:48,861  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:30:50,608  INFO my endpoint is tcp://127.0.0.1:6789 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:30:50,615  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:30:50,615  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:30:50,615  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:30:50,617  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:30:50,622  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:30:50,634  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:30:50,634  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:30:50,898  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:30:54,891  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:30:54,891  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:30:54,891  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:30:54,892  INFO work_thread_<WorkThread(Thread-4, started daemon 9040)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:30:54,892  INFO work_thread_<WorkThread(Thread-3, started daemon 1440)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:31:55,325  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:31:55,325  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:31:55,325  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:31:57,005  INFO my endpoint is tcp://127.0.0.1:6730 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:31:57,013  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:31:57,015  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:31:57,015  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:31:57,015  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:31:57,019  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:31:57,036  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:31:57,036  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:32:03,069  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:32:07,888  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:32:07,888  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:32:07,888  INFO work_thread_<WorkThread(Thread-4, started daemon 3340)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:32:07,890  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:32:07,890  INFO work_thread_<WorkThread(Thread-3, started daemon 3308)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:33:23,312  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:33:23,312  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:33:23,312  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:33:24,956  INFO my endpoint is tcp://127.0.0.1:6352 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:33:24,963  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:24,964  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:24,964  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:33:24,964  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:24,970  INFO my pid is :1002 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:33:24,974  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:33:24,976  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:25,332  INFO get pid failed. service_name: PortalManApp [File:basic_app.py Function:get_pid Line:1343]
+
+2013-06-10 22:33:25,332  ERROR IpcSendWorker.send_frame(): can not find pid(0).<AppFrame cmd_code:16925187, sender_pid:1002, receiver_pid:0, original_pid:0, next_pid:0, task_id:4294901762L, data_length:90, datas num:1, data[0]:'{"article_id":null,"subject_id":"1","current_page":0,"user_session":"0","num_per_page":10}'> [File:ipc_worker.py Function:send_frame Line:170]
+
+2013-06-10 22:33:31,117  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:33:35,888  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:35,890  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:35,890  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:35,891  INFO work_thread_<WorkThread(Thread-4, started daemon 7852)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:33:35,891  INFO work_thread_<WorkThread(Thread-3, started daemon 3624)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:33:46,388  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:33:46,388  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:33:46,388  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:33:48,039  INFO my endpoint is tcp://127.0.0.1:6121 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:33:48,049  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:48,049  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:48,049  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:33:48,049  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:48,055  INFO my pid is :1002 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:33:48,062  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:33:48,061  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:48,474  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:33:52,434  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:52,434  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:52,434  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:52,436  INFO work_thread_<WorkThread(Thread-4, started daemon 6544)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:33:52,437  INFO work_thread_<WorkThread(Thread-3, started daemon 6228)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:43:59,259  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:43:59,260  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:43:59,260  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:44:00,880  INFO my endpoint is tcp://127.0.0.1:6232 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:44:00,888  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:44:00,888  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:44:00,888  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:44:00,888  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:44:00,894  INFO my pid is :1002 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:44:00,901  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:44:00,901  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:44:01,315  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:44:05,303  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:44:05,305  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:44:05,305  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:44:05,305  INFO work_thread_<WorkThread(Thread-4, started daemon 8220)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:44:05,305  INFO work_thread_<WorkThread(Thread-3, started daemon 3440)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:44:10,522  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:44:10,523  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:44:10,523  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:44:12,092  INFO my endpoint is tcp://127.0.0.1:6100 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:44:12,101  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:44:12,102  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:44:12,102  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:44:12,102  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:44:12,111  INFO my pid is :1002 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:44:12,118  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:44:12,118  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:44:24,167  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:44:28,967  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:44:28,967  INFO work_thread_<WorkThread(Thread-4, started daemon 8652)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:44:28,969  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:44:28,969  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:44:28,970  INFO work_thread_<WorkThread(Thread-3, started daemon 4984)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:45:56,342  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:45:56,342  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:45:56,342  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:45:58,210  INFO my endpoint is tcp://127.0.0.1:6462 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:45:58,220  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:58,220  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:45:58,220  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:58,220  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:58,227  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:45:58,233  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:45:58,233  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:46:04,273  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:46:09,071  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:46:09,072  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:46:09,072  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:46:09,072  INFO work_thread_<WorkThread(Thread-4, started daemon 9140)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:46:09,073  INFO work_thread_<WorkThread(Thread-3, started daemon 1684)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:48:31,082  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:48:31,084  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:48:31,084  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:48:33,079  INFO get pid failed. service_name: PortalManApp [File:basic_app.py Function:get_pid Line:1343]
+
+2013-06-10 22:48:33,082  INFO get pid failed. service_name: PortalManApp [File:basic_app.py Function:get_pid Line:1343]
+
+2013-06-10 22:48:33,658  INFO my endpoint is tcp://127.0.0.1:6469 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:48:33,673  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:33,674  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:33,674  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:48:33,674  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:33,687  INFO my pid is :1002 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:48:34,690  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:48:34,691  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:49:15,224  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:49:15,224  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:49:15,226  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:49:16,868  INFO my endpoint is tcp://127.0.0.1:6997 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:49:16,875  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:49:16,877  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:49:16,877  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:49:16,877  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:49:16,882  INFO my pid is :1002 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:49:16,898  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:49:16,898  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:49:17,289  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:49:21,243  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:49:21,243  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:49:21,244  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:49:21,246  INFO work_thread_<WorkThread(Thread-4, started daemon 4228)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:49:21,246  INFO work_thread_<WorkThread(Thread-3, started daemon 1068)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:49:44,069  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:49:44,069  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:49:44,069  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:49:45,694  INFO my endpoint is tcp://127.0.0.1:6279 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:49:45,703  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:49:45,703  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:49:45,703  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:49:45,704  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:49:45,710  INFO my pid is :1002 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:49:45,726  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:49:45,726  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:49:46,138  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:49:50,118  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:49:50,118  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:49:50,118  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:49:50,119  INFO work_thread_<WorkThread(Thread-4, started daemon 9176)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:49:50,119  INFO work_thread_<WorkThread(Thread-3, started daemon 9108)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:50:01,752  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:50:01,752  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:50:01,752  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:50:03,404  INFO my endpoint is tcp://127.0.0.1:6378 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:50:03,414  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:03,414  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:50:03,414  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:03,414  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:03,421  INFO my pid is :1002 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:50:03,427  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:03,427  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:50:09,467  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:50:14,278  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:14,278  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:14,278  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:14,278  INFO work_thread_<WorkThread(Thread-4, started daemon 828)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:50:14,279  INFO work_thread_<WorkThread(Thread-3, started daemon 6628)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:50:56,595  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:50:56,595  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:50:56,595  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:50:58,591  INFO get pid failed. service_name: PortalManApp [File:basic_app.py Function:get_pid Line:1343]
+
+2013-06-10 22:50:59,055  INFO my endpoint is tcp://127.0.0.1:6538 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:50:59,065  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:59,066  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:50:59,066  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:59,066  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:59,073  INFO my pid is :1006 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:50:59,081  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:59,081  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:52:29,177  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:52:29,177  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:52:29,177  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:52:30,926  INFO my endpoint is tcp://127.0.0.1:6264 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:52:30,934  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:52:30,936  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:52:30,936  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:52:30,936  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:52:30,943  INFO my pid is :1006 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:52:30,948  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:52:30,948  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:52:31,213  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:52:35,184  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:52:35,186  INFO work_thread_<WorkThread(Thread-4, started daemon 7956)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:52:35,187  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:52:35,187  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:52:35,187  INFO work_thread_<WorkThread(Thread-3, started daemon 2192)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:55:52,816  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:55:52,816  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:55:52,816  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:55:54,453  INFO my endpoint is tcp://127.0.0.1:6407 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:55:54,461  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:55:54,463  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:55:54,463  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:55:54,463  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:55:54,470  INFO my pid is :1006 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:55:55,479  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:55:55,480  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:56:36,220  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:56:36,220  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:56:36,220  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:56:37,769  INFO my endpoint is tcp://127.0.0.1:6549 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:56:37,776  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:56:37,778  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:56:37,778  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:56:37,778  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:56:37,785  INFO my pid is :1006 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:56:37,789  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:56:37,789  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:56:43,828  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:56:48,627  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:56:48,628  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:56:48,628  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:56:48,628  INFO work_thread_<WorkThread(Thread-4, started daemon 4520)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:56:48,630  INFO work_thread_<WorkThread(Thread-3, started daemon 8184)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:57:44,147  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:57:44,147  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:57:44,147  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:57:45,703  INFO my endpoint is tcp://127.0.0.1:6383 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:57:45,713  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:45,713  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:45,713  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:57:45,713  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:45,720  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:57:45,732  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:45,732  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:57:46,196  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:57:50,180  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:50,181  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:50,183  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:50,183  INFO work_thread_<WorkThread(Thread-4, started daemon 8524)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:57:50,184  INFO work_thread_<WorkThread(Thread-3, started daemon 6792)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:57:55,052  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:57:55,052  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:57:55,052  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:57:56,592  INFO my endpoint is tcp://127.0.0.1:6109 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:57:56,599  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:56,601  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:57:56,601  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:56,601  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:56,608  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:57:56,612  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:57:56,612  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:57,128  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:58:01,101  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:58:01,101  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:58:01,102  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:58:01,102  INFO work_thread_<WorkThread(Thread-4, started daemon 6168)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:58:01,104  INFO work_thread_<WorkThread(Thread-3, started daemon 4000)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:58:04,173  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:58:04,173  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:58:04,174  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:58:05,720  INFO my endpoint is tcp://127.0.0.1:6399 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:58:05,729  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:58:05,730  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:58:05,730  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:58:05,730  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:58:05,736  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:58:05,747  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:58:05,747  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:58:11,783  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:58:16,581  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:58:16,582  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:58:16,582  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:58:16,582  INFO work_thread_<WorkThread(Thread-4, started daemon 7264)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:58:16,582  INFO work_thread_<WorkThread(Thread-3, started daemon 1784)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:59:24,924  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:59:24,924  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:59:24,924  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:59:26,918  INFO get pid failed. service_name: PortalManApp [File:basic_app.py Function:get_pid Line:1343]
+
+2013-06-10 22:59:26,921  INFO get pid failed. service_name: PortalManApp [File:basic_app.py Function:get_pid Line:1343]
+
+2013-06-10 22:59:27,176  INFO my endpoint is tcp://127.0.0.1:6172 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:59:27,184  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:27,184  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:27,184  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:59:27,184  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:27,190  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:59:27,197  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:59:27,197  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:00:00,642  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:00:00,642  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:00:00,642  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:00:02,210  INFO my endpoint is tcp://127.0.0.1:6232 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:00:02,219  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:00:02,220  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:00:02,220  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:00:02,220  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:00:02,226  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:00:02,239  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:00:02,239  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:00:02,701  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:00:06,678  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:00:06,680  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:00:06,680  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:00:06,683  INFO work_thread_<WorkThread(Thread-4, started daemon 3624)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:00:06,684  INFO work_thread_<WorkThread(Thread-3, started daemon 7152)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:00:14,332  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:00:14,334  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:00:14,334  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:00:15,951  INFO my endpoint is tcp://127.0.0.1:6585 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:00:15,960  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:00:15,961  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:00:15,961  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:00:15,961  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:00:15,967  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:00:15,974  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:00:15,974  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:00:16,438  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:00:20,414  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:00:20,414  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:00:20,415  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:00:20,417  INFO work_thread_<WorkThread(Thread-4, started daemon 7600)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:00:20,417  INFO work_thread_<WorkThread(Thread-3, started daemon 6520)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:00:59,493  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:00:59,493  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:00:59,493  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:01:01,138  INFO my endpoint is tcp://127.0.0.1:6681 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:01:01,150  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:01:01,151  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:01:01,151  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:01:01,151  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:01:01,160  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:01:01,176  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:01:01,176  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:01:01,588  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:01:05,571  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:01:05,572  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:01:05,572  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:01:05,573  INFO work_thread_<WorkThread(Thread-4, started daemon 8612)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:01:05,575  INFO work_thread_<WorkThread(Thread-3, started daemon 6124)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:05:16,451  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:05:16,451  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:05:16,451  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:05:18,131  INFO my endpoint is tcp://127.0.0.1:6556 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:05:18,140  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:05:18,140  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:05:18,140  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:05:18,141  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:05:18,145  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:05:18,161  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:05:18,161  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:05:18,476  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:05:22,963  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:05:22,964  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:05:22,964  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:05:22,966  INFO work_thread_<WorkThread(Thread-4, started daemon 2752)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:05:22,967  INFO work_thread_<WorkThread(Thread-3, started daemon 7940)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:05:39,023  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:05:39,025  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:05:39,025  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:05:40,627  INFO my endpoint is tcp://127.0.0.1:6314 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:05:40,635  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:05:40,635  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:05:40,635  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:05:40,637  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:05:40,642  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:05:40,650  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:05:40,650  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:05:46,690  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:05:51,486  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:05:51,487  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:05:51,489  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:05:51,489  INFO work_thread_<WorkThread(Thread-4, started daemon 6716)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:05:51,490  INFO work_thread_<WorkThread(Thread-3, started daemon 7632)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:07:32,082  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:07:32,082  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:07:32,084  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:07:33,701  INFO my endpoint is tcp://127.0.0.1:6342 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:07:33,710  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:07:33,710  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:07:33,711  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:07:33,711  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:07:33,719  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:07:33,727  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:07:33,727  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:07:34,194  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:07:38,145  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:07:38,145  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:07:38,147  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:07:38,148  INFO work_thread_<WorkThread(Thread-4, started daemon 3340)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:07:38,148  INFO work_thread_<WorkThread(Thread-3, started daemon 6056)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:09:40,385  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:09:40,385  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:09:40,385  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:09:41,997  INFO my endpoint is tcp://127.0.0.1:6986 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:09:42,006  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:09:42,007  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:09:42,007  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:09:42,007  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:09:42,013  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:09:42,026  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:09:42,026  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:09:42,543  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:09:46,513  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:09:46,513  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:09:46,513  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:09:46,513  INFO work_thread_<WorkThread(Thread-4, started daemon 6216)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:09:46,513  INFO work_thread_<WorkThread(Thread-3, started daemon 9120)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:19:01,733  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:19:01,733  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:19:01,733  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:19:03,285  INFO my endpoint is tcp://127.0.0.1:6882 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:19:03,293  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:19:03,293  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:19:03,293  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:19:03,295  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:19:03,301  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:19:03,308  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:19:03,308  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:19:03,770  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:19:07,759  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:19:07,759  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:19:07,759  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:19:07,760  INFO work_thread_<WorkThread(Thread-4, started daemon 6364)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:19:07,760  INFO work_thread_<WorkThread(Thread-3, started daemon 4316)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:19:36,265  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:19:36,265  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:19:36,265  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:19:37,861  INFO my endpoint is tcp://127.0.0.1:6833 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:19:37,868  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:19:37,869  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:19:37,869  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:19:37,871  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:19:37,877  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:19:37,891  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:19:37,891  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:19:38,355  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:19:42,316  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:19:42,318  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:19:42,318  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:19:42,319  INFO work_thread_<WorkThread(Thread-4, started daemon 3924)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:19:42,319  INFO work_thread_<WorkThread(Thread-3, started daemon 7112)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:21:06,769  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:21:06,770  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:21:06,770  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:21:08,332  INFO my endpoint is tcp://127.0.0.1:6190 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:21:08,341  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:21:08,341  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:21:08,341  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:21:08,342  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:21:08,348  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:21:08,354  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:21:08,354  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:21:14,407  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:21:19,207  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:21:19,207  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:21:19,207  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:21:19,207  INFO work_thread_<WorkThread(Thread-4, started daemon 8312)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:21:19,209  INFO work_thread_<WorkThread(Thread-3, started daemon 3340)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:22:37,773  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:22:37,773  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:22:37,773  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:22:39,312  INFO my endpoint is tcp://127.0.0.1:6213 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:22:39,321  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:39,322  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:22:39,322  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:39,322  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:39,328  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:22:39,338  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:39,338  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:22:39,851  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:22:43,805  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:43,806  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:43,806  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:43,808  INFO work_thread_<WorkThread(Thread-4, started daemon 7572)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:22:43,808  INFO work_thread_<WorkThread(Thread-3, started daemon 852)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:23:32,875  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:23:32,875  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:23:32,875  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:23:34,487  INFO my endpoint is tcp://127.0.0.1:6308 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:23:34,496  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:23:34,496  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:23:34,496  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:23:34,497  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:23:34,505  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:23:34,516  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:23:34,516  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:23:40,552  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:23:45,349  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:23:45,349  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:23:45,351  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:23:45,351  INFO work_thread_<WorkThread(Thread-4, started daemon 3504)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:23:45,351  INFO work_thread_<WorkThread(Thread-3, started daemon 8648)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:25:05,243  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:25:05,243  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:25:05,243  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:25:06,773  INFO my endpoint is tcp://127.0.0.1:6408 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:25:06,782  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:06,782  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:25:06,782  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:06,782  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:06,789  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:25:06,795  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:25:06,795  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:07,308  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:25:11,275  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:25:11,275  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:25:11,276  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:25:11,276  INFO work_thread_<WorkThread(Thread-4, started daemon 4688)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:25:11,276  INFO work_thread_<WorkThread(Thread-3, started daemon 7600)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:25:16,367  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:25:16,367  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:25:16,367  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:25:17,911  INFO my endpoint is tcp://127.0.0.1:6186 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:25:17,918  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:17,920  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:25:17,920  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:17,920  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:17,926  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:25:17,941  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:25:17,941  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:18,456  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:25:22,407  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:25:22,407  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:25:22,408  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:25:22,410  INFO work_thread_<WorkThread(Thread-4, started daemon 5000)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:25:22,411  INFO work_thread_<WorkThread(Thread-3, started daemon 8936)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:25:25,236  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:25:25,237  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:25:25,237  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:25:26,756  INFO my endpoint is tcp://127.0.0.1:6679 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:25:26,766  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:26,766  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:25:26,766  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:26,767  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:26,773  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:25:26,780  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:25:26,780  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:27,293  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:25:31,266  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:25:31,267  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:25:31,267  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:25:31,269  INFO work_thread_<WorkThread(Thread-4, started daemon 8128)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:25:31,269  INFO work_thread_<WorkThread(Thread-3, started daemon 3476)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:25:54,071  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:25:54,071  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:25:54,071  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:25:55,607  INFO my endpoint is tcp://127.0.0.1:6624 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:25:55,615  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:55,615  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:25:55,615  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:55,615  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:55,621  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:25:55,628  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:25:55,628  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:56,141  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:26:00,115  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:26:00,117  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:26:00,117  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:26:00,118  INFO work_thread_<WorkThread(Thread-4, started daemon 8068)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:26:00,118  INFO work_thread_<WorkThread(Thread-3, started daemon 5632)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:26:51,720  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:26:51,720  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:26:51,720  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:26:53,289  INFO my endpoint is tcp://127.0.0.1:6274 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:26:53,296  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:26:53,298  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:26:53,298  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:26:53,299  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:26:53,305  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:26:53,312  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:26:53,312  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:26:53,776  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:26:57,750  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:26:57,752  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:26:57,752  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:26:57,753  INFO work_thread_<WorkThread(Thread-4, started daemon 4412)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:26:57,753  INFO work_thread_<WorkThread(Thread-3, started daemon 2836)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:27:31,877  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:27:31,877  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:27:31,877  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:27:33,447  INFO my endpoint is tcp://127.0.0.1:6912 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:27:33,456  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:27:33,457  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:27:33,457  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:27:33,457  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:27:33,463  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:27:33,479  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:27:33,479  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:27:33,993  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:27:37,963  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:27:37,964  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:27:37,964  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:27:37,966  INFO work_thread_<WorkThread(Thread-4, started daemon 7756)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:27:37,967  INFO work_thread_<WorkThread(Thread-3, started daemon 9204)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:27:41,408  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:27:41,408  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:27:41,408  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:27:43,055  INFO my endpoint is tcp://127.0.0.1:6301 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:27:43,065  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:27:43,065  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:27:43,065  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:27:43,065  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:27:43,072  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:27:43,078  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:27:43,078  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:27:43,441  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:27:47,440  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:27:47,440  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:27:47,440  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:27:47,441  INFO work_thread_<WorkThread(Thread-4, started daemon 1612)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:27:47,441  INFO work_thread_<WorkThread(Thread-3, started daemon 8312)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:29:27,724  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:29:27,724  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:29:27,724  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:29:29,506  INFO my endpoint is tcp://127.0.0.1:6957 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:29:29,513  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:29:29,513  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:29:29,513  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:29:29,515  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:29:29,520  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:29:29,526  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:29:29,526  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:29:29,789  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:29:33,765  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:29:33,766  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:29:33,766  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:29:33,766  INFO work_thread_<WorkThread(Thread-4, started daemon 6768)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:29:33,767  INFO work_thread_<WorkThread(Thread-3, started daemon 7792)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:30:23,085  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:30:23,085  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:30:23,085  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:30:24,680  INFO my endpoint is tcp://127.0.0.1:6806 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:30:24,690  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:30:24,690  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:30:24,690  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:30:24,690  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:30:24,697  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:30:24,713  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:30:24,713  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:30:25,127  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:30:29,111  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:30:29,112  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:30:29,112  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:30:29,114  INFO work_thread_<WorkThread(Thread-4, started daemon 9204)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:30:29,115  INFO work_thread_<WorkThread(Thread-3, started daemon 1912)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:32:20,693  INFO process start: TestCaseApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:32:20,693  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:32:20,693  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:32:22,293  INFO my endpoint is tcp://127.0.0.1:6448 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:32:22,302  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:32:22,302  INFO regist_name_service, service name:TestCaseApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:32:22,302  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:32:22,303  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:32:22,309  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:32:22,325  INFO GateResponseWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:32:22,325  INFO process TestCaseApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:32:22,740  INFO process TestCaseApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:32:26,733  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:32:26,733  INFO GateResponseWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:32:26,733  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:32:26,733  INFO work_thread_<WorkThread(Thread-4, started daemon 5992)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:32:26,733  INFO work_thread_<WorkThread(Thread-3, started daemon 8544)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]

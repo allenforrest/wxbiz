@@ -1,0 +1,552 @@
+
+2013-06-10 22:26:03,443  INFO process start: WebGate_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:26:03,443  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:26:03,443  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:26:05,934  INFO my endpoint is tcp://127.0.0.1:6174 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:26:05,951  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:26:05,954  INFO regist_name_service, service name:WebGate  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:26:05,954  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:26:05,956  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:26:05,960  INFO my pid is :1002 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:26:06,969  INFO process WebGate_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:26:06,970  INFO SimpleCallAcpSrv start listen on port 7005, ssl_option:None [File:basic_app.py Function:start_listen Line:116]
+
+2013-06-10 22:26:06,970  INFO MessageDispathWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:02,117  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_oss\web_gate\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:33:02,122  INFO process WebGate_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:33:05,961  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:05,963  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:05,964  INFO work_thread_<WorkThread(Thread-2, started daemon 7960)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:33:05,967  INFO MessageDispathWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:05,967  INFO work_thread_<WorkThread(Thread-3, started daemon 6188)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:33:25,578  INFO process start: WebGate_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:33:25,578  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:33:25,578  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:33:27,766  INFO my endpoint is tcp://127.0.0.1:6890 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:33:27,780  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:27,786  INFO regist_name_service, service name:WebGate  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:33:27,786  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:27,788  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:27,795  INFO my pid is :1004 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:33:27,802  INFO process WebGate_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:33:27,802  INFO SimpleCallAcpSrv start listen on port 7005, ssl_option:None [File:basic_app.py Function:start_listen Line:116]
+
+2013-06-10 22:33:27,803  INFO MessageDispathWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:32,509  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_oss\web_gate\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:45:32,520  INFO process WebGate_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:45:36,546  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:36,549  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:36,552  INFO work_thread_<WorkThread(Thread-2, started daemon 8004)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:45:36,559  INFO MessageDispathWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:36,559  INFO work_thread_<WorkThread(Thread-3, started daemon 8448)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:45:54,299  INFO process start: WebGate_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:45:54,299  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:45:54,299  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:45:56,709  INFO my endpoint is tcp://127.0.0.1:6132 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:45:56,720  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:56,721  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:56,721  INFO regist_name_service, service name:WebGate  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:45:56,721  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:56,730  INFO my pid is :1005 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:45:56,736  INFO process WebGate_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:45:56,736  INFO SimpleCallAcpSrv start listen on port 7005, ssl_option:None [File:basic_app.py Function:start_listen Line:116]
+
+2013-06-10 22:45:56,736  INFO MessageDispathWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:12,190  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_oss\web_gate\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:48:12,194  INFO process WebGate_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:48:16,216  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:16,217  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:16,219  INFO work_thread_<WorkThread(Thread-2, started daemon 2796)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:48:16,221  INFO MessageDispathWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:16,223  INFO work_thread_<WorkThread(Thread-3, started daemon 500)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:48:32,724  INFO process start: WebGate_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:48:32,726  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:48:32,726  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:48:35,461  INFO my endpoint is tcp://127.0.0.1:6274 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:48:35,473  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:35,473  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:35,473  INFO regist_name_service, service name:WebGate  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:48:35,473  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:35,482  INFO my pid is :1006 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:48:35,487  INFO process WebGate_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:48:35,489  INFO SimpleCallAcpSrv start listen on port 7005, ssl_option:None [File:basic_app.py Function:start_listen Line:116]
+
+2013-06-10 22:48:35,489  INFO MessageDispathWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:34,434  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_oss\web_gate\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:50:34,440  INFO process WebGate_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:50:39,046  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:39,049  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:39,049  INFO work_thread_<WorkThread(Thread-2, started daemon 7920)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:50:39,049  INFO MessageDispathWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:39,051  INFO work_thread_<WorkThread(Thread-3, started daemon 1884)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:50:56,345  INFO process start: WebGate_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:50:56,345  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:50:56,345  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:50:59,062  INFO my endpoint is tcp://127.0.0.1:6453 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:50:59,072  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:59,072  INFO regist_name_service, service name:WebGate  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:50:59,072  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:59,073  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:59,081  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:50:59,085  INFO process WebGate_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:50:59,085  INFO SimpleCallAcpSrv start listen on port 7005, ssl_option:None [File:basic_app.py Function:start_listen Line:116]
+
+2013-06-10 22:50:59,085  INFO MessageDispathWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:18,769  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_oss\web_gate\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:57:18,773  INFO process WebGate_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:57:22,796  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:22,802  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:22,802  INFO work_thread_<WorkThread(Thread-2, started daemon 4176)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:57:22,806  INFO MessageDispathWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:22,808  INFO work_thread_<WorkThread(Thread-3, started daemon 5552)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:57:40,184  INFO process start: WebGate_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:57:40,184  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:57:40,184  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:57:42,493  INFO my endpoint is tcp://127.0.0.1:6860 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:57:42,505  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:42,506  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:42,506  INFO regist_name_service, service name:WebGate  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:57:42,506  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:42,515  INFO my pid is :1005 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:57:42,520  INFO process WebGate_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:57:42,522  INFO SimpleCallAcpSrv start listen on port 7005, ssl_option:None [File:basic_app.py Function:start_listen Line:116]
+
+2013-06-10 22:57:42,523  INFO MessageDispathWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:01,841  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_oss\web_gate\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:59:01,849  INFO process WebGate_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:59:05,875  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:05,875  INFO MessageDispathWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:05,875  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:05,877  INFO work_thread_<WorkThread(Thread-3, started daemon 2160)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:59:05,878  INFO work_thread_<WorkThread(Thread-2, started daemon 7876)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:59:23,795  INFO process start: WebGate_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:59:23,795  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:59:23,795  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:59:26,244  INFO my endpoint is tcp://127.0.0.1:6184 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:59:26,263  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:26,267  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:26,267  INFO regist_name_service, service name:WebGate  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:59:26,269  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:26,279  INFO my pid is :1002 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:59:26,296  INFO process WebGate_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:59:26,296  INFO SimpleCallAcpSrv start listen on port 7005, ssl_option:None [File:basic_app.py Function:start_listen Line:116]
+
+2013-06-10 22:59:26,296  INFO MessageDispathWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:11,019  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_oss\web_gate\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:06:11,036  INFO process WebGate_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:06:15,053  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:15,055  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:15,055  INFO work_thread_<WorkThread(Thread-2, started daemon 1188)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:06:15,059  INFO MessageDispathWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:15,059  INFO work_thread_<WorkThread(Thread-3, started daemon 2996)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:06:33,773  INFO process start: WebGate_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:06:33,773  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:06:33,775  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:06:36,099  INFO my endpoint is tcp://127.0.0.1:6939 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:06:36,109  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:36,109  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:36,109  INFO regist_name_service, service name:WebGate  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:06:36,111  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:36,118  INFO my pid is :1004 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:06:36,134  INFO process WebGate_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:06:36,134  INFO SimpleCallAcpSrv start listen on port 7005, ssl_option:None [File:basic_app.py Function:start_listen Line:116]
+
+2013-06-10 23:06:36,134  INFO MessageDispathWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:17:45,838  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_oss\web_gate\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:17:45,852  INFO process WebGate_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:17:49,877  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:49,878  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:49,884  INFO work_thread_<WorkThread(Thread-2, started daemon 6044)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:17:49,894  INFO MessageDispathWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:49,894  INFO work_thread_<WorkThread(Thread-3, started daemon 8636)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:18:08,003  INFO process start: WebGate_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:18:08,003  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:18:08,003  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:18:10,336  INFO my endpoint is tcp://127.0.0.1:6389 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:18:10,348  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:10,349  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:10,349  INFO regist_name_service, service name:WebGate  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:18:10,349  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:10,358  INFO my pid is :1004 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:18:10,365  INFO process WebGate_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:18:10,365  INFO SimpleCallAcpSrv start listen on port 7005, ssl_option:None [File:basic_app.py Function:start_listen Line:116]
+
+2013-06-10 23:18:10,365  INFO MessageDispathWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:32,894  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_oss\web_gate\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:18:32,911  INFO process WebGate_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:18:36,953  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:36,953  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:36,953  INFO work_thread_<WorkThread(Thread-2, started daemon 4416)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:18:36,960  INFO MessageDispathWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:36,960  INFO work_thread_<WorkThread(Thread-3, started daemon 7504)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:18:54,145  INFO process start: WebGate_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:18:54,145  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:18:54,145  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:18:56,447  INFO my endpoint is tcp://127.0.0.1:6697 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:18:56,457  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:56,459  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:56,459  INFO regist_name_service, service name:WebGate  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:18:56,459  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:56,466  INFO my pid is :1005 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:18:56,471  INFO process WebGate_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:18:56,473  INFO SimpleCallAcpSrv start listen on port 7005, ssl_option:None [File:basic_app.py Function:start_listen Line:116]
+
+2013-06-10 23:18:56,473  INFO MessageDispathWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:10,538  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_oss\web_gate\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:22:10,559  INFO process WebGate_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:22:15,391  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:15,392  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:15,394  INFO work_thread_<WorkThread(Thread-2, started daemon 9152)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:22:15,395  INFO MessageDispathWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:15,397  INFO work_thread_<WorkThread(Thread-3, started daemon 7144)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:22:32,414  INFO process start: WebGate_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:22:32,415  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:22:32,415  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:22:34,473  INFO my endpoint is tcp://127.0.0.1:6433 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:22:34,484  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:34,486  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:34,486  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:34,486  INFO regist_name_service, service name:WebGate  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:22:34,493  INFO my pid is :1002 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:22:34,503  INFO process WebGate_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:22:34,503  INFO SimpleCallAcpSrv start listen on port 7005, ssl_option:None [File:basic_app.py Function:start_listen Line:116]
+
+2013-06-10 23:22:34,503  INFO MessageDispathWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:12,125  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_oss\web_gate\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:24:12,128  INFO process WebGate_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:24:16,957  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:16,957  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:16,957  INFO work_thread_<WorkThread(Thread-2, started daemon 1104)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:24:16,970  INFO MessageDispathWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:16,973  INFO work_thread_<WorkThread(Thread-3, started daemon 9040)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:24:55,134  INFO process start: WebGate_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:24:55,135  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:24:55,135  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:24:57,157  INFO my endpoint is tcp://127.0.0.1:6296 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:24:57,171  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:57,173  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:57,173  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:57,173  INFO regist_name_service, service name:WebGate  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:24:57,186  INFO my pid is :1003 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:24:58,180  INFO process WebGate_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:24:58,180  INFO SimpleCallAcpSrv start listen on port 7005, ssl_option:None [File:basic_app.py Function:start_listen Line:116]
+
+2013-06-10 23:24:58,180  INFO MessageDispathWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:33:30,509  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_oss\web_gate\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:33:30,513  INFO process WebGate_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:33:34,558  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:34,559  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:34,559  INFO work_thread_<WorkThread(Thread-2, started daemon 1872)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:33:34,562  INFO MessageDispathWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:34,562  INFO work_thread_<WorkThread(Thread-3, started daemon 1172)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]

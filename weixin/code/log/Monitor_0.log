@@ -1,0 +1,2112 @@
+
+2013-06-10 22:25:50,038  INFO process start: Monitor_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:25:50,038  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:25:50,038  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:25:51,625  INFO device_id: device xxx [File:device_cfg_info.py Function:log_device_info Line:66]
+
+2013-06-10 22:25:51,625  INFO device_external_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:67]
+
+2013-06-10 22:25:51,625  INFO device_external_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:68]
+
+2013-06-10 22:25:51,625  INFO device_internal_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:69]
+
+2013-06-10 22:25:51,625  INFO device_internal_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:70]
+
+2013-06-10 22:25:51,625  INFO cluster_enable: 0 [File:device_cfg_info.py Function:log_device_info Line:71]
+
+2013-06-10 22:25:51,627  INFO cluster_virtual_ip: 10.0.0.222 [File:device_cfg_info.py Function:log_device_info Line:72]
+
+2013-06-10 22:25:51,627  INFO cluster_virtual_mask: 255.255.255.0 [File:device_cfg_info.py Function:log_device_info Line:73]
+
+2013-06-10 22:25:51,627  INFO cluster_max_nodes_num: 0 [File:device_cfg_info.py Function:log_device_info Line:74]
+
+2013-06-10 22:25:51,642  INFO my endpoint is tcp://127.0.0.1:6001 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:25:51,653  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:25:51,653  INFO regist_name_service, service name:Monitor  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:25:51,653  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:25:51,654  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:25:51,661  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6001',service_name:'Monitor',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1001 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:25:51,663  INFO my pid is :1001 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:25:51,664  INFO ClusterCfgWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:25:51,664  INFO NameManageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:25:51,665  INFO process Monitor_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:25:51,667  INFO ProcessMonitorWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:26:02,871  INFO starting process(WebGate_0, 6628)  program path:C:\svn\weixin_public\code\rfid_oss/web_gate/web_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:26:02,872  INFO starting process(WXGateApp_0, 4612)  program path:C:\svn\weixin_public\code\wx_cloud/wx_gateway/wx_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:26:02,875  INFO starting process(SubscriberManApp_0, 8712)  program path:C:\svn\weixin_public\code\wx_cloud/subscriber_manager/subscriber_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:26:02,875  INFO starting process(PortalManApp_0, 7408)  program path:C:\svn\weixin_public\code\wx_cloud/portal_manager/portal_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:26:02,877  INFO starting process(EventCenterApp_0, 6020)  program path:C:\svn\weixin_public\code\wx_cloud/event_center/event_center_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:26:05,960  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6174',service_name:'WebGate',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:26:05,967  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6389',service_name:'EventCenterApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1003 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:26:05,976  INFO process(EventCenterApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:26:05,992  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6713',service_name:'WXGateApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1004 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:26:05,997  INFO process(WXGateApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:26:06,173  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6345',service_name:'PortalManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1005 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:26:06,180  INFO process(PortalManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:26:06,733  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6723',service_name:'SubscriberManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1006 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:26:06,740  INFO process(SubscriberManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:26:06,967  INFO process(WebGate_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:26:06,982  INFO process(EventCenterApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:26:07,000  INFO process(WXGateApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:26:07,190  INFO process(PortalManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:26:07,970  INFO process(WebGate_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:26:10,312  INFO process(SubscriberManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:28:44,365  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6392',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:28:44,372  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:28:44,688  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:28:49,709  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:30:50,621  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6789',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:30:50,634  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:30:50,903  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:30:55,898  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:31:57,019  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6730',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:31:57,036  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:31:58,040  INFO process(TestCaseApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:32:03,072  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:32:07,880  INFO process(TestCaseApp_0) is abnormal while running. [File:process_stat_mgr.py Function:on_check_running Line:401]
+
+2013-06-10 22:32:08,200  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:33:02,132  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_plt\monitor\../base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:33:02,137  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:33:02,138  INFO process Monitor_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:33:02,145  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1004,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:33:02,151  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1003,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:33:02,154  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1005,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:33:02,157  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1006,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:33:05,489  INFO process(EventCenterApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:33:05,490  INFO process(WXGateApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:33:06,071  INFO process(WebGate_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:33:06,273  INFO process(PortalManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:33:06,276  INFO process(SubscriberManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:33:07,075  INFO process(WebGate_0, 6628) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:33:07,075  INFO process(WXGateApp_0, 4612) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:33:07,075  INFO process(SubscriberManApp_0, 8712) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:33:07,075  INFO process(PortalManApp_0, 7408) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:33:07,075  INFO process(EventCenterApp_0, 6020) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:33:07,154  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:07,154  INFO ClusterCfgWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:07,155  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:07,155  INFO ProcessMonitorWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:07,157  INFO NameManageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:07,157  INFO work_thread_<WorkThread(Thread-2, started daemon 5532)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:33:07,157  INFO work_thread_<WorkThread(Thread-5, started daemon 5156)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:33:07,157  INFO work_thread_<WorkThread(Thread-4, started daemon 8512)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:33:12,371  INFO process start: Monitor_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:33:12,371  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:33:12,371  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:33:14,045  INFO device_id: device xxx [File:device_cfg_info.py Function:log_device_info Line:66]
+
+2013-06-10 22:33:14,045  INFO device_external_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:67]
+
+2013-06-10 22:33:14,045  INFO device_external_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:68]
+
+2013-06-10 22:33:14,045  INFO device_internal_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:69]
+
+2013-06-10 22:33:14,045  INFO device_internal_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:70]
+
+2013-06-10 22:33:14,045  INFO cluster_enable: 0 [File:device_cfg_info.py Function:log_device_info Line:71]
+
+2013-06-10 22:33:14,045  INFO cluster_virtual_ip: 10.0.0.222 [File:device_cfg_info.py Function:log_device_info Line:72]
+
+2013-06-10 22:33:14,045  INFO cluster_virtual_mask: 255.255.255.0 [File:device_cfg_info.py Function:log_device_info Line:73]
+
+2013-06-10 22:33:14,046  INFO cluster_max_nodes_num: 0 [File:device_cfg_info.py Function:log_device_info Line:74]
+
+2013-06-10 22:33:14,058  INFO my endpoint is tcp://127.0.0.1:6001 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:33:14,068  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:14,069  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:14,069  INFO regist_name_service, service name:Monitor  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:33:14,069  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:14,075  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6001',service_name:'Monitor',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1001 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:33:14,075  INFO my pid is :1001 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:33:14,076  INFO ClusterCfgWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:14,078  INFO NameManageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:14,078  INFO process Monitor_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:33:14,078  INFO ProcessMonitorWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:24,969  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6352',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:33:24,974  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:33:24,976  INFO starting process(WebGate_0, 7012)  program path:C:\svn\weixin_public\code\rfid_oss/web_gate/web_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:33:24,977  INFO starting process(WXGateApp_0, 4972)  program path:C:\svn\weixin_public\code\wx_cloud/wx_gateway/wx_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:33:24,979  INFO starting process(SubscriberManApp_0, 7436)  program path:C:\svn\weixin_public\code\wx_cloud/subscriber_manager/subscriber_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:33:24,980  INFO starting process(PortalManApp_0, 6768)  program path:C:\svn\weixin_public\code\wx_cloud/portal_manager/portal_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:33:24,980  INFO starting process(EventCenterApp_0, 9156)  program path:C:\svn\weixin_public\code\wx_cloud/event_center/event_center_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:33:25,977  INFO process(TestCaseApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:33:27,785  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6804',service_name:'WXGateApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1003 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:33:27,793  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6890',service_name:'WebGate',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1004 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:33:27,799  INFO process(WebGate_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:33:27,917  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6898',service_name:'PortalManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1005 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:33:27,923  INFO process(PortalManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:33:28,013  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6430',service_name:'SubscriberManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1006 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:33:28,019  INFO process(SubscriberManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:33:28,378  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6867',service_name:'EventCenterApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:33:28,384  INFO process(EventCenterApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:33:28,793  INFO process(WXGateApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:33:28,802  INFO process(WebGate_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:33:28,931  INFO process(PortalManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:33:29,391  INFO process(EventCenterApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:33:29,799  INFO process(WXGateApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:33:30,510  INFO process(SubscriberManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:33:31,118  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:33:35,839  INFO process(TestCaseApp_0) is abnormal while running. [File:process_stat_mgr.py Function:on_check_running Line:401]
+
+2013-06-10 22:33:36,196  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:33:48,053  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6121',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:33:48,059  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:33:48,476  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:33:53,440  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:44:00,894  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6232',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:44:00,901  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:44:01,318  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:44:06,305  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:44:12,108  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6100',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:44:12,118  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:44:13,121  INFO process(TestCaseApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:44:24,171  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:44:28,331  INFO process(TestCaseApp_0) is abnormal while running. [File:process_stat_mgr.py Function:on_check_running Line:401]
+
+2013-06-10 22:44:29,275  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:45:32,513  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_plt\monitor\../base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:45:32,523  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1003,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:45:32,523  INFO process Monitor_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:45:32,530  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1006,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:45:32,532  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1004,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:45:32,539  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:45:32,540  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1005,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:45:36,586  INFO process(WXGateApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:45:36,661  INFO process(EventCenterApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:45:36,661  INFO process(PortalManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:45:36,674  INFO process(WebGate_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:45:37,448  INFO process(SubscriberManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:45:38,249  INFO process(WebGate_0, 7012) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:45:38,249  INFO process(WXGateApp_0, 4972) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:45:38,250  INFO process(SubscriberManApp_0, 7436) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:45:38,250  INFO process(PortalManApp_0, 6768) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:45:38,250  INFO process(EventCenterApp_0, 9156) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:45:38,542  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:38,542  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:38,542  INFO work_thread_<WorkThread(Thread-2, started daemon 7572)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:45:38,545  INFO ProcessMonitorWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:38,545  INFO ClusterCfgWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:38,546  INFO work_thread_<WorkThread(Thread-5, started daemon 3472)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:45:38,546  INFO NameManageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:38,548  INFO work_thread_<WorkThread(Thread-4, started daemon 5416)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:45:40,806  INFO process start: Monitor_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:45:40,808  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:45:40,808  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:45:42,375  INFO device_id: device xxx [File:device_cfg_info.py Function:log_device_info Line:66]
+
+2013-06-10 22:45:42,375  INFO device_external_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:67]
+
+2013-06-10 22:45:42,375  INFO device_external_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:68]
+
+2013-06-10 22:45:42,375  INFO device_internal_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:69]
+
+2013-06-10 22:45:42,375  INFO device_internal_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:70]
+
+2013-06-10 22:45:42,375  INFO cluster_enable: 0 [File:device_cfg_info.py Function:log_device_info Line:71]
+
+2013-06-10 22:45:42,375  INFO cluster_virtual_ip: 10.0.0.222 [File:device_cfg_info.py Function:log_device_info Line:72]
+
+2013-06-10 22:45:42,377  INFO cluster_virtual_mask: 255.255.255.0 [File:device_cfg_info.py Function:log_device_info Line:73]
+
+2013-06-10 22:45:42,377  INFO cluster_max_nodes_num: 0 [File:device_cfg_info.py Function:log_device_info Line:74]
+
+2013-06-10 22:45:42,390  INFO my endpoint is tcp://127.0.0.1:6001 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:45:42,400  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:42,400  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:42,400  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:42,400  INFO regist_name_service, service name:Monitor  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:45:42,407  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6001',service_name:'Monitor',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1001 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:45:42,407  INFO my pid is :1001 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:45:42,410  INFO ClusterCfgWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:42,410  INFO process Monitor_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:45:42,410  INFO NameManageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:42,411  INFO ProcessMonitorWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:53,618  INFO starting process(WebGate_0, 7832)  program path:C:\svn\weixin_public\code\rfid_oss/web_gate/web_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:45:53,622  INFO starting process(WXGateApp_0, 4688)  program path:C:\svn\weixin_public\code\wx_cloud/wx_gateway/wx_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:45:53,625  INFO starting process(SubscriberManApp_0, 7812)  program path:C:\svn\weixin_public\code\wx_cloud/subscriber_manager/subscriber_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:45:53,628  INFO starting process(PortalManApp_0, 3592)  program path:C:\svn\weixin_public\code\wx_cloud/portal_manager/portal_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:45:53,632  INFO starting process(EventCenterApp_0, 8688)  program path:C:\svn\weixin_public\code\wx_cloud/event_center/event_center_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:45:56,571  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6851',service_name:'PortalManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:45:56,581  INFO process(PortalManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:45:56,627  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6104',service_name:'WXGateApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1003 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:45:56,638  INFO process(WXGateApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:45:56,641  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6908',service_name:'EventCenterApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1004 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:45:56,727  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6132',service_name:'WebGate',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1005 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:45:56,734  INFO process(WebGate_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:45:57,204  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6482',service_name:'SubscriberManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1006 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:45:57,210  INFO process(SubscriberManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:45:57,595  INFO process(PortalManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:45:57,641  INFO process(EventCenterApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:45:57,644  INFO process(WXGateApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:45:57,736  INFO process(WebGate_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:45:58,226  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6462',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:45:58,233  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:45:58,648  INFO process(EventCenterApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:45:59,236  INFO process(TestCaseApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:46:02,045  INFO process(SubscriberManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:46:04,276  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:46:08,671  INFO process(TestCaseApp_0) is abnormal while running. [File:process_stat_mgr.py Function:on_check_running Line:401]
+
+2013-06-10 22:46:09,375  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:48:12,197  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_plt\monitor\../base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:48:12,203  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1004,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:48:12,204  INFO process Monitor_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:48:12,210  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1005,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:48:12,213  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1006,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:48:12,214  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1003,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:48:12,216  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:48:16,279  INFO process(EventCenterApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:48:16,323  INFO process(WebGate_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:48:16,325  INFO process(WXGateApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:48:16,336  INFO process(PortalManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:48:16,348  INFO process(SubscriberManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:48:17,150  INFO process(WebGate_0, 7832) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:48:17,150  INFO process(WXGateApp_0, 4688) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:48:17,150  INFO process(SubscriberManApp_0, 7812) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:48:17,150  INFO process(PortalManApp_0, 3592) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:48:17,150  INFO process(EventCenterApp_0, 8688) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:48:17,211  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:17,213  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:17,213  INFO work_thread_<WorkThread(Thread-2, started daemon 7256)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:48:17,213  INFO ProcessMonitorWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:17,213  INFO work_thread_<WorkThread(Thread-5, started daemon 8860)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:48:17,213  INFO ClusterCfgWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:17,213  INFO NameManageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:17,213  INFO work_thread_<WorkThread(Thread-4, started daemon 6044)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:48:19,062  INFO process start: Monitor_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:48:19,062  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:48:19,062  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:48:20,736  INFO device_id: device xxx [File:device_cfg_info.py Function:log_device_info Line:66]
+
+2013-06-10 22:48:20,736  INFO device_external_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:67]
+
+2013-06-10 22:48:20,736  INFO device_external_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:68]
+
+2013-06-10 22:48:20,736  INFO device_internal_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:69]
+
+2013-06-10 22:48:20,736  INFO device_internal_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:70]
+
+2013-06-10 22:48:20,736  INFO cluster_enable: 0 [File:device_cfg_info.py Function:log_device_info Line:71]
+
+2013-06-10 22:48:20,736  INFO cluster_virtual_ip: 10.0.0.222 [File:device_cfg_info.py Function:log_device_info Line:72]
+
+2013-06-10 22:48:20,736  INFO cluster_virtual_mask: 255.255.255.0 [File:device_cfg_info.py Function:log_device_info Line:73]
+
+2013-06-10 22:48:20,736  INFO cluster_max_nodes_num: 0 [File:device_cfg_info.py Function:log_device_info Line:74]
+
+2013-06-10 22:48:20,750  INFO my endpoint is tcp://127.0.0.1:6001 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:48:20,759  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:20,759  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:20,759  INFO regist_name_service, service name:Monitor  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:48:20,759  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:20,766  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6001',service_name:'Monitor',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1001 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:48:20,767  INFO my pid is :1001 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:48:20,769  INFO ClusterCfgWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:20,769  INFO NameManageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:20,769  INFO process Monitor_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:48:20,770  INFO ProcessMonitorWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:31,974  INFO starting process(WebGate_0, 8664)  program path:C:\svn\weixin_public\code\rfid_oss/web_gate/web_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:48:31,976  INFO starting process(WXGateApp_0, 8312)  program path:C:\svn\weixin_public\code\wx_cloud/wx_gateway/wx_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:48:31,976  INFO starting process(SubscriberManApp_0, 2844)  program path:C:\svn\weixin_public\code\wx_cloud/subscriber_manager/subscriber_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:48:31,979  INFO starting process(PortalManApp_0, 3736)  program path:C:\svn\weixin_public\code\wx_cloud/portal_manager/portal_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:48:31,980  INFO starting process(EventCenterApp_0, 9188)  program path:C:\svn\weixin_public\code\wx_cloud/event_center/event_center_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:48:33,681  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6469',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:48:34,684  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:48:34,963  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6332',service_name:'SubscriberManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1003 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:48:35,019  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6541',service_name:'PortalManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1004 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:48:35,028  INFO process(PortalManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:48:35,098  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6324',service_name:'WXGateApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1005 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:48:35,105  INFO process(WXGateApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:48:35,480  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6274',service_name:'WebGate',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1006 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:48:35,486  INFO process(WebGate_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:48:35,628  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6580',service_name:'EventCenterApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:48:35,634  INFO process(EventCenterApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:48:35,697  INFO process(TestCaseApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:48:35,970  INFO process(SubscriberManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:48:36,036  INFO process(PortalManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:48:36,109  INFO process(WXGateApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:48:36,489  INFO process(WebGate_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:48:36,638  INFO process(EventCenterApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:48:38,480  INFO process(SubscriberManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:49:06,188  INFO process(TestCaseApp_0) is abnormal while running. [File:process_stat_mgr.py Function:on_check_running Line:401]
+
+2013-06-10 22:49:10,206  INFO unregist stopped app, pid:1002, TestCaseApp_0 [File:name_mit_manager.py Function:on_notify_running_pids Line:367]
+
+2013-06-10 22:49:16,881  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6997',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:49:16,897  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:49:17,289  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:49:22,269  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:49:45,709  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6279',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:49:45,724  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:49:46,141  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:49:51,125  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:50:03,418  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6378',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:50:03,427  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:50:04,431  INFO process(TestCaseApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:50:09,470  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:50:13,519  INFO process(TestCaseApp_0) is abnormal while running. [File:process_stat_mgr.py Function:on_check_running Line:401]
+
+2013-06-10 22:50:14,586  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:50:34,448  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_plt\monitor\../base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:50:34,453  INFO process Monitor_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:50:34,456  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1006,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:50:34,460  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:50:34,467  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1004,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:50:34,469  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1005,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:50:34,470  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1003,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:50:38,576  INFO process(EventCenterApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:50:38,605  INFO process(WXGateApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:50:38,605  INFO process(SubscriberManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:50:38,605  INFO process(PortalManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:50:39,153  INFO process(WebGate_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:50:39,953  INFO process(WebGate_0, 8664) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:50:39,953  INFO process(WXGateApp_0, 8312) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:50:39,956  INFO process(SubscriberManApp_0, 2844) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:50:39,957  INFO process(PortalManApp_0, 3736) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:50:39,957  INFO process(EventCenterApp_0, 9188) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:50:40,461  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:40,463  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:40,464  INFO ClusterCfgWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:40,466  INFO work_thread_<WorkThread(Thread-2, started daemon 672)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:50:40,466  INFO ProcessMonitorWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:40,467  INFO NameManageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:40,467  INFO work_thread_<WorkThread(Thread-5, started daemon 8820)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:50:40,467  INFO work_thread_<WorkThread(Thread-4, started daemon 2876)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:50:42,421  INFO process start: Monitor_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:50:42,421  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:50:42,421  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:50:44,046  INFO device_id: device xxx [File:device_cfg_info.py Function:log_device_info Line:66]
+
+2013-06-10 22:50:44,046  INFO device_external_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:67]
+
+2013-06-10 22:50:44,046  INFO device_external_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:68]
+
+2013-06-10 22:50:44,046  INFO device_internal_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:69]
+
+2013-06-10 22:50:44,046  INFO device_internal_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:70]
+
+2013-06-10 22:50:44,046  INFO cluster_enable: 0 [File:device_cfg_info.py Function:log_device_info Line:71]
+
+2013-06-10 22:50:44,046  INFO cluster_virtual_ip: 10.0.0.222 [File:device_cfg_info.py Function:log_device_info Line:72]
+
+2013-06-10 22:50:44,046  INFO cluster_virtual_mask: 255.255.255.0 [File:device_cfg_info.py Function:log_device_info Line:73]
+
+2013-06-10 22:50:44,048  INFO cluster_max_nodes_num: 0 [File:device_cfg_info.py Function:log_device_info Line:74]
+
+2013-06-10 22:50:44,061  INFO my endpoint is tcp://127.0.0.1:6001 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:50:44,071  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:44,072  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:44,072  INFO regist_name_service, service name:Monitor  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:50:44,072  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:44,078  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6001',service_name:'Monitor',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1001 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:50:44,079  INFO my pid is :1001 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:50:44,082  INFO ClusterCfgWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:44,082  INFO NameManageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:44,082  INFO process Monitor_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:50:44,082  INFO ProcessMonitorWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:55,286  INFO starting process(WebGate_0, 4260)  program path:C:\svn\weixin_public\code\rfid_oss/web_gate/web_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:50:55,286  INFO starting process(WXGateApp_0, 8216)  program path:C:\svn\weixin_public\code\wx_cloud/wx_gateway/wx_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:50:55,289  INFO starting process(SubscriberManApp_0, 5932)  program path:C:\svn\weixin_public\code\wx_cloud/subscriber_manager/subscriber_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:50:55,290  INFO starting process(PortalManApp_0, 2196)  program path:C:\svn\weixin_public\code\wx_cloud/portal_manager/portal_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:50:55,292  INFO starting process(EventCenterApp_0, 8668)  program path:C:\svn\weixin_public\code\wx_cloud/event_center/event_center_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:50:58,338  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6636',service_name:'WXGateApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:50:58,345  INFO process(WXGateApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:50:58,568  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6189',service_name:'SubscriberManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1003 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:50:58,819  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6659',service_name:'PortalManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1004 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:50:58,826  INFO process(PortalManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:50:58,940  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6554',service_name:'EventCenterApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1005 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:50:58,957  INFO process(EventCenterApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:50:59,072  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6538',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1006 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:50:59,078  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6453',service_name:'WebGate',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:50:59,079  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:50:59,084  INFO process(WebGate_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:50:59,348  INFO process(WXGateApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:50:59,585  INFO process(SubscriberManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:50:59,838  INFO process(PortalManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:50:59,960  INFO process(EventCenterApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:51:00,084  INFO process(TestCaseApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:51:00,088  INFO process(WebGate_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:51:02,125  INFO process(SubscriberManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:51:30,516  INFO process(TestCaseApp_0) is abnormal while running. [File:process_stat_mgr.py Function:on_check_running Line:401]
+
+2013-06-10 22:51:33,538  INFO unregist stopped app, pid:1006, TestCaseApp_0 [File:name_mit_manager.py Function:on_notify_running_pids Line:367]
+
+2013-06-10 22:52:30,941  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6264',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1006 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:52:30,947  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:52:31,213  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1006,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:52:36,194  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:55:54,469  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6407',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1006 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:55:55,476  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:55:56,484  INFO process(TestCaseApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:56:27,572  INFO process(TestCaseApp_0) is abnormal while running. [File:process_stat_mgr.py Function:on_check_running Line:401]
+
+2013-06-10 22:56:30,592  INFO unregist stopped app, pid:1006, TestCaseApp_0 [File:name_mit_manager.py Function:on_notify_running_pids Line:367]
+
+2013-06-10 22:56:37,782  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6549',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1006 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:56:37,789  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:56:38,796  INFO process(TestCaseApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:56:43,831  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1006,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:56:48,687  INFO process(TestCaseApp_0) is abnormal while running. [File:process_stat_mgr.py Function:on_check_running Line:401]
+
+2013-06-10 22:56:48,931  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:57:18,769  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_plt\monitor\../base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:57:18,775  INFO process Monitor_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:57:18,776  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1005,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:57:18,782  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1003,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:57:18,786  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:57:18,789  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1004,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:57:18,792  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:57:22,835  INFO process(EventCenterApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:57:22,904  INFO process(PortalManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:57:22,905  INFO process(WXGateApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:57:22,907  INFO process(WebGate_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:57:22,928  INFO process(SubscriberManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:57:23,729  INFO process(WebGate_0, 4260) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:57:23,730  INFO process(WXGateApp_0, 8216) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:57:23,730  INFO process(SubscriberManApp_0, 5932) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:57:23,730  INFO process(PortalManApp_0, 2196) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:57:23,730  INFO process(EventCenterApp_0, 8668) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:57:23,788  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:23,789  INFO ClusterCfgWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:23,789  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:23,789  INFO ProcessMonitorWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:23,790  INFO NameManageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:23,790  INFO work_thread_<WorkThread(Thread-2, started daemon 3924)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:57:23,792  INFO work_thread_<WorkThread(Thread-5, started daemon 5700)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:57:23,792  INFO work_thread_<WorkThread(Thread-4, started daemon 4892)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:57:26,782  INFO process start: Monitor_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:57:26,783  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:57:26,783  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:57:28,331  INFO device_id: device xxx [File:device_cfg_info.py Function:log_device_info Line:66]
+
+2013-06-10 22:57:28,331  INFO device_external_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:67]
+
+2013-06-10 22:57:28,331  INFO device_external_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:68]
+
+2013-06-10 22:57:28,331  INFO device_internal_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:69]
+
+2013-06-10 22:57:28,332  INFO device_internal_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:70]
+
+2013-06-10 22:57:28,332  INFO cluster_enable: 0 [File:device_cfg_info.py Function:log_device_info Line:71]
+
+2013-06-10 22:57:28,332  INFO cluster_virtual_ip: 10.0.0.222 [File:device_cfg_info.py Function:log_device_info Line:72]
+
+2013-06-10 22:57:28,332  INFO cluster_virtual_mask: 255.255.255.0 [File:device_cfg_info.py Function:log_device_info Line:73]
+
+2013-06-10 22:57:28,332  INFO cluster_max_nodes_num: 0 [File:device_cfg_info.py Function:log_device_info Line:74]
+
+2013-06-10 22:57:28,344  INFO my endpoint is tcp://127.0.0.1:6001 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:57:28,354  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:28,354  INFO regist_name_service, service name:Monitor  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:57:28,355  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:28,355  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:28,361  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6001',service_name:'Monitor',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1001 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:57:28,361  INFO my pid is :1001 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:57:28,362  INFO ClusterCfgWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:28,362  INFO NameManageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:28,364  INFO process Monitor_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:57:28,365  INFO ProcessMonitorWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:39,568  INFO starting process(WebGate_0, 8500)  program path:C:\svn\weixin_public\code\rfid_oss/web_gate/web_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:57:39,569  INFO starting process(WXGateApp_0, 8376)  program path:C:\svn\weixin_public\code\wx_cloud/wx_gateway/wx_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:57:39,572  INFO starting process(SubscriberManApp_0, 8040)  program path:C:\svn\weixin_public\code\wx_cloud/subscriber_manager/subscriber_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:57:39,573  INFO starting process(PortalManApp_0, 3340)  program path:C:\svn\weixin_public\code\wx_cloud/portal_manager/portal_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:57:39,575  INFO starting process(EventCenterApp_0, 6056)  program path:C:\svn\weixin_public\code\wx_cloud/event_center/event_center_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:57:42,404  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6157',service_name:'WXGateApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:57:42,415  INFO process(WXGateApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:57:42,476  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6514',service_name:'PortalManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1003 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:57:42,480  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6838',service_name:'SubscriberManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1004 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:57:42,490  INFO process(PortalManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:57:42,496  INFO process(SubscriberManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:57:42,513  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6860',service_name:'WebGate',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1005 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:57:42,519  INFO process(WebGate_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:57:42,812  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6873',service_name:'EventCenterApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1006 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:57:42,816  INFO process(EventCenterApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:57:43,430  INFO process(WXGateApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:57:43,502  INFO process(PortalManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:57:43,529  INFO process(WebGate_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:57:43,825  INFO process(EventCenterApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:57:45,073  INFO process(SubscriberManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:57:45,719  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6383',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:57:45,730  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:57:46,197  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:57:51,209  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:57:56,607  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6109',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:57:56,611  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:57:57,130  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:58:02,108  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:58:05,734  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6399',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:58:05,746  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:58:06,750  INFO process(TestCaseApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:58:11,786  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:58:16,569  INFO process(TestCaseApp_0) is abnormal while running. [File:process_stat_mgr.py Function:on_check_running Line:401]
+
+2013-06-10 22:58:16,884  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:59:01,845  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1004,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:59:01,848  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_plt\monitor\../base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:59:01,859  INFO process Monitor_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:59:01,861  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1006,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:59:01,861  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:59:01,865  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1005,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:59:01,871  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1003,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 22:59:05,976  INFO process(EventCenterApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:59:05,979  INFO process(WebGate_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:59:05,984  INFO process(PortalManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:59:06,398  INFO process(SubscriberManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:59:06,782  INFO process(WXGateApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 22:59:07,582  INFO process(WebGate_0, 8500) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:59:07,582  INFO process(WXGateApp_0, 8376) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:59:07,582  INFO process(SubscriberManApp_0, 8040) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:59:07,582  INFO process(PortalManApp_0, 3340) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:59:07,582  INFO process(EventCenterApp_0, 6056) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 22:59:07,878  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:07,878  INFO ClusterCfgWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:07,878  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:07,878  INFO ProcessMonitorWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:07,880  INFO NameManageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:07,881  INFO work_thread_<WorkThread(Thread-2, started daemon 6540)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:59:07,881  INFO work_thread_<WorkThread(Thread-5, started daemon 4900)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:59:07,881  INFO work_thread_<WorkThread(Thread-4, started daemon 1144)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:59:10,321  INFO process start: Monitor_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:59:10,321  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:59:10,321  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:59:11,901  INFO device_id: device xxx [File:device_cfg_info.py Function:log_device_info Line:66]
+
+2013-06-10 22:59:11,901  INFO device_external_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:67]
+
+2013-06-10 22:59:11,901  INFO device_external_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:68]
+
+2013-06-10 22:59:11,901  INFO device_internal_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:69]
+
+2013-06-10 22:59:11,901  INFO device_internal_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:70]
+
+2013-06-10 22:59:11,901  INFO cluster_enable: 0 [File:device_cfg_info.py Function:log_device_info Line:71]
+
+2013-06-10 22:59:11,901  INFO cluster_virtual_ip: 10.0.0.222 [File:device_cfg_info.py Function:log_device_info Line:72]
+
+2013-06-10 22:59:11,901  INFO cluster_virtual_mask: 255.255.255.0 [File:device_cfg_info.py Function:log_device_info Line:73]
+
+2013-06-10 22:59:11,901  INFO cluster_max_nodes_num: 0 [File:device_cfg_info.py Function:log_device_info Line:74]
+
+2013-06-10 22:59:11,915  INFO my endpoint is tcp://127.0.0.1:6001 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:59:11,926  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:11,926  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:11,926  INFO regist_name_service, service name:Monitor  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:59:11,926  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:11,933  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6001',service_name:'Monitor',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1001 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:59:11,934  INFO my pid is :1001 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:59:11,934  INFO ClusterCfgWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:11,934  INFO NameManageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:11,936  INFO process Monitor_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:59:11,937  INFO ProcessMonitorWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:23,141  INFO starting process(WebGate_0, 3108)  program path:C:\svn\weixin_public\code\rfid_oss/web_gate/web_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:59:23,142  INFO starting process(WXGateApp_0, 8720)  program path:C:\svn\weixin_public\code\wx_cloud/wx_gateway/wx_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:59:23,144  INFO starting process(SubscriberManApp_0, 6736)  program path:C:\svn\weixin_public\code\wx_cloud/subscriber_manager/subscriber_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:59:23,147  INFO starting process(PortalManApp_0, 5632)  program path:C:\svn\weixin_public\code\wx_cloud/portal_manager/portal_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:59:23,148  INFO starting process(EventCenterApp_0, 2472)  program path:C:\svn\weixin_public\code\wx_cloud/event_center/event_center_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 22:59:26,276  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6184',service_name:'WebGate',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:59:26,288  INFO process(WebGate_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:59:26,352  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6159',service_name:'SubscriberManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1003 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:59:26,469  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6322',service_name:'EventCenterApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1004 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:59:26,476  INFO process(EventCenterApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:59:26,538  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6651',service_name:'WXGateApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1005 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:59:26,543  INFO process(WXGateApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:59:26,617  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6127',service_name:'PortalManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1006 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:59:26,621  INFO process(PortalManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:59:27,190  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6172',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 22:59:27,197  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:59:27,299  INFO process(WebGate_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:59:27,369  INFO process(SubscriberManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 22:59:27,482  INFO process(EventCenterApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:59:27,546  INFO process(WXGateApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:59:27,630  INFO process(PortalManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:59:28,198  INFO process(TestCaseApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:59:29,815  INFO process(SubscriberManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 22:59:34,325  INFO process(TestCaseApp_0) is abnormal while running. [File:process_stat_mgr.py Function:on_check_running Line:401]
+
+2013-06-10 23:00:01,463  INFO unregist stopped app, pid:1007, TestCaseApp_0 [File:name_mit_manager.py Function:on_notify_running_pids Line:367]
+
+2013-06-10 23:00:02,224  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6232',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:00:02,237  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:00:02,703  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:00:07,684  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:00:15,967  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6585',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:00:15,973  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:00:16,440  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:00:20,719  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:01:01,158  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6681',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:01:01,174  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:01:01,592  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:01:06,578  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:05:18,144  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6556',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:05:18,161  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:05:18,480  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:05:23,269  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:05:40,641  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6314',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:05:40,648  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:05:41,654  INFO process(TestCaseApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:05:46,694  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:05:51,496  INFO process(TestCaseApp_0) is abnormal while running. [File:process_stat_mgr.py Function:on_check_running Line:401]
+
+2013-06-10 23:05:51,803  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:06:11,019  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_plt\monitor\../base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:06:11,035  INFO process Monitor_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:06:11,039  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1004,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:06:11,043  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1006,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:06:11,046  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:06:11,049  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1003,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:06:11,051  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1005,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:06:15,161  INFO process(WebGate_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:06:15,164  INFO process(WXGateApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:06:15,184  INFO process(PortalManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:06:15,507  INFO process(EventCenterApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:06:15,979  INFO process(SubscriberManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:06:15,980  INFO process(WebGate_0, 3108) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:06:15,980  INFO process(WXGateApp_0, 8720) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:06:15,980  INFO process(PortalManApp_0, 5632) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:06:15,980  INFO process(EventCenterApp_0, 2472) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:06:17,582  INFO process(SubscriberManApp_0, 6736) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:06:18,049  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:18,049  INFO ClusterCfgWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:18,049  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:18,049  INFO ProcessMonitorWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:18,051  INFO NameManageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:18,052  INFO work_thread_<WorkThread(Thread-2, started daemon 8504)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:06:18,052  INFO work_thread_<WorkThread(Thread-5, started daemon 2824)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:06:18,052  INFO work_thread_<WorkThread(Thread-4, started daemon 7732)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:06:20,233  INFO process start: Monitor_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:06:20,234  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:06:20,234  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:06:21,753  INFO device_id: device xxx [File:device_cfg_info.py Function:log_device_info Line:66]
+
+2013-06-10 23:06:21,753  INFO device_external_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:67]
+
+2013-06-10 23:06:21,753  INFO device_external_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:68]
+
+2013-06-10 23:06:21,753  INFO device_internal_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:69]
+
+2013-06-10 23:06:21,753  INFO device_internal_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:70]
+
+2013-06-10 23:06:21,753  INFO cluster_enable: 0 [File:device_cfg_info.py Function:log_device_info Line:71]
+
+2013-06-10 23:06:21,753  INFO cluster_virtual_ip: 10.0.0.222 [File:device_cfg_info.py Function:log_device_info Line:72]
+
+2013-06-10 23:06:21,755  INFO cluster_virtual_mask: 255.255.255.0 [File:device_cfg_info.py Function:log_device_info Line:73]
+
+2013-06-10 23:06:21,755  INFO cluster_max_nodes_num: 0 [File:device_cfg_info.py Function:log_device_info Line:74]
+
+2013-06-10 23:06:21,767  INFO my endpoint is tcp://127.0.0.1:6001 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:06:21,778  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:21,778  INFO regist_name_service, service name:Monitor  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:06:21,778  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:21,779  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:21,785  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6001',service_name:'Monitor',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1001 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:06:21,786  INFO my pid is :1001 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:06:21,786  INFO ClusterCfgWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:21,786  INFO process Monitor_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:06:21,788  INFO NameManageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:21,789  INFO ProcessMonitorWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:32,994  INFO starting process(WebGate_0, 8208)  program path:C:\svn\weixin_public\code\rfid_oss/web_gate/web_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:06:32,999  INFO starting process(WXGateApp_0, 8880)  program path:C:\svn\weixin_public\code\wx_cloud/wx_gateway/wx_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:06:33,000  INFO starting process(SubscriberManApp_0, 4268)  program path:C:\svn\weixin_public\code\wx_cloud/subscriber_manager/subscriber_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:06:33,003  INFO starting process(PortalManApp_0, 8900)  program path:C:\svn\weixin_public\code\wx_cloud/portal_manager/portal_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:06:33,007  INFO starting process(EventCenterApp_0, 4628)  program path:C:\svn\weixin_public\code\wx_cloud/event_center/event_center_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:06:35,710  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6579',service_name:'WXGateApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:06:35,717  INFO process(WXGateApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:06:35,910  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6119',service_name:'SubscriberManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1003 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:06:36,117  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6939',service_name:'WebGate',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1004 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:06:36,131  INFO process(WebGate_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:06:36,236  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6107',service_name:'EventCenterApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1005 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:06:36,242  INFO process(EventCenterApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:06:36,265  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6498',service_name:'PortalManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1006 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:06:36,269  INFO process(PortalManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:06:36,720  INFO process(WXGateApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:06:36,917  INFO process(SubscriberManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:06:37,141  INFO process(WebGate_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:06:37,246  INFO process(EventCenterApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:06:37,276  INFO process(PortalManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:06:39,378  INFO process(SubscriberManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:07:33,717  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6342',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:07:33,726  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:07:34,194  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:07:39,151  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:09:42,013  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6986',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:09:42,025  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:09:42,545  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:09:47,526  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:17:45,842  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_plt\monitor\../base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:17:45,849  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1005,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:17:45,852  INFO process Monitor_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:17:45,869  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1004,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:17:45,871  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1006,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:17:45,874  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1003,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:17:45,878  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:17:49,992  INFO process(PortalManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:17:49,993  INFO process(WXGateApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:17:50,000  INFO process(WebGate_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:17:50,002  INFO process(SubscriberManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:17:50,184  INFO process(EventCenterApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:17:50,983  INFO process(WebGate_0, 8208) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:17:50,983  INFO process(WXGateApp_0, 8880) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:17:50,984  INFO process(SubscriberManApp_0, 4268) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:17:50,984  INFO process(PortalManApp_0, 8900) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:17:50,984  INFO process(EventCenterApp_0, 4628) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:17:51,884  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:51,884  INFO ClusterCfgWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:51,885  INFO ProcessMonitorWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:51,885  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:51,885  INFO NameManageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:51,887  INFO work_thread_<WorkThread(Thread-5, started daemon 5416)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:17:51,887  INFO work_thread_<WorkThread(Thread-2, started daemon 8980)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:17:51,888  INFO work_thread_<WorkThread(Thread-4, started daemon 1900)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:17:54,516  INFO process start: Monitor_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:17:54,516  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:17:54,516  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:17:56,114  INFO device_id: device xxx [File:device_cfg_info.py Function:log_device_info Line:66]
+
+2013-06-10 23:17:56,114  INFO device_external_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:67]
+
+2013-06-10 23:17:56,114  INFO device_external_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:68]
+
+2013-06-10 23:17:56,114  INFO device_internal_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:69]
+
+2013-06-10 23:17:56,114  INFO device_internal_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:70]
+
+2013-06-10 23:17:56,115  INFO cluster_enable: 0 [File:device_cfg_info.py Function:log_device_info Line:71]
+
+2013-06-10 23:17:56,115  INFO cluster_virtual_ip: 10.0.0.222 [File:device_cfg_info.py Function:log_device_info Line:72]
+
+2013-06-10 23:17:56,115  INFO cluster_virtual_mask: 255.255.255.0 [File:device_cfg_info.py Function:log_device_info Line:73]
+
+2013-06-10 23:17:56,115  INFO cluster_max_nodes_num: 0 [File:device_cfg_info.py Function:log_device_info Line:74]
+
+2013-06-10 23:17:56,128  INFO my endpoint is tcp://127.0.0.1:6001 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:17:56,138  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:17:56,138  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:17:56,138  INFO regist_name_service, service name:Monitor  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:17:56,138  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:17:56,144  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6001',service_name:'Monitor',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1001 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:17:56,145  INFO my pid is :1001 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:17:56,147  INFO ClusterCfgWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:17:56,147  INFO NameManageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:17:56,147  INFO process Monitor_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:17:56,148  INFO ProcessMonitorWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:07,357  INFO starting process(WebGate_0, 3484)  program path:C:\svn\weixin_public\code\rfid_oss/web_gate/web_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:18:07,359  INFO starting process(WXGateApp_0, 3976)  program path:C:\svn\weixin_public\code\wx_cloud/wx_gateway/wx_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:18:07,362  INFO starting process(SubscriberManApp_0, 5448)  program path:C:\svn\weixin_public\code\wx_cloud/subscriber_manager/subscriber_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:18:07,365  INFO starting process(PortalManApp_0, 2508)  program path:C:\svn\weixin_public\code\wx_cloud/portal_manager/portal_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:18:07,368  INFO starting process(EventCenterApp_0, 8652)  program path:C:\svn\weixin_public\code\wx_cloud/event_center/event_center_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:18:10,194  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6837',service_name:'PortalManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:18:10,203  INFO process(PortalManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:18:10,309  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6498',service_name:'SubscriberManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1003 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:18:10,315  INFO process(SubscriberManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:18:10,357  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6389',service_name:'WebGate',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1004 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:18:10,364  INFO process(WebGate_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:18:10,918  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6952',service_name:'EventCenterApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1005 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:18:10,926  INFO process(EventCenterApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:18:10,951  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6611',service_name:'WXGateApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1006 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:18:10,967  INFO process(WXGateApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:18:11,214  INFO process(PortalManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:18:11,365  INFO process(WebGate_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:18:11,933  INFO process(EventCenterApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:18:11,973  INFO process(WXGateApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:18:12,759  INFO process(SubscriberManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:18:32,894  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_plt\monitor\../base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:18:32,901  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1005,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:18:32,903  INFO process Monitor_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:18:32,917  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1006,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:18:32,926  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1003,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:18:32,930  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1004,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:18:32,937  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:18:36,918  INFO process(EventCenterApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:18:37,065  INFO process(WebGate_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:18:37,069  INFO process(PortalManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:18:37,072  INFO process(WXGateApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:18:37,848  INFO process(SubscriberManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:18:38,650  INFO process(WebGate_0, 3484) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:18:38,650  INFO process(WXGateApp_0, 3976) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:18:38,651  INFO process(SubscriberManApp_0, 5448) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:18:38,651  INFO process(PortalManApp_0, 2508) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:18:38,651  INFO process(EventCenterApp_0, 8652) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:18:38,923  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:38,924  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:38,924  INFO work_thread_<WorkThread(Thread-2, started daemon 4972)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:18:38,924  INFO ClusterCfgWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:38,926  INFO NameManageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:38,926  INFO work_thread_<WorkThread(Thread-4, started daemon 4900)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:18:38,927  INFO ProcessMonitorWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:38,927  INFO work_thread_<WorkThread(Thread-5, started daemon 8412)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:18:40,713  INFO process start: Monitor_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:18:40,713  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:18:40,713  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:18:42,244  INFO device_id: device xxx [File:device_cfg_info.py Function:log_device_info Line:66]
+
+2013-06-10 23:18:42,244  INFO device_external_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:67]
+
+2013-06-10 23:18:42,244  INFO device_external_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:68]
+
+2013-06-10 23:18:42,244  INFO device_internal_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:69]
+
+2013-06-10 23:18:42,244  INFO device_internal_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:70]
+
+2013-06-10 23:18:42,244  INFO cluster_enable: 0 [File:device_cfg_info.py Function:log_device_info Line:71]
+
+2013-06-10 23:18:42,244  INFO cluster_virtual_ip: 10.0.0.222 [File:device_cfg_info.py Function:log_device_info Line:72]
+
+2013-06-10 23:18:42,244  INFO cluster_virtual_mask: 255.255.255.0 [File:device_cfg_info.py Function:log_device_info Line:73]
+
+2013-06-10 23:18:42,244  INFO cluster_max_nodes_num: 0 [File:device_cfg_info.py Function:log_device_info Line:74]
+
+2013-06-10 23:18:42,257  INFO my endpoint is tcp://127.0.0.1:6001 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:18:42,267  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:42,269  INFO regist_name_service, service name:Monitor  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:18:42,269  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:42,269  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:42,276  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6001',service_name:'Monitor',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1001 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:18:42,278  INFO my pid is :1001 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:18:42,279  INFO ClusterCfgWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:42,279  INFO NameManageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:42,279  INFO process Monitor_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:18:42,280  INFO ProcessMonitorWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:53,486  INFO starting process(WebGate_0, 7356)  program path:C:\svn\weixin_public\code\rfid_oss/web_gate/web_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:18:53,490  INFO starting process(WXGateApp_0, 7376)  program path:C:\svn\weixin_public\code\wx_cloud/wx_gateway/wx_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:18:53,496  INFO starting process(SubscriberManApp_0, 7792)  program path:C:\svn\weixin_public\code\wx_cloud/subscriber_manager/subscriber_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:18:53,500  INFO starting process(PortalManApp_0, 5200)  program path:C:\svn\weixin_public\code\wx_cloud/portal_manager/portal_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:18:53,505  INFO starting process(EventCenterApp_0, 3448)  program path:C:\svn\weixin_public\code\wx_cloud/event_center/event_center_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:18:56,250  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6387',service_name:'WXGateApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:18:56,369  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6603',service_name:'EventCenterApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1003 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:18:56,398  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6931',service_name:'PortalManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1004 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:18:56,407  INFO process(PortalManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:18:56,464  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6697',service_name:'WebGate',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1005 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:18:56,470  INFO process(WebGate_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:18:56,891  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6663',service_name:'SubscriberManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1006 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:18:56,908  INFO process(SubscriberManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:18:57,255  INFO process(WXGateApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:18:57,384  INFO process(EventCenterApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:18:57,417  INFO process(PortalManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:18:57,473  INFO process(WebGate_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:18:58,259  INFO process(WXGateApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:18:58,391  INFO process(EventCenterApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:18:59,338  INFO process(SubscriberManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:19:03,299  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6882',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:19:03,305  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:19:03,773  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:19:08,763  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:19:37,875  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6833',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:19:37,891  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:19:38,357  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:19:43,321  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:21:08,346  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6190',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:21:08,352  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:21:09,358  INFO process(TestCaseApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:21:14,411  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:21:18,979  INFO process(TestCaseApp_0) is abnormal while running. [File:process_stat_mgr.py Function:on_check_running Line:401]
+
+2013-06-10 23:21:19,513  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:22:10,543  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_plt\monitor\../base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:22:10,546  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1003,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:22:10,563  INFO process Monitor_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:22:10,571  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1006,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:22:10,576  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:22:10,582  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1004,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:22:10,584  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1005,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:22:14,697  INFO process(PortalManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:22:14,698  INFO process(WXGateApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:22:15,299  INFO process(EventCenterApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:22:15,480  INFO process(SubscriberManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:22:15,499  INFO process(WebGate_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:22:16,299  INFO process(WebGate_0, 7356) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:22:16,299  INFO process(WXGateApp_0, 7376) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:22:16,299  INFO process(SubscriberManApp_0, 7792) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:22:16,299  INFO process(PortalManApp_0, 5200) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:22:16,299  INFO process(EventCenterApp_0, 3448) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:22:16,575  INFO ClusterCfgWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:16,575  INFO NameManageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:16,576  INFO work_thread_<WorkThread(Thread-4, started daemon 6412)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:22:16,578  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:16,578  INFO ProcessMonitorWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:16,578  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:16,579  INFO work_thread_<WorkThread(Thread-5, started daemon 7092)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:22:16,579  INFO work_thread_<WorkThread(Thread-2, started daemon 1580)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:22:19,007  INFO process start: Monitor_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:22:19,009  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:22:19,009  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:22:20,546  INFO device_id: device xxx [File:device_cfg_info.py Function:log_device_info Line:66]
+
+2013-06-10 23:22:20,546  INFO device_external_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:67]
+
+2013-06-10 23:22:20,546  INFO device_external_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:68]
+
+2013-06-10 23:22:20,546  INFO device_internal_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:69]
+
+2013-06-10 23:22:20,546  INFO device_internal_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:70]
+
+2013-06-10 23:22:20,546  INFO cluster_enable: 0 [File:device_cfg_info.py Function:log_device_info Line:71]
+
+2013-06-10 23:22:20,546  INFO cluster_virtual_ip: 10.0.0.222 [File:device_cfg_info.py Function:log_device_info Line:72]
+
+2013-06-10 23:22:20,546  INFO cluster_virtual_mask: 255.255.255.0 [File:device_cfg_info.py Function:log_device_info Line:73]
+
+2013-06-10 23:22:20,546  INFO cluster_max_nodes_num: 0 [File:device_cfg_info.py Function:log_device_info Line:74]
+
+2013-06-10 23:22:20,559  INFO my endpoint is tcp://127.0.0.1:6001 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:22:20,569  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:20,569  INFO regist_name_service, service name:Monitor  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:22:20,569  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:20,569  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:20,576  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6001',service_name:'Monitor',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1001 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:22:20,576  INFO my pid is :1001 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:22:20,578  INFO ClusterCfgWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:20,579  INFO process Monitor_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:22:20,579  INFO NameManageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:20,581  INFO ProcessMonitorWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:31,789  INFO starting process(WebGate_0, 7416)  program path:C:\svn\weixin_public\code\rfid_oss/web_gate/web_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:22:31,792  INFO starting process(WXGateApp_0, 2228)  program path:C:\svn\weixin_public\code\wx_cloud/wx_gateway/wx_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:22:31,796  INFO starting process(SubscriberManApp_0, 828)  program path:C:\svn\weixin_public\code\wx_cloud/subscriber_manager/subscriber_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:22:31,799  INFO starting process(PortalManApp_0, 2308)  program path:C:\svn\weixin_public\code\wx_cloud/portal_manager/portal_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:22:31,812  INFO starting process(EventCenterApp_0, 8860)  program path:C:\svn\weixin_public\code\wx_cloud/event_center/event_center_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:22:34,493  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6433',service_name:'WebGate',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:22:34,500  INFO process(WebGate_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:22:34,642  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6180',service_name:'WXGateApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1003 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:22:34,790  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6506',service_name:'PortalManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1004 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:22:34,798  INFO process(PortalManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:22:34,818  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6943',service_name:'EventCenterApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1005 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:22:34,823  INFO process(EventCenterApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:22:34,928  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6600',service_name:'SubscriberManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1006 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:22:34,944  INFO process(SubscriberManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:22:35,505  INFO process(WebGate_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:22:35,647  INFO process(WXGateApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:22:35,808  INFO process(PortalManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:22:35,826  INFO process(EventCenterApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:22:36,650  INFO process(WXGateApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:22:37,367  INFO process(SubscriberManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:22:39,326  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6213',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:22:39,336  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:22:39,852  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:22:44,812  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:23:34,503  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6308',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:23:34,516  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:23:35,520  INFO process(TestCaseApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:23:40,556  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:23:44,829  INFO process(TestCaseApp_0) is abnormal while running. [File:process_stat_mgr.py Function:on_check_running Line:401]
+
+2013-06-10 23:23:45,654  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:24:12,131  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_plt\monitor\../base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:24:12,132  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1003,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:24:12,137  INFO process Monitor_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:24:12,148  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1004,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:24:12,151  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:24:12,151  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1005,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:24:12,153  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1006,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:24:16,039  INFO process(WXGateApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:24:16,256  INFO process(PortalManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:24:16,263  INFO process(EventCenterApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:24:16,278  INFO process(SubscriberManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:24:17,072  INFO process(WebGate_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:24:17,072  INFO process(WXGateApp_0, 2228) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:24:17,072  INFO process(SubscriberManApp_0, 828) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:24:17,072  INFO process(PortalManApp_0, 2308) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:24:17,072  INFO process(EventCenterApp_0, 8860) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:24:18,674  INFO process(WebGate_0, 7416) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:24:19,148  INFO ClusterCfgWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:19,148  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:19,148  INFO ProcessMonitorWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:19,148  INFO NameManageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:19,150  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:19,151  INFO work_thread_<WorkThread(Thread-5, started daemon 3576)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:24:19,151  INFO work_thread_<WorkThread(Thread-4, started daemon 8744)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:24:19,151  INFO work_thread_<WorkThread(Thread-2, started daemon 8756)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:24:41,651  INFO process start: Monitor_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:24:41,651  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:24:41,651  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:24:43,217  INFO device_id: device xxx [File:device_cfg_info.py Function:log_device_info Line:66]
+
+2013-06-10 23:24:43,217  INFO device_external_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:67]
+
+2013-06-10 23:24:43,217  INFO device_external_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:68]
+
+2013-06-10 23:24:43,217  INFO device_internal_NIC: 无线网络连接 2 [File:device_cfg_info.py Function:log_device_info Line:69]
+
+2013-06-10 23:24:43,217  INFO device_internal_ip: 192.168.1.3 [File:device_cfg_info.py Function:log_device_info Line:70]
+
+2013-06-10 23:24:43,217  INFO cluster_enable: 0 [File:device_cfg_info.py Function:log_device_info Line:71]
+
+2013-06-10 23:24:43,217  INFO cluster_virtual_ip: 10.0.0.222 [File:device_cfg_info.py Function:log_device_info Line:72]
+
+2013-06-10 23:24:43,217  INFO cluster_virtual_mask: 255.255.255.0 [File:device_cfg_info.py Function:log_device_info Line:73]
+
+2013-06-10 23:24:43,217  INFO cluster_max_nodes_num: 0 [File:device_cfg_info.py Function:log_device_info Line:74]
+
+2013-06-10 23:24:43,230  INFO my endpoint is tcp://127.0.0.1:6001 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:24:43,240  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:43,240  INFO regist_name_service, service name:Monitor  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:24:43,240  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:43,242  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:43,247  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6001',service_name:'Monitor',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1001 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:24:43,249  INFO my pid is :1001 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:24:43,250  INFO ClusterCfgWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:43,250  INFO process Monitor_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:24:43,250  INFO NameManageWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:43,252  INFO ProcessMonitorWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:54,463  INFO starting process(WebGate_0, 4924)  program path:C:\svn\weixin_public\code\rfid_oss/web_gate/web_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:24:54,466  INFO starting process(WXGateApp_0, 8560)  program path:C:\svn\weixin_public\code\wx_cloud/wx_gateway/wx_gate_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:24:54,470  INFO starting process(SubscriberManApp_0, 8228)  program path:C:\svn\weixin_public\code\wx_cloud/subscriber_manager/subscriber_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:24:54,474  INFO starting process(PortalManApp_0, 6020)  program path:C:\svn\weixin_public\code\wx_cloud/portal_manager/portal_man_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:24:54,479  INFO starting process(EventCenterApp_0, 7832)  program path:C:\svn\weixin_public\code\wx_cloud/event_center/event_center_app.py [File:process_stat_mgr.py Function:start_process Line:449]
+
+2013-06-10 23:24:57,138  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6190',service_name:'PortalManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1002 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:24:57,157  INFO process(PortalManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:24:57,180  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6296',service_name:'WebGate',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1003 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:24:57,312  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6363',service_name:'WXGateApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1004 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:24:57,319  INFO process(WXGateApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:24:57,367  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6169',service_name:'SubscriberManApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1005 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:24:57,372  INFO process(SubscriberManApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:24:57,842  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6833',service_name:'EventCenterApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1006 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:24:57,849  INFO process(EventCenterApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:24:58,178  INFO process(WebGate_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:24:58,188  INFO process(PortalManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:24:58,322  INFO process(WXGateApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:24:58,857  INFO process(EventCenterApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:24:59,181  INFO process(WebGate_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:24:59,904  INFO process(SubscriberManApp_0) is running. [File:process_stat_mgr.py Function:on_shake_hand Line:355]
+
+2013-06-10 23:25:06,788  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6408',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:25:06,793  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:25:07,309  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:25:12,296  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:25:17,924  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6186',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:25:17,940  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:25:18,457  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:25:23,414  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:25:26,772  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6679',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:25:26,779  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:25:27,296  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:25:32,276  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:25:55,621  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6624',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:25:55,628  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:25:56,142  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:26:01,121  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:26:53,302  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6274',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:26:53,311  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:26:53,779  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:26:58,757  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:27:33,461  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6912',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:27:33,477  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:27:33,996  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:27:38,971  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:27:43,071  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6301',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:27:43,076  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:27:43,444  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:27:48,451  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:29:29,519  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6957',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:29:29,526  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:29:29,792  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:29:34,772  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:30:24,696  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6806',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:30:24,711  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:30:25,128  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:30:30,121  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:32:22,309  INFO app regist name service: AppRegisterRequest{system_ip:'127.0.0.1',need_return_all_app_info:True,endpoint:'tcp://127.0.0.1:6448',service_name:'TestCaseApp',instance_id:0,node_type:'MASTER',endpoint_protocol:'EIPC PROTOCOL'}, pid:1007 [File:name_manage_worker.py Function:on_msg_received Line:208]
+
+2013-06-10 23:32:22,325  INFO process(TestCaseApp_0) is initializing. [File:process_stat_mgr.py Function:on_shake_hand Line:349]
+
+2013-06-10 23:32:22,743  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1007,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:32:27,737  INFO process(TestCaseApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:33:30,516  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\rfid_plt\monitor\../base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:33:30,525  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1006,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:33:30,526  INFO process Monitor_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:33:30,532  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1003,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:33:30,536  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1004,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:33:30,539  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1002,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:33:30,540  INFO unregist name service:AppUnRegisterRequest{system_ip:None,service_name:None,endpoint:None,pid:1005,need_reponse:False} [File:name_manage_worker.py Function:handle_cmd Line:95]
+
+2013-06-10 23:33:34,667  INFO process(WebGate_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:33:34,668  INFO process(SubscriberManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:33:34,686  INFO process(PortalManApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:33:34,687  INFO process(WXGateApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:33:34,789  INFO process(EventCenterApp_0) is stopping. [File:process_stat_mgr.py Function:on_shake_hand Line:361]
+
+2013-06-10 23:33:36,391  INFO process(WebGate_0, 4924) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:33:36,391  INFO process(WXGateApp_0, 8560) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:33:36,391  INFO process(SubscriberManApp_0, 8228) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:33:36,391  INFO process(PortalManApp_0, 6020) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:33:36,391  INFO process(EventCenterApp_0, 7832) stopped automatically. [File:process_stat_mgr.py Function:stop_process Line:486]
+
+2013-06-10 23:33:36,542  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:36,542  INFO ClusterCfgWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:36,543  INFO ProcessMonitorWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:36,543  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:36,543  INFO NameManageWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:36,545  INFO work_thread_<WorkThread(Thread-5, started daemon 9080)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:33:36,545  INFO work_thread_<WorkThread(Thread-2, started daemon 6748)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:33:36,546  INFO work_thread_<WorkThread(Thread-4, started daemon 7776)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]

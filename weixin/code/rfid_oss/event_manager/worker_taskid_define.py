@@ -1,0 +1,26 @@
+#coding=gbk
+"""
+Copyright (C), 2012-2015, Anything Connected Possibilities
+Author: ACP2013
+Version: 1.0
+Date: 2012-11-15
+Description: 
+Others:      
+Key Class&Method List: 
+             1. ....
+History: 
+1. Date:2012-11-15
+   Author:ACP2013
+   Modification:新建文件
+"""
+
+TASK_NUM = 10000
+
+
+#Event Manager
+EVENT_MANAGER_BASE = 2000000
+EVENT_PERSISTENCE_WORKER_MIN_TASK_ID = EVENT_MANAGER_BASE + 1
+EVENT_PERSISTENCE_WORKER_MAX_TASK_ID = EVENT_PERSISTENCE_WORKER_MIN_TASK_ID + TASK_NUM
+
+EVENT_OPERATION_WORKER_MIN_TASK_ID = EVENT_MANAGER_BASE + 1
+EVENT_OPERATION_WORKER_MAX_TASK_ID = EVENT_OPERATION_WORKER_MIN_TASK_ID + TASK_NUM

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device_info>    
+    <!-- NIC: Network Interface Card
+        linux上，nic为eth0, eth1等等
+        windows上，nic为网络连接中看到的网卡名称，例如'本地连接', '无线网络连接'
+     -->
+	<device id="device xxx" external_NIC="无线网络连接 2" internal_NIC="无线网络连接 2" />
+	<cluster enable="0" virtual_ip="10.0.0.222" virtual_mask="255.255.255.0" />
+</device_info>
+

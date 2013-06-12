@@ -1,0 +1,576 @@
+
+2013-06-10 22:26:03,654  INFO process start: EventCenterApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:26:03,655  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:26:03,655  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:26:05,938  INFO my endpoint is tcp://127.0.0.1:6389 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:26:05,957  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:26:05,959  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:26:05,959  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:26:05,960  INFO regist_name_service, service name:EventCenterApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:26:05,970  INFO my pid is :1003 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:26:05,980  INFO EventManWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:26:05,980  INFO process EventCenterApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:33:02,125  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:33:02,130  INFO process EventCenterApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:33:05,365  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:05,365  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:05,367  INFO EventManWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:05,367  INFO work_thread_<WorkThread(Thread-2, started daemon 8168)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:33:05,368  INFO work_thread_<WorkThread(Thread-3, started daemon 7036)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:33:25,743  INFO process start: EventCenterApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:33:25,743  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:33:25,744  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:33:28,361  INFO my endpoint is tcp://127.0.0.1:6867 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:33:28,371  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:28,372  INFO regist_name_service, service name:EventCenterApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:33:28,372  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:28,372  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:28,381  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:33:28,387  INFO EventManWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:28,387  INFO process EventCenterApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:45:32,506  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:45:32,522  INFO process EventCenterApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:45:36,546  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:36,549  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:36,552  INFO work_thread_<WorkThread(Thread-2, started daemon 8908)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:45:36,558  INFO EventManWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:36,559  INFO work_thread_<WorkThread(Thread-3, started daemon 3308)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:45:54,312  INFO process start: EventCenterApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:45:54,312  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:45:54,312  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:45:56,615  INFO my endpoint is tcp://127.0.0.1:6908 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:45:56,632  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:56,634  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:56,634  INFO regist_name_service, service name:EventCenterApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:45:56,634  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:56,642  INFO my pid is :1004 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:45:57,644  INFO EventManWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:57,644  INFO process EventCenterApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:48:12,180  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:48:12,184  INFO process EventCenterApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:48:16,164  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:16,165  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:16,167  INFO work_thread_<WorkThread(Thread-2, started daemon 6168)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:48:16,167  INFO EventManWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:16,168  INFO work_thread_<WorkThread(Thread-3, started daemon 7096)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:48:33,187  INFO process start: EventCenterApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:48:33,187  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:48:33,187  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:48:35,612  INFO my endpoint is tcp://127.0.0.1:6580 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:48:35,621  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:35,622  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:35,622  INFO regist_name_service, service name:EventCenterApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:48:35,622  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:35,628  INFO my pid is :1007 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:48:35,638  INFO EventManWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:35,638  INFO process EventCenterApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:50:34,434  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:50:34,438  INFO process EventCenterApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:50:38,473  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:38,474  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:38,480  INFO work_thread_<WorkThread(Thread-2, started daemon 5148)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:50:38,480  INFO EventManWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:38,483  INFO work_thread_<WorkThread(Thread-3, started daemon 8112)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:50:56,407  INFO process start: EventCenterApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:50:56,407  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:50:56,407  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:50:58,921  INFO my endpoint is tcp://127.0.0.1:6554 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:50:58,931  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:58,933  INFO regist_name_service, service name:EventCenterApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:50:58,933  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:58,933  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:58,940  INFO my pid is :1005 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:50:58,960  INFO process EventCenterApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:50:58,960  INFO EventManWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:18,753  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:57:18,759  INFO process EventCenterApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:57:22,723  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:22,724  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:22,726  INFO work_thread_<WorkThread(Thread-2, started daemon 3940)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:57:22,729  INFO EventManWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:22,729  INFO work_thread_<WorkThread(Thread-3, started daemon 5632)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:57:40,384  INFO process start: EventCenterApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:57:40,384  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:57:40,384  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:57:42,792  INFO my endpoint is tcp://127.0.0.1:6873 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:57:42,803  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:42,805  INFO regist_name_service, service name:EventCenterApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:57:42,805  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:42,805  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:42,812  INFO my pid is :1006 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:57:42,819  INFO EventManWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:42,819  INFO process EventCenterApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:59:01,829  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:59:01,836  INFO process EventCenterApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:59:05,868  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:05,869  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:05,869  INFO work_thread_<WorkThread(Thread-2, started daemon 7568)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:59:05,872  INFO EventManWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:05,874  INFO work_thread_<WorkThread(Thread-3, started daemon 3976)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:59:24,009  INFO process start: EventCenterApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:59:24,009  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:59:24,009  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:59:26,447  INFO my endpoint is tcp://127.0.0.1:6322 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:59:26,461  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:26,463  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:26,463  INFO regist_name_service, service name:EventCenterApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:59:26,463  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:26,471  INFO my pid is :1004 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:59:26,480  INFO EventManWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:26,480  INFO process EventCenterApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:06:11,017  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:06:11,028  INFO process EventCenterApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:06:15,398  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:15,398  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:15,400  INFO work_thread_<WorkThread(Thread-2, started daemon 8752)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:06:15,401  INFO EventManWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:15,401  INFO work_thread_<WorkThread(Thread-3, started daemon 7332)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:06:33,961  INFO process start: EventCenterApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:06:33,961  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:06:33,961  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:06:36,217  INFO my endpoint is tcp://127.0.0.1:6107 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:06:36,230  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:36,230  INFO regist_name_service, service name:EventCenterApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:06:36,230  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:36,230  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:36,236  INFO my pid is :1005 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:06:36,243  INFO EventManWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:36,244  INFO process EventCenterApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:17:45,838  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:17:45,845  INFO process EventCenterApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:17:50,075  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:50,075  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:50,075  INFO work_thread_<WorkThread(Thread-2, started daemon 1244)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:17:50,078  INFO EventManWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:50,078  INFO work_thread_<WorkThread(Thread-3, started daemon 1828)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:18:08,243  INFO process start: EventCenterApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:18:08,244  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:18:08,244  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:18:10,897  INFO my endpoint is tcp://127.0.0.1:6952 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:18:10,911  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:10,913  INFO regist_name_service, service name:EventCenterApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:18:10,913  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:10,913  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:10,920  INFO my pid is :1005 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:18:10,928  INFO EventManWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:10,928  INFO process EventCenterApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:18:32,891  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:18:32,895  INFO process EventCenterApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:18:36,813  INFO EventManWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:36,815  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:36,815  INFO work_thread_<WorkThread(Thread-3, started daemon 8596)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:18:36,815  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:36,816  INFO work_thread_<WorkThread(Thread-2, started daemon 8648)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:18:54,187  INFO process start: EventCenterApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:18:54,188  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:18:54,188  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:18:56,345  INFO my endpoint is tcp://127.0.0.1:6603 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:18:56,361  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:56,362  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:56,362  INFO regist_name_service, service name:EventCenterApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:18:56,362  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:56,371  INFO my pid is :1003 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:18:57,387  INFO EventManWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:57,388  INFO process EventCenterApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:21:08,782  INFO <event_man_worker.EventCenterMessageShareHandler object at 0x02D3FD70> [File:event_man_worker.py Function:handle_cmd Line:467]
+
+2013-06-10 23:21:08,782  INFO content man worker recv message share frame: <AppFrame cmd_code:16928773, sender_pid:1007, receiver_pid:1003, original_pid:0, next_pid:0, task_id:4294901762L, data_length:54, datas num:1, data[0]:'{"event_id":"259","subject_id":"7","user_session":"0"}'> [File:event_man_worker.py Function:handle_cmd Line:471]
+
+2013-06-10 23:21:08,786  ERROR WorkThread._work failed. [File:work_thread.py Function:_work Line:725]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\_bundleframework\dispatch\work_thread.py", line 716, in _work
+    if not self._handle_frames(0.8) or self.__idle_not_run_times > 10:
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\_bundleframework\dispatch\work_thread.py", line 744, in _handle_frames
+    self._handle_one_frame(frame, priority)
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\_bundleframework\dispatch\work_thread.py", line 789, in _handle_one_frame
+    wrkr.work(frame, self._total_ready_to_process_frames)
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\_bundleframework\cmdhandler\cmd_worker.py", line 270, in work
+    new_handler.handle_cmd(frame)
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\event_man_worker.py", line 536, in handle_cmd
+    new_frame.add_data(add_article.serialize())
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\serializable_obj.py", line 409, in serialize
+    return json.dumps(dict_value, separators = (',', ':'))
+  File "C:\Python27\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 201, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 264, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python27\lib\json\encoder.py", line 178, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: GroupList{group_ids:['1', '101', '102']} is not JSON serializable
+
+2013-06-10 23:22:10,535  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:22:10,542  INFO process EventCenterApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:22:15,196  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:15,197  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:15,197  INFO EventManWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:15,197  INFO work_thread_<WorkThread(Thread-2, started daemon 5640)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:22:15,197  INFO work_thread_<WorkThread(Thread-3, started daemon 9104)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:22:32,539  INFO process start: EventCenterApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:22:32,539  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:22:32,539  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:22:34,802  INFO my endpoint is tcp://127.0.0.1:6943 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:22:34,812  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:34,812  INFO regist_name_service, service name:EventCenterApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:22:34,812  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:34,812  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:34,819  INFO my pid is :1005 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:22:34,825  INFO EventManWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:34,825  INFO process EventCenterApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:22:39,782  INFO <event_man_worker.EventCenterMessageShareHandler object at 0x02C62EF0> [File:event_man_worker.py Function:handle_cmd Line:467]
+
+2013-06-10 23:22:39,782  INFO content man worker recv message share frame: <AppFrame cmd_code:16928773, sender_pid:1007, receiver_pid:1005, original_pid:0, next_pid:0, task_id:4294901762L, data_length:54, datas num:1, data[0]:'{"event_id":"259","subject_id":"7","user_session":"0"}'> [File:event_man_worker.py Function:handle_cmd Line:471]
+
+2013-06-10 23:22:39,789  INFO event center app send ack frame: <AppFrame cmd_code:1002, sender_pid:0, receiver_pid:1007, original_pid:0, next_pid:0, task_id:4294901762L, data_length:77, datas num:1, data[0]:'{"user_session":"0","return_code":0,"description":"\\u64cd\\u4f5c\\u6210\\u529f"}'> [File:event_center_app.py Function:send_ack_dispatch Line:118]
+
+2013-06-10 23:22:39,790  INFO frame buf: {"user_session":"0","return_code":0,"description":"\u64cd\u4f5c\u6210\u529f"} [File:event_center_app.py Function:send_ack_dispatch Line:119]
+
+2013-06-10 23:22:39,836  ERROR dispatch frame to duty worker failed.<AppFrame cmd_code:1002, sender_pid:1004, receiver_pid:1005, original_pid:0, next_pid:0, task_id:0, data_length:76, datas num:1, data[0]:'{"user_session":"","return_code":0,"description":"\\u64cd\\u4f5c\\u6210\\u529f"}'> [File:basic_app.py Function:dispatch_frame_to_duty_worker Line:1541]
+
+2013-06-10 23:24:12,118  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:24:12,122  INFO process EventCenterApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:24:16,158  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:16,158  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:16,158  INFO EventManWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:16,158  INFO work_thread_<WorkThread(Thread-2, started daemon 7736)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:24:16,160  INFO work_thread_<WorkThread(Thread-3, started daemon 252)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:24:55,355  INFO process start: EventCenterApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:24:55,357  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:24:55,357  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:24:57,822  INFO my endpoint is tcp://127.0.0.1:6833 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:24:57,835  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:57,836  INFO regist_name_service, service name:EventCenterApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:24:57,836  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:57,836  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:57,844  INFO my pid is :1006 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:24:57,851  INFO EventManWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:57,851  INFO process EventCenterApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:25:07,253  INFO <event_man_worker.EventCenterMessageShareHandler object at 0x02E1FF70> [File:event_man_worker.py Function:handle_cmd Line:467]
+
+2013-06-10 23:25:07,255  INFO content man worker recv message share frame: <AppFrame cmd_code:16928773, sender_pid:1007, receiver_pid:1006, original_pid:0, next_pid:0, task_id:4294901762L, data_length:54, datas num:1, data[0]:'{"event_id":"259","subject_id":"7","user_session":"0"}'> [File:event_man_worker.py Function:handle_cmd Line:471]
+
+2013-06-10 23:25:07,263  INFO event center app send ack frame: <AppFrame cmd_code:1002, sender_pid:0, receiver_pid:1007, original_pid:0, next_pid:0, task_id:4294901762L, data_length:77, datas num:1, data[0]:'{"user_session":"0","return_code":0,"description":"\\u64cd\\u4f5c\\u6210\\u529f"}'> [File:event_center_app.py Function:send_ack_dispatch Line:118]
+
+2013-06-10 23:25:07,263  INFO frame buf: {"user_session":"0","return_code":0,"description":"\u64cd\u4f5c\u6210\u529f"} [File:event_center_app.py Function:send_ack_dispatch Line:119]
+
+2013-06-10 23:25:07,341  ERROR dispatch frame to duty worker failed.<AppFrame cmd_code:1002, sender_pid:1002, receiver_pid:1006, original_pid:0, next_pid:0, task_id:0, data_length:76, datas num:1, data[0]:'{"user_session":"","return_code":0,"description":"\\u64cd\\u4f5c\\u6210\\u529f"}'> [File:basic_app.py Function:dispatch_frame_to_duty_worker Line:1541]
+
+2013-06-10 23:33:30,503  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\event_center\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:33:30,506  INFO process EventCenterApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:33:34,684  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:34,684  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:34,687  INFO work_thread_<WorkThread(Thread-2, started daemon 8392)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:33:34,691  INFO EventManWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:34,707  INFO work_thread_<WorkThread(Thread-3, started daemon 8424)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]

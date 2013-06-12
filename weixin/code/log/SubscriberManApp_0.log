@@ -1,0 +1,1668 @@
+
+2013-06-10 22:26:03,977  INFO process start: SubscriberManApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:26:03,979  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:26:03,980  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:26:06,720  INFO my endpoint is tcp://127.0.0.1:6723 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:26:06,729  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:26:06,729  INFO regist_name_service, service name:SubscriberManApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:26:06,729  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:26:06,730  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:26:06,736  INFO my pid is :1006 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:26:06,743  INFO SubscriberManagerWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:26:06,743  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x0358C030> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 22:26:07,744  INFO <subscriber_man_worker.SubscriberManInitHandler object at 0x0358C030> [File:subscriber_man_worker.py Function:handle_cmd Line:340]
+
+2013-06-10 22:26:07,744  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:26:07,746  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:26:07,746  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:26:07,746  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:26:07,746  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:26:07,746  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:26:07,746  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:26:07,746  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:26:07,746  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:26:07,746  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:26:07,746  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:26:07,747  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:26:09,155  INFO WX Biz(brxhaiqing@163.com) login succ! [File:wx_svc_api.py Function:_login Line:82]
+
+2013-06-10 22:26:09,311  INFO process SubscriberManApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:26:09,311  INFO SubscriberTaskWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:02,132  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:33:02,137  INFO process SubscriberManApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:33:06,165  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:06,165  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:06,167  INFO work_thread_<WorkThread(Thread-2, started daemon 6764)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:33:06,167  INFO SubscriberManagerWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:33:06,167  INFO work_thread_<WorkThread(Thread-3, started daemon 2256)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:33:25,812  INFO process start: SubscriberManApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:33:25,812  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:33:25,812  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:33:27,996  INFO my endpoint is tcp://127.0.0.1:6430 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:33:28,006  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:28,007  INFO regist_name_service, service name:SubscriberManApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:33:28,007  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:28,007  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:28,015  INFO my pid is :1006 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:33:28,023  INFO SubscriberManagerWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:33:28,023  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x0375C110> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 22:33:28,039  INFO <subscriber_man_worker.SubscriberManInitHandler object at 0x0375C110> [File:subscriber_man_worker.py Function:handle_cmd Line:340]
+
+2013-06-10 22:33:28,039  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:33:28,039  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:33:28,039  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:33:28,039  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:33:28,039  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:33:28,039  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:33:28,040  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:33:28,040  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:33:28,040  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:33:28,040  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:33:28,040  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:33:28,042  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:33:29,332  INFO WX Biz(brxhaiqing@163.com) login succ! [File:wx_svc_api.py Function:_login Line:82]
+
+2013-06-10 22:33:29,509  INFO process SubscriberManApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:33:29,509  INFO SubscriberTaskWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:32,506  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:45:32,519  INFO process SubscriberManApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:45:37,331  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:37,332  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:37,334  INFO work_thread_<WorkThread(Thread-2, started daemon 1960)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:45:37,338  INFO SubscriberManagerWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:45:37,339  INFO work_thread_<WorkThread(Thread-3, started daemon 7352)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:45:54,635  INFO process start: SubscriberManApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:45:54,635  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:45:54,635  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:45:57,188  INFO my endpoint is tcp://127.0.0.1:6482 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:45:57,197  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:57,198  INFO regist_name_service, service name:SubscriberManApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:45:57,198  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:57,198  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:57,206  INFO my pid is :1006 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:45:57,213  INFO SubscriberManagerWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:45:57,213  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x0362D030> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 22:45:57,240  INFO <subscriber_man_worker.SubscriberManInitHandler object at 0x0362D030> [File:subscriber_man_worker.py Function:handle_cmd Line:340]
+
+2013-06-10 22:45:57,240  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:45:57,240  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:45:57,240  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:45:57,242  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:45:57,242  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:45:57,242  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:45:57,242  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:45:57,242  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:45:57,243  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:45:57,243  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:45:57,243  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:45:57,243  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:46:00,390  INFO WX Biz(brxhaiqing@163.com) login succ! [File:wx_svc_api.py Function:_login Line:82]
+
+2013-06-10 22:46:01,043  INFO SubscriberTaskWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:46:01,043  INFO process SubscriberManApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:48:12,177  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:48:12,184  INFO process SubscriberManApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:48:16,219  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:16,220  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:16,220  INFO work_thread_<WorkThread(Thread-2, started daemon 6764)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:48:16,224  INFO SubscriberManagerWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:48:16,226  INFO work_thread_<WorkThread(Thread-3, started daemon 8928)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:48:32,690  INFO process start: SubscriberManApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:48:32,691  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:48:32,691  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:48:34,941  INFO my endpoint is tcp://127.0.0.1:6332 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:48:34,954  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:34,956  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:34,957  INFO regist_name_service, service name:SubscriberManApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:48:34,957  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:34,966  INFO my pid is :1003 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:48:35,994  INFO SubscriberManagerWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:48:35,997  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x035ACD90> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 22:48:36,000  INFO <subscriber_man_worker.SubscriberManInitHandler object at 0x035ACD90> [File:subscriber_man_worker.py Function:handle_cmd Line:340]
+
+2013-06-10 22:48:36,002  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:48:36,002  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:48:36,002  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:48:36,002  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:48:36,002  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:48:36,003  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:48:36,003  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:48:36,003  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:48:36,003  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:48:36,003  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:48:36,003  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:48:36,003  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:48:37,266  INFO WX Biz(brxhaiqing@163.com) login succ! [File:wx_svc_api.py Function:_login Line:82]
+
+2013-06-10 22:48:37,476  INFO process SubscriberManApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:48:37,476  INFO SubscriberTaskWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:34,447  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:50:34,451  INFO process SubscriberManApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:50:38,483  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:38,483  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:38,483  INFO work_thread_<WorkThread(Thread-2, started daemon 7436)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:50:38,484  INFO SubscriberManagerWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:50:38,486  INFO work_thread_<WorkThread(Thread-3, started daemon 2820)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:50:56,012  INFO process start: SubscriberManApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:50:56,013  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:50:56,013  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:50:58,546  INFO my endpoint is tcp://127.0.0.1:6189 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:50:58,559  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:58,561  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:58,561  INFO regist_name_service, service name:SubscriberManApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:50:58,561  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:58,569  INFO my pid is :1003 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:50:59,595  INFO SubscriberManagerWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:50:59,596  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x0376D070> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 22:50:59,654  INFO <subscriber_man_worker.SubscriberManInitHandler object at 0x0376D070> [File:subscriber_man_worker.py Function:handle_cmd Line:340]
+
+2013-06-10 22:50:59,655  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:50:59,655  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:50:59,655  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:50:59,655  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:50:59,657  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:50:59,657  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:50:59,657  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:50:59,657  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:50:59,657  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:50:59,657  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:50:59,657  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:50:59,657  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:51:00,915  INFO WX Biz(brxhaiqing@163.com) login succ! [File:wx_svc_api.py Function:_login Line:82]
+
+2013-06-10 22:51:01,121  INFO SubscriberTaskWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:51:01,121  INFO process SubscriberManApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:57:18,763  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:57:18,766  INFO process SubscriberManApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:57:22,803  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:22,808  INFO SubscriberManagerWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:22,809  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:22,811  INFO work_thread_<WorkThread(Thread-3, started daemon 972)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:57:22,812  INFO work_thread_<WorkThread(Thread-2, started daemon 4600)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:57:22,914  INFO SubscriberTaskWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:57:40,267  INFO process start: SubscriberManApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:57:40,267  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:57:40,269  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:57:42,456  INFO my endpoint is tcp://127.0.0.1:6838 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:57:42,469  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:42,470  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:42,470  INFO regist_name_service, service name:SubscriberManApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:57:42,470  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:42,480  INFO my pid is :1004 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:57:42,509  INFO SubscriberManagerWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:57:42,509  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x0387DB30> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 22:57:42,523  INFO <subscriber_man_worker.SubscriberManInitHandler object at 0x03878CB0> [File:subscriber_man_worker.py Function:handle_cmd Line:340]
+
+2013-06-10 22:57:42,523  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:57:42,523  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:57:42,525  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:57:42,525  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:57:42,525  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:57:42,525  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:57:42,525  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:57:42,525  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:57:42,526  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:57:42,526  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:57:42,526  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:57:42,526  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:57:43,842  INFO WX Biz(brxhaiqing@163.com) login succ! [File:wx_svc_api.py Function:_login Line:82]
+
+2013-06-10 22:57:44,072  INFO process SubscriberManApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:57:44,072  INFO SubscriberTaskWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:58:06,200  INFO <subscriber_man_worker.SubscriberGroupAssocMsgHandler object at 0x03882890> [File:subscriber_man_worker.py Function:handle_cmd Line:422]
+
+2013-06-10 22:58:06,200  ERROR WorkThread._work failed. [File:work_thread.py Function:_work Line:725]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\../../rfid_plt/base_platform\_bundleframework\dispatch\work_thread.py", line 716, in _work
+    if not self._handle_frames(0.8) or self.__idle_not_run_times > 10:
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\../../rfid_plt/base_platform\_bundleframework\dispatch\work_thread.py", line 744, in _handle_frames
+    self._handle_one_frame(frame, priority)
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\../../rfid_plt/base_platform\_bundleframework\dispatch\work_thread.py", line 789, in _handle_one_frame
+    wrkr.work(frame, self._total_ready_to_process_frames)
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\../../rfid_plt/base_platform\_bundleframework\cmdhandler\cmd_worker.py", line 270, in work
+    new_handler.handle_cmd(frame)
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\subscriber_man_worker.py", line 437, in handle_cmd
+    group_ids = gids)
+TypeError: mod_complex_attr() takes exactly 3 arguments (2 given)
+
+2013-06-10 22:59:01,834  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 22:59:01,836  INFO process SubscriberManApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 22:59:06,290  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:06,292  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:06,292  INFO SubscriberManagerWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 22:59:06,293  INFO work_thread_<WorkThread(Thread-2, started daemon 6572)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:59:06,295  INFO work_thread_<WorkThread(Thread-3, started daemon 7736)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 22:59:23,880  INFO process start: SubscriberManApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 22:59:23,880  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 22:59:23,881  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 22:59:26,326  INFO my endpoint is tcp://127.0.0.1:6159 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 22:59:26,342  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:26,342  INFO regist_name_service, service name:SubscriberManApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 22:59:26,342  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:26,342  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:26,354  INFO my pid is :1003 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 22:59:27,375  INFO SubscriberManagerWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 22:59:27,375  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x03724050> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 22:59:27,403  INFO <subscriber_man_worker.SubscriberManInitHandler object at 0x03724050> [File:subscriber_man_worker.py Function:handle_cmd Line:340]
+
+2013-06-10 22:59:27,404  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:59:27,404  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:59:27,404  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:59:27,404  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:59:27,404  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:59:27,404  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:59:27,404  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:59:27,404  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:59:27,404  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:59:27,404  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:59:27,404  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 22:59:27,404  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 22:59:28,631  INFO WX Biz(brxhaiqing@163.com) login succ! [File:wx_svc_api.py Function:_login Line:82]
+
+2013-06-10 22:59:28,811  INFO process SubscriberManApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 22:59:28,811  INFO SubscriberTaskWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:00:16,359  INFO <subscriber_man_worker.SubscriberGroupAssocMsgHandler object at 0x036ED3B0> [File:subscriber_man_worker.py Function:handle_cmd Line:422]
+
+2013-06-10 23:00:16,385  INFO subscriber man app send ack frame: <AppFrame cmd_code:1002, sender_pid:0, receiver_pid:1006, original_pid:0, next_pid:0, task_id:2, data_length:77, datas num:1, data[0]:'{"user_session":"0","return_code":0,"description":"\\u64cd\\u4f5c\\u6210\\u529f"}'> [File:subscriber_man_app.py Function:send_ack_dispatch Line:143]
+
+2013-06-10 23:00:16,385  INFO frame buf[0]: {"user_session":"0","return_code":0,"description":"\u64cd\u4f5c\u6210\u529f"} [File:subscriber_man_app.py Function:send_ack_dispatch Line:144]
+
+2013-06-10 23:06:11,019  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:06:11,036  INFO process SubscriberManApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:06:15,867  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:15,867  INFO SubscriberManagerWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:15,868  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:06:15,868  INFO work_thread_<WorkThread(Thread-3, started daemon 8156)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:06:15,869  INFO work_thread_<WorkThread(Thread-2, started daemon 8668)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:06:33,769  INFO process start: SubscriberManApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:06:33,769  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:06:33,769  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:06:35,890  INFO my endpoint is tcp://127.0.0.1:6119 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:06:35,903  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:35,904  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:35,904  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:35,904  INFO regist_name_service, service name:SubscriberManApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:06:35,911  INFO my pid is :1003 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:06:36,928  INFO SubscriberManagerWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:06:36,930  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x036CC130> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 23:06:36,964  INFO <subscriber_man_worker.SubscriberManInitHandler object at 0x036CC130> [File:subscriber_man_worker.py Function:handle_cmd Line:340]
+
+2013-06-10 23:06:36,966  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:06:36,966  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:06:36,966  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:06:36,966  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:06:36,966  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:06:36,967  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:06:36,967  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:06:36,967  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:06:36,967  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:06:36,967  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:06:36,967  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:06:36,967  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:06:38,223  INFO WX Biz(brxhaiqing@163.com) login succ! [File:wx_svc_api.py Function:_login Line:82]
+
+2013-06-10 23:06:38,372  INFO process SubscriberManApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:06:38,372  INFO SubscriberTaskWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:07:34,134  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x036C85F0> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 23:07:34,138  INFO <subscriber_man_worker.SubscriberArticleUploadHandler object at 0x036CCF50> [File:subscriber_man_worker.py Function:handle_cmd Line:538]
+
+2013-06-10 23:07:34,138  INFO create new article on WX portal(id 31) [File:subscriber_man_worker.py Function:handle_cmd Line:550]
+
+2013-06-10 23:07:34,526  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,528  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:07:34,529  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,529  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:07:34,529  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:07:34,529  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:07:34,529  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,530  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:07:34,530  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,532  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:07:34,532  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:07:34,532  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:07:34,532  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,532  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:07:34,533  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,533  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:07:34,533  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:07:34,533  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:07:34,535  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,535  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:07:34,536  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,536  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:07:34,536  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:07:34,536  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:07:34,536  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,536  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:07:34,538  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,538  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:07:34,538  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:07:34,539  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:07:34,539  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,539  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:07:34,539  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,539  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:07:34,539  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:07:34,540  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:07:34,540  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,542  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:07:34,542  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,542  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:07:34,542  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:07:34,542  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:07:34,542  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,543  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:07:34,543  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,543  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:07:34,545  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:07:34,545  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:07:34,545  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,546  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:07:34,546  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,546  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:07:34,546  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:07:34,546  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:07:34,548  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,548  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:07:34,548  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,549  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:07:34,549  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:07:34,549  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:07:34,549  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,549  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:07:34,549  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:07:34,551  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:07:34,551  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:07:34,551  ERROR re-upload the article(31) 10 times, stop! [File:subscriber_task_worker.py Function:idle Line:251]
+
+2013-06-10 23:09:42,513  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x036CC7D0> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 23:17:45,849  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:17:45,867  INFO process SubscriberManApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:17:49,880  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:49,881  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:49,881  INFO work_thread_<WorkThread(Thread-2, started daemon 7908)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:17:49,891  INFO SubscriberManagerWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:17:49,892  INFO work_thread_<WorkThread(Thread-3, started daemon 6124)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:18:08,141  INFO process start: SubscriberManApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:18:08,141  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:18:08,141  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:18:10,289  INFO my endpoint is tcp://127.0.0.1:6498 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:18:10,302  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:10,302  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:10,302  INFO regist_name_service, service name:SubscriberManApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:18:10,302  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:10,309  INFO my pid is :1003 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:18:10,319  INFO SubscriberManagerWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:10,322  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x039AD130> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 23:18:10,354  INFO <subscriber_man_worker.SubscriberManInitHandler object at 0x039AD130> [File:subscriber_man_worker.py Function:handle_cmd Line:340]
+
+2013-06-10 23:18:10,355  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:18:10,355  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:18:10,355  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:18:10,355  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:18:10,355  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:18:10,355  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:18:10,357  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:18:10,357  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:18:10,357  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:18:10,359  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:18:10,361  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:18:10,361  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:18:11,568  INFO WX Biz(brxhaiqing@163.com) login succ! [File:wx_svc_api.py Function:_login Line:82]
+
+2013-06-10 23:18:11,756  INFO SubscriberTaskWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:11,756  INFO process SubscriberManApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:18:32,894  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:18:32,908  INFO process SubscriberManApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:18:37,740  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:37,743  INFO SubscriberManagerWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:37,743  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:18:37,743  INFO work_thread_<WorkThread(Thread-3, started daemon 3380)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:18:37,744  INFO work_thread_<WorkThread(Thread-2, started daemon 8504)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:18:54,638  INFO process start: SubscriberManApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:18:54,638  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:18:54,638  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:18:56,865  INFO my endpoint is tcp://127.0.0.1:6663 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:18:56,885  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:56,887  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:56,887  INFO regist_name_service, service name:SubscriberManApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:18:56,887  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:56,894  INFO my pid is :1006 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:18:56,911  INFO SubscriberManagerWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:18:56,911  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x0356C0F0> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 23:18:56,924  INFO <subscriber_man_worker.SubscriberManInitHandler object at 0x0356C0F0> [File:subscriber_man_worker.py Function:handle_cmd Line:340]
+
+2013-06-10 23:18:56,924  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:18:56,924  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:18:56,924  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:18:56,924  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:18:56,924  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:18:56,924  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:18:56,924  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:18:56,924  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:18:56,924  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:18:56,924  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:18:56,924  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:18:56,926  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:18:58,155  INFO WX Biz(brxhaiqing@163.com) login succ! [File:wx_svc_api.py Function:_login Line:82]
+
+2013-06-10 23:18:58,334  INFO process SubscriberManApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:18:58,334  INFO SubscriberTaskWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:19:38,312  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x03568490> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 23:19:38,315  INFO <subscriber_man_worker.SubscriberArticleUploadHandler object at 0x0356CF10> [File:subscriber_man_worker.py Function:handle_cmd Line:538]
+
+2013-06-10 23:19:38,315  INFO create new article on WX portal(id 32) [File:subscriber_man_worker.py Function:handle_cmd Line:550]
+
+2013-06-10 23:19:38,345  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,345  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:19:38,345  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,345  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:19:38,345  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:19:38,345  ERROR re-upload the article(32) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:19:38,345  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,345  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:19:38,345  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,345  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:19:38,345  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:19:38,345  ERROR re-upload the article(32) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:19:38,345  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,345  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:19:38,345  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,345  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:19:38,346  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:19:38,346  ERROR re-upload the article(32) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:19:38,346  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,346  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:19:38,346  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,346  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:19:38,346  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:19:38,346  ERROR re-upload the article(32) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:19:38,346  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,346  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:19:38,348  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,348  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:19:38,348  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:19:38,348  ERROR re-upload the article(32) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:19:38,348  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,348  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:19:38,348  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,348  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:19:38,348  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:19:38,348  ERROR re-upload the article(32) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:19:38,348  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,348  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:19:38,348  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,348  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:19:38,348  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:19:38,348  ERROR re-upload the article(32) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:19:38,348  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,348  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:19:38,348  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,348  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:19:38,348  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:19:38,349  ERROR re-upload the article(32) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:19:38,349  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,349  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:19:38,349  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,349  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:19:38,349  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:19:38,349  ERROR re-upload the article(32) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:19:38,349  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,349  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:19:38,349  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,349  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:19:38,351  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:19:38,351  ERROR re-upload the article(32) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:19:38,351  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,351  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:19:38,351  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:19:38,351  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:19:38,351  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:19:38,351  ERROR re-upload the article(32) 10 times, stop! [File:subscriber_task_worker.py Function:idle Line:251]
+
+2013-06-10 23:22:10,535  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:22:10,549  INFO process SubscriberManApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:22:15,374  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:15,375  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:15,375  INFO work_thread_<WorkThread(Thread-2, started daemon 1784)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:22:15,375  INFO SubscriberManagerWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:22:15,375  INFO work_thread_<WorkThread(Thread-3, started daemon 7300)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:22:32,700  INFO process start: SubscriberManApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:22:32,700  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:22:32,700  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:22:34,914  INFO my endpoint is tcp://127.0.0.1:6600 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:22:34,923  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:34,924  INFO regist_name_service, service name:SubscriberManApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:22:34,924  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:34,924  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:34,930  INFO my pid is :1006 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:22:34,946  INFO SubscriberManagerWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:34,947  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x039BC1B0> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 23:22:34,967  INFO <subscriber_man_worker.SubscriberManInitHandler object at 0x039BC1B0> [File:subscriber_man_worker.py Function:handle_cmd Line:340]
+
+2013-06-10 23:22:34,967  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:22:34,967  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:22:34,967  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:22:34,969  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:22:34,969  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:22:34,969  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:22:34,969  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:22:34,969  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:22:34,969  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:22:34,969  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:22:34,969  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:22:34,970  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:22:36,196  INFO WX Biz(brxhaiqing@163.com) login succ! [File:wx_svc_api.py Function:_login Line:82]
+
+2013-06-10 23:22:36,361  INFO SubscriberTaskWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:22:36,361  INFO process SubscriberManApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:22:39,838  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x039B8510> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 23:22:39,839  INFO <subscriber_man_worker.SubscriberArticleUploadHandler object at 0x039BC0B0> [File:subscriber_man_worker.py Function:handle_cmd Line:538]
+
+2013-06-10 23:22:39,841  INFO create new article on WX portal(id 33) [File:subscriber_man_worker.py Function:handle_cmd Line:550]
+
+2013-06-10 23:22:39,868  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,868  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:22:39,868  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,868  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:22:39,868  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:22:39,868  ERROR re-upload the article(33) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:22:39,868  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,868  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:22:39,868  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,868  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:22:39,868  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:22:39,868  ERROR re-upload the article(33) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:22:39,868  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,868  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:22:39,868  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,869  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:22:39,869  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:22:39,869  ERROR re-upload the article(33) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:22:39,869  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,869  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:22:39,869  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,869  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:22:39,869  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:22:39,869  ERROR re-upload the article(33) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:22:39,869  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,871  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:22:39,871  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,871  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:22:39,871  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:22:39,871  ERROR re-upload the article(33) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:22:39,871  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,871  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:22:39,871  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,871  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:22:39,871  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:22:39,871  ERROR re-upload the article(33) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:22:39,871  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,871  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:22:39,871  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,871  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:22:39,871  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:22:39,871  ERROR re-upload the article(33) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:22:39,871  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,872  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:22:39,872  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,872  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:22:39,872  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:22:39,872  ERROR re-upload the article(33) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:22:39,872  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,872  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:22:39,872  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,872  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:22:39,872  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:22:39,874  ERROR re-upload the article(33) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:22:39,874  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,874  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:22:39,874  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,874  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:22:39,874  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:22:39,874  ERROR re-upload the article(33) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:22:39,874  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,874  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:22:39,875  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:22:39,875  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:22:39,875  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:22:39,875  ERROR re-upload the article(33) 10 times, stop! [File:subscriber_task_worker.py Function:idle Line:251]
+
+2013-06-10 23:24:12,130  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:24:12,134  INFO process SubscriberManApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:24:16,157  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:16,157  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:16,157  INFO SubscriberManagerWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:16,157  INFO work_thread_<WorkThread(Thread-2, started daemon 7072)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:24:16,157  INFO work_thread_<WorkThread(Thread-3, started daemon 4192)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:24:16,257  INFO SubscriberTaskWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:24:55,276  INFO process start: SubscriberManApp_0 [File:basic_app.py Function:_initialize Line:1290]
+
+2013-06-10 23:24:55,276  INFO python version is 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] [File:basic_app.py Function:_initialize Line:1291]
+
+2013-06-10 23:24:55,278  INFO language is chs [File:basic_app.py Function:_initialize Line:1292]
+
+2013-06-10 23:24:57,351  INFO my endpoint is tcp://127.0.0.1:6169 [File:basic_app.py Function:_create_base_worker_and_threads Line:1158]
+
+2013-06-10 23:24:57,361  INFO ipc_recv_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:57,361  INFO regist_name_service, service name:SubscriberManApp  [File:basic_app.py Function:regist_name_service Line:689]
+
+2013-06-10 23:24:57,361  INFO rpc_worker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:57,361  INFO CommonCmdWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:57,368  INFO my pid is :1005 [File:basic_app.py Function:regist_name_service Line:740]
+
+2013-06-10 23:24:57,375  INFO SubscriberManagerWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:24:57,377  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x0354C0B0> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 23:24:57,391  INFO <subscriber_man_worker.SubscriberManInitHandler object at 0x0354C0B0> [File:subscriber_man_worker.py Function:handle_cmd Line:340]
+
+2013-06-10 23:24:57,391  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:24:57,392  INFO subscriber oXnCzjhddVUzouJD7XqnymUNY9Po exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:24:57,392  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:24:57,392  INFO subscriber oXnCzjuMn1VrZwKIYFDh_Q3zDAMo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:24:57,392  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:24:57,392  INFO subscriber oXnCzjgRMGKw_kZ5bpClTouSBycQ exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:24:57,392  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:24:57,394  INFO subscriber oXnCzjuwhSeESLwoXBfE3JBcykMk exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:24:57,394  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:24:57,394  INFO subscriber oXnCzjrdxRpzySXYKFKhuCuTmIXo exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:24:57,394  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 enter NORMAL SESSION state [File:subscriber_state_man.py Function:enter_state Line:115]
+
+2013-06-10 23:24:57,394  INFO subscriber oXnCzjjCGKfAH-mzx55jPxB_MZ94 exec NORMAL SESSION state [File:subscriber_state_man.py Function:exec_state Line:198]
+
+2013-06-10 23:24:58,694  INFO WX Biz(brxhaiqing@163.com) login succ! [File:wx_svc_api.py Function:_login Line:82]
+
+2013-06-10 23:24:58,901  INFO process SubscriberManApp_0 starts successfully. [File:basic_app.py Function:run Line:925]
+
+2013-06-10 23:24:58,901  INFO SubscriberTaskWorker is ready for work. [File:work_thread.py Function:_ready_for_work Line:653]
+
+2013-06-10 23:25:07,338  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x0354C050> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 23:25:07,342  INFO <subscriber_man_worker.SubscriberArticleUploadHandler object at 0x0354C050> [File:subscriber_man_worker.py Function:handle_cmd Line:538]
+
+2013-06-10 23:25:07,342  INFO create new article on WX portal(id 30) [File:subscriber_man_worker.py Function:handle_cmd Line:550]
+
+2013-06-10 23:25:07,802  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,803  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:07,803  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,803  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:07,805  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:07,805  ERROR re-upload the article(30) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:07,805  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,805  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:07,806  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,806  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:07,806  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:07,806  ERROR re-upload the article(30) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:07,808  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,808  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:07,809  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,809  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:07,809  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:07,809  ERROR re-upload the article(30) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:07,809  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,811  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:07,811  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,811  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:07,812  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:07,812  ERROR re-upload the article(30) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:07,812  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,812  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:07,813  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,813  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:07,813  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:07,815  ERROR re-upload the article(30) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:07,815  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,815  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:07,815  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,815  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:07,816  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:07,816  ERROR re-upload the article(30) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:07,816  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,818  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:07,818  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,819  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:07,819  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:07,819  ERROR re-upload the article(30) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:07,819  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,819  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:07,819  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,821  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:07,821  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:07,821  ERROR re-upload the article(30) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:07,822  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,822  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:07,822  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,822  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:07,822  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:07,823  ERROR re-upload the article(30) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:07,823  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,823  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:07,825  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,825  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:07,825  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:07,825  ERROR re-upload the article(30) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:07,825  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,826  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:07,826  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:07,828  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:07,828  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:07,828  ERROR re-upload the article(30) 10 times, stop! [File:subscriber_task_worker.py Function:idle Line:251]
+
+2013-06-10 23:25:18,395  INFO <subscriber_man_worker.SubscriberContentUpdateMsgHandler object at 0x0354CFD0> [File:subscriber_man_worker.py Function:handle_cmd Line:370]
+
+2013-06-10 23:25:18,410  INFO <subscriber_man_worker.SubscriberArticleUploadHandler object at 0x0354CFD0> [File:subscriber_man_worker.py Function:handle_cmd Line:538]
+
+2013-06-10 23:25:18,411  INFO create new article on WX portal(id 31) [File:subscriber_man_worker.py Function:handle_cmd Line:550]
+
+2013-06-10 23:25:18,630  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,631  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:18,631  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,631  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:18,631  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:18,631  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:18,632  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,632  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:18,634  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,634  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:18,634  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:18,634  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:18,634  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,635  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:18,635  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,637  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:18,637  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:18,637  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:18,638  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,638  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:18,638  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,638  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:18,638  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:18,640  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:18,640  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,641  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:18,641  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,641  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:18,641  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:18,641  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:18,642  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,642  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:18,642  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,644  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:18,644  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:18,644  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:18,644  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,644  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:18,645  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,645  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:18,645  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:18,647  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:18,647  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,647  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:18,648  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,648  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:18,648  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:18,648  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:18,648  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,650  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:18,650  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,650  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:18,651  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:18,651  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:18,651  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,651  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:18,651  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,653  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:18,653  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:18,653  ERROR re-upload the article(31) [File:subscriber_task_worker.py Function:idle Line:247]
+
+2013-06-10 23:25:18,654  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,654  ERROR upload img failed, reupload the default logo img [File:wx_svc_api.py Function:create_news Line:327]
+
+2013-06-10 23:25:18,654  ERROR open file /usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png exceptional([Errno 2] No such file or directory: '/usr/local/apache/htdocs/weixinpublic/js/ueditor/php/upload/memory.png') [File:wx_svc_api.py Function:_upload_img Line:225]
+
+2013-06-10 23:25:18,654  ERROR upload the default logo img fail! [File:wx_svc_api.py Function:create_news Line:330]
+
+2013-06-10 23:25:18,654  INFO create news ret ! [File:subscriber_task_worker.py Function:idle Line:241]
+
+2013-06-10 23:25:18,655  ERROR re-upload the article(31) 10 times, stop! [File:subscriber_task_worker.py Function:idle Line:251]
+
+2013-06-10 23:27:33,895  INFO <subscriber_man_worker.SubscriberGroupAssocMsgHandler object at 0x0354CFF0> [File:subscriber_man_worker.py Function:handle_cmd Line:422]
+
+2013-06-10 23:27:33,934  INFO subscriber man app send ack frame: <AppFrame cmd_code:1002, sender_pid:0, receiver_pid:1002, original_pid:0, next_pid:0, task_id:2, data_length:77, datas num:1, data[0]:'{"user_session":"0","return_code":0,"description":"\\u64cd\\u4f5c\\u6210\\u529f"}'> [File:subscriber_man_app.py Function:send_ack_dispatch Line:143]
+
+2013-06-10 23:27:33,934  INFO frame buf[0]: {"user_session":"0","return_code":0,"description":"\u64cd\u4f5c\u6210\u529f"} [File:subscriber_man_app.py Function:send_ack_dispatch Line:144]
+
+2013-06-10 23:30:25,104  INFO <subscriber_man_worker.SubscriberArticlePushHandler object at 0x03553EF0> [File:subscriber_man_worker.py Function:handle_cmd Line:506]
+
+2013-06-10 23:30:25,105  INFO push article id 1 to fake_id 874504921, news_id 10000070 [File:subscriber_man_worker.py Function:handle_cmd Line:515]
+
+2013-06-10 23:30:25,105  INFO push article id 1 to fake_id 739542740, news_id 10000070 [File:subscriber_man_worker.py Function:handle_cmd Line:515]
+
+2013-06-10 23:30:25,105  INFO push article id 1 to fake_id 1815629722, news_id 10000070 [File:subscriber_man_worker.py Function:handle_cmd Line:515]
+
+2013-06-10 23:30:25,105  INFO push article id 1 to fake_id 1968919201, news_id 10000070 [File:subscriber_man_worker.py Function:handle_cmd Line:515]
+
+2013-06-10 23:30:25,107  INFO push article id 1 to fake_id 1512138560, news_id 10000070 [File:subscriber_man_worker.py Function:handle_cmd Line:515]
+
+2013-06-10 23:30:25,107  INFO push article id 1 to fake_id 1550699400, news_id 10000070 [File:subscriber_man_worker.py Function:handle_cmd Line:515]
+
+2013-06-10 23:30:25,926  INFO push news 10000070 to sub 874504921, ret {"ret":"0", "msg":"ok"} [File:subscriber_task_worker.py Function:idle Line:231]
+
+2013-06-10 23:30:26,055  INFO push news 10000070 to sub 739542740, ret {"ret":"0", "msg":"ok"} [File:subscriber_task_worker.py Function:idle Line:231]
+
+2013-06-10 23:30:26,121  INFO push news 10000070 to sub 1815629722, ret {"ret":"62720", "msg":"not fan"} [File:subscriber_task_worker.py Function:idle Line:231]
+
+2013-06-10 23:30:26,234  INFO push news 10000070 to sub 1968919201, ret {"ret":"0", "msg":"ok"} [File:subscriber_task_worker.py Function:idle Line:231]
+
+2013-06-10 23:30:26,339  INFO push news 10000070 to sub 1512138560, ret {"ret":"0", "msg":"ok"} [File:subscriber_task_worker.py Function:idle Line:231]
+
+2013-06-10 23:30:26,496  INFO push news 10000070 to sub 1550699400, ret {"ret":"0", "msg":"ok"} [File:subscriber_task_worker.py Function:idle Line:231]
+
+2013-06-10 23:32:22,716  INFO <subscriber_man_worker.SubscriberArticlePushHandler object at 0x035539D0> [File:subscriber_man_worker.py Function:handle_cmd Line:506]
+
+2013-06-10 23:32:22,717  INFO push article id 2 to fake_id 1968919201, news_id 10000052 [File:subscriber_man_worker.py Function:handle_cmd Line:515]
+
+2013-06-10 23:32:23,155  INFO push news 10000052 to sub 1968919201, ret {"ret":"0", "msg":"ok"} [File:subscriber_task_worker.py Function:idle Line:231]
+
+2013-06-10 23:33:30,516  ERROR process run failed. [File:basic_app.py Function:run Line:937]
+Traceback (most recent call last):
+  File "C:\svn\weixin_public\code\wx_cloud\subscriber_manager\../../rfid_plt/base_platform\_bundleframework\basic_app.py", line 929, in run
+    self.__stop_event.wait(1)
+  File "C:\Python27\lib\threading.py", line 403, in wait
+    self.__cond.wait(timeout)
+  File "C:\Python27\lib\threading.py", line 262, in wait
+    _sleep(delay)
+KeyboardInterrupt
+
+2013-06-10 23:33:30,520  INFO process SubscriberManApp_0 is stopping...... [File:basic_app.py Function:run Line:940]
+
+2013-06-10 23:33:34,553  INFO rpc_worker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:34,555  INFO CommonCmdWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:34,555  INFO SubscriberManagerWorker is over normally. [File:work_thread.py Function:run Line:470]
+
+2013-06-10 23:33:34,556  INFO work_thread_<WorkThread(Thread-2, started daemon 6464)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]
+
+2013-06-10 23:33:34,556  INFO work_thread_<WorkThread(Thread-3, started daemon 6604)> go to stop, total_ready_to_process_frames:0, frame_buffer:[0]0,[1]0,[2]0,[3]0 [File:work_thread.py Function:run Line:477]

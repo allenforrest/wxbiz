@@ -1,0 +1,1 @@
+send_ale_cmd_app.py --case="ADD_ECSpec"
