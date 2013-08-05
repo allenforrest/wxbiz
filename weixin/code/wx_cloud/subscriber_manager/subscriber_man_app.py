@@ -28,6 +28,7 @@ import msg_params_def
 import subscriber_man_worker
 import subscriber_task_worker
 import wx_svc_api
+#import wx_windeln_api
 
 from moc_wx import Subscriber, Group, Article, Subject, HelpTips, Member, WXBizInfo
 
@@ -56,6 +57,9 @@ class SubscriberManApp(bf.BasicApp):
         self._sub_man_worker = None
            
         self._task_worker = None
+        
+        self._price = None
+        self._stock = False
            
     def _ready_for_work(self):
         """
@@ -94,6 +98,8 @@ class SubscriberManApp(bf.BasicApp):
         bizs = self._mit_manager.rdm_find('WXBizInfo')
         self._wx_service_api = wx_svc_api.WXServiceAPI(bizs[0].login_user, bizs[0].login_pwd)
         self._wx_service_api.get_biz_fakeid()
+        
+        #self._wx_windeln_api = wx_windeln_api.WXWindelnAPI('allenxu@gmail.com', 'Xuweinan812185')
 
         self._task_worker = subscriber_task_worker.SubscriberTaskWorker()
         self.register_worker(self._task_worker)
@@ -105,6 +111,9 @@ class SubscriberManApp(bf.BasicApp):
     
     def get_wx_service_api(self):
         return self._wx_service_api
+    
+    def get_wx_windeln_api(self):
+        return self._wx_windeln_api
     
     def get_task_worker(self):
         return self._task_worker
@@ -147,6 +156,15 @@ class SubscriberManApp(bf.BasicApp):
         self.dispatch_frame_to_process_by_pid(frame.get_sender_pid(), frame_ack)
             
 
+    """
+    def update_windeln_info(self, price, stock):
+        self._price = price
+        self._stock = stock
+    
+    def get_windeln_info(self):
+        return (self._price, self._stock)
+    """
+    
 if __name__ == "__main__":
     SubscriberManApp().run()
     

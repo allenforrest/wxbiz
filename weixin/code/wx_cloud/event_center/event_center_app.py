@@ -53,6 +53,7 @@ class EventCenterApp(bf.BasicApp):
 
         bf.BasicApp.__init__(self, "EventCenterApp")
         self._mit_manager = mit.Mit()
+        self._portal_mit_manager = mit.Mit()
         self._event_seq_no_creator = sequence_no_creator.SequenceNoCreator()
             
     def _ready_for_work(self):
@@ -68,12 +69,14 @@ class EventCenterApp(bf.BasicApp):
         bf.BasicApp._ready_for_work(self)        
         
         self._mit_manager.init_mit_lock()
-        
         self._mit_manager.regist_moc(Event.Event, Event.EventRule)
-        self._mit_manager.regist_moc(Subject.Subject, Subject.SubjectRule)
-        self._mit_manager.regist_moc(Group.Group, Group.GroupRule)
+
+        self._portal_mit_manager.init_mit_lock()
+        self._portal_mit_manager.regist_moc(Subject.Subject, Subject.SubjectRule)
+        self._portal_mit_manager.regist_moc(Group.Group, Group.GroupRule)
         
-        self._mit_manager.open_sqlite("../../data/sqlite/wx_cloud.db")
+        self._mit_manager.open_sqlite("../../data/sqlite/wx_event.db")
+        self._portal_mit_manager.open_sqlite("../../data/sqlite/wx_cloud.db")
 
         worker = event_man_worker.EventManWorker(min_task_id = 1, max_task_id = 9999)
         self.register_worker(worker)
@@ -95,6 +98,17 @@ class EventCenterApp(bf.BasicApp):
         """
 
         return self._mit_manager
+
+    def get_portal_mit_manager(self):
+        """
+        Method: get_portal_mit_manager
+        Description: 获取进程的mit管理器
+        Parameter: 无
+        Return: mit管理器
+        Others: 
+        """
+
+        return self._portal_mit_manager
     
     def get_event_seq_no_creater(self):
         return self._event_seq_no_creator

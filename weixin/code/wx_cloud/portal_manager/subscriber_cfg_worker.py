@@ -16,6 +16,7 @@ import import_paths
 
 import bundleframework as bf
 import basic_rep_to_web
+import mit
 
 import err_code_mgr
 
@@ -76,6 +77,9 @@ class PortalSubscriberInfoQueryHandler(bf.CmdHandler):
             group_id = int(sub_qry.group_id)
 
         all_records = self.get_worker().get_app().get_mit_manager().lookup_attrs('Subscriber', ['group_ids'])
+
+        multi_sql = mit.MultiSQL()
+        multi_sql.set_sqlite_sql('subscribe_seq_no desc')   
         
         records = self.get_worker().get_app().get_mit_manager().lookup_attrs('Subscriber',
                                                                              [
@@ -85,13 +89,17 @@ class PortalSubscriberInfoQueryHandler(bf.CmdHandler):
                                                                               'gender',
                                                                               'city',
                                                                               'group_ids',
-                                                                              'assoc_member_id'                                                                             
+                                                                              'assoc_member_id',
+                                                                              'admin_flag'                                                                     
                                                                               ],
-                                                                             num_per_page = num_per_page, 
-                                                                             current_page = current_page
+                                                                             order_by_sql = multi_sql
+                                                                             #num_per_page = num_per_page, 
+                                                                             #current_page = current_page
                                                                              )
         
         result.subscribers = []
+        
+        all_subscribers = []
         for sub_rec in records:
             if group_id is not None and group_id not in sub_rec[5].group_ids:
                 continue
@@ -117,7 +125,11 @@ class PortalSubscriberInfoQueryHandler(bf.CmdHandler):
                 sub.assoc_member_id = sub_rec[6]
                 sub.assoc_member_name = members[0].name
             
-            result.subscribers.append(sub)
+            sub.head_img = '/' + msg_params_def.WX_HEAD_IMG_FILE_SAVE_LOCAL_PATH + sub.subscriber_open_id + '.png'
+            
+            sub.admin_flag = True if sub_rec[7] == 'True' else False
+            
+            all_subscribers.append(sub)
 
         if group_id is None:
             result.count = self.get_worker().get_app().get_mit_manager().count('Subscriber')
@@ -128,6 +140,29 @@ class PortalSubscriberInfoQueryHandler(bf.CmdHandler):
                     count += 1
             
             result.count = count
+
+        if num_per_page is not None and num_per_page > 0 and current_page is not None:
+            all_sub_map = {}
+            page_num = 0
+            count = 0
+            for s in all_subscribers:
+                if all_sub_map.has_key(page_num) is False:
+                    all_sub_map[page_num] = []
+                all_sub_map[page_num].append(s)
+                count += 1
+                page_num = count / num_per_page 
+        
+            if all_sub_map.has_key(current_page) is True:
+                result.subscribers = all_sub_map[current_page]
+            else:
+                result.return_code = err_code_mgr.ERR_PORTAL_SUBSCRIBER_NOT_EXISTS
+                result.description = err_code_mgr.get_error_msg(err_code_mgr.ERR_PORTAL_SUBSCRIBER_NOT_EXISTS)
+    
+                result.prepare_for_ack(sub_qry, result.return_code, result.description)
+                self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+                return
+        else:
+            result.subscribers = all_subscribers
             
         # 给WEB回成功响应
         result.return_code = err_code_mgr.ER_SUCCESS
@@ -491,7 +526,303 @@ class PortalSubscriberGroupQueryHandler(bf.CmdHandler):
          
         self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
 
+
+class PortalSubscriberGroupMsgPushHandler(bf.CmdHandler):
+    """
+    Class: PortalSubscriberGroupMsgPushHandler
+    Description: Portal下发的订阅者分组消息群发的命令handler
+    Base: CmdHandler
+    Others: 
+    """
+
+
+    def handle_cmd(self, frame):
+        """
+        Method:    handle_cmd
+        Description: 处理订阅者分组消息群发的命令消息
+        Parameter: 
+            frame: AppFrame
+        Return: 
+        Others: 
+        """
+        tracelog.info(self)
         
+        result = basic_rep_to_web.BasicRepToWeb()
+        result.init_all_attr()
+        tracelog.info('subscriber cfg worker recv group msg push frame: %s' % frame)
+        buf = frame.get_data()
+        
+        try:
+            push_info = msg_params_def.PortalSubscriberGroupMsgPushReq.deserialize(buf)
+        except:
+            result.return_code = err_code_mgr.ERR_PORTAL_DESERIALIZE_ERROR
+            result.description = err_code_mgr.get_error_msg(err_code_mgr.ERR_PORTAL_DESERIALIZE_ERROR,
+                                                            cmd = 'PORTAL_SUBSCRIBER_GROUP_MSG_PUSH',
+                                                            param_name = 'PortalSubscriberGroupMsgPushReq')
+            result.user_session = ''
+            self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+            return
+        
+        grp_list_valid = True
+        
+        grps = self.get_worker().get_app().get_mit_manager().rdm_find('Group')
+        if len(grps) > 0:
+            gids = [grp.group_id for grp in grps]
+            for gid in push_info.group_ids:
+                if int(gid) not in gids:
+                    grp_list_valid = False
+                    break
+        else:
+            grp_list_valid = False
+
+        if grp_list_valid is False:
+            result.return_code = err_code_mgr.ERR_PORTAL_GROUP_NOT_EXISTS
+            result.description = err_code_mgr.get_error_msg(err_code_mgr.ERR_PORTAL_GROUP_NOT_EXISTS)
+
+            result.prepare_for_ack(push_info, result.return_code, result.description)
+            self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+            return
+        
+
+        records = self.get_worker().get_app().get_mit_manager().lookup_attrs('Subscriber',
+                                                                             [
+                                                                              'subscriber_open_id',
+                                                                              'group_ids',
+                                                                              ])
+        push_subs = {}
+        
+        for gid in push_info.group_ids:
+            for rec in records:
+                if int(gid) in rec[1].group_ids:
+                    push_subs[rec[0]] = None
+        
+        push_sub_list = push_subs.keys()
+        
+        # 构造推送消息发给SubscriberManApp
+        push_msg = msg_params_def.CloudPortalTextPushMessage()
+        push_msg.init_all_attr()
+        push_msg.subscriber_open_ids = push_sub_list
+        push_msg.text_msg = push_info.text_msg
+        
+        push_frame = bf.AppFrame()
+        push_frame.set_cmd_code(cmd_code_def.CLOUD_PORTAL_TEXT_PUSH_MSG)
+        push_frame.add_data(push_msg.serialize())
+        self.get_worker().dispatch_frame_to_process_by_pid(self.get_worker().get_pid("SubscriberManApp"), push_frame)
+        
+        # 给WEB回成功响应
+        result.return_code = err_code_mgr.ER_SUCCESS
+        result.description = err_code_mgr.get_error_msg(err_code_mgr.ER_SUCCESS)       
+        result.prepare_for_ack(push_info, result.return_code, result.description)
+
+        self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+
+
+class PortalSubscriberMemberAssociateHandler(bf.CmdHandler):
+    """
+    Class: PortalSubscriberMemberAssociateHandler
+    Description: Portal下发的订阅者绑定会员的命令handler
+    Base: CmdHandler
+    Others: 
+    """
+
+
+    def handle_cmd(self, frame):
+        """
+        Method:    handle_cmd
+        Description: 处理订阅者绑定会员的命令消息
+        Parameter: 
+            frame: AppFrame
+        Return: 
+        Others: 
+        """
+        tracelog.info(self)
+                
+        result = basic_rep_to_web.BasicRepToWeb()
+        result.init_all_attr()
+        tracelog.info('subscriber cfg worker recv member frame: %s' % frame)
+        
+        self._req_frame = frame
+        buf = frame.get_data()
+        
+        try:
+            assoc_req = msg_params_def.PortalSubscriberMemberAssociateReq.deserialize(buf)
+        except:
+            result.return_code = err_code_mgr.ERR_PORTAL_DESERIALIZE_ERROR
+            result.description = err_code_mgr.get_error_msg(err_code_mgr.ERR_PORTAL_DESERIALIZE_ERROR,
+                                                            cmd = 'PORTAL_SUBSCRIBER_MEMBER_ASSOCIATE',
+                                                            param_name = 'PortalSubscriberMemberAssociateReq')
+            result.user_session = ''
+            self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+            return
+
+        self._message = assoc_req
+        # 检查订阅者是否存在
+        subs = self.get_worker().get_app().get_mit_manager().rdm_find('Subscriber',
+                                                                      subscriber_open_id = assoc_req.subscriber_open_id)   
+
+        if len(subs) == 0:
+            result.return_code = err_code_mgr.ERR_PORTAL_SUBSCRIBER_NOT_EXISTS
+            result.description = err_code_mgr.get_error_msg(err_code_mgr.ERR_PORTAL_SUBSCRIBER_NOT_EXISTS)
+
+            result.prepare_for_ack(assoc_req, result.return_code, result.description)
+            self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+            return
+        else:
+            old_member_id = subs[0].assoc_member_id
+            
+            # 检查订阅者关联的会员是否都存在
+            if len(assoc_req.member_id) > 0: 
+                members = self.get_worker().get_app().get_mit_manager().rdm_find('Member', member_id = assoc_req.member_id)
+                if len(members) == 0:
+                    result.return_code = err_code_mgr.ERR_PORTAL_MEMBER_NOT_EXISTS
+                    result.description = err_code_mgr.get_error_msg(err_code_mgr.ERR_PORTAL_MEMBER_NOT_EXISTS)
+        
+                    result.prepare_for_ack(assoc_req, result.return_code, result.description)
+                    self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+                    return
+                else:
+                    # 如果后台下发了会员名和联系方式，表示是微信用户自行关联，需要检查会员信息是否合法
+                    if (len(assoc_req.name) > 0 and assoc_req.name != members[0].name) or (len(assoc_req.cellphone) > 0 and assoc_req.cellphone != members[0].cellphone):
+                        result.return_code = err_code_mgr.ERR_PORTAL_MEMBER_INFO_INVALID
+                        result.description = err_code_mgr.get_error_msg(err_code_mgr.ERR_PORTAL_MEMBER_INFO_INVALID)
+            
+                        result.prepare_for_ack(assoc_req, result.return_code, result.description)
+                        self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+                        return
+                    
+                    tracelog.info('member %s assoc subscriber %s succ' % (assoc_req.member_id, assoc_req.subscriber_open_id))
+
+                    # 解除老的绑定关系
+                    if old_member_id is not None and len(old_member_id) > 0:
+                        old_members = self.get_worker().get_app().get_mit_manager().rdm_find('Member', member_id = old_member_id)
+                        if len(old_members) > 0:
+                            old_members[0].subscriber_open_id = ''
+                            self.get_worker().get_app().get_mit_manager().rdm_mod(old_members[0])
+        
+                    members[0].subscriber_open_id = assoc_req.subscriber_open_id
+                    self.get_worker().get_app().get_mit_manager().rdm_mod(members[0])
+                    
+                    mbr_pro = self.get_worker().get_app().get_member_man_worker().get_state_manager().get_processor(assoc_req.member_id)
+                    if mbr_pro is not None:
+                        mbr_pro.get_target().set_assoc_subscriber(subs[0])
+                    
+            sub_frame = bf.AppFrame()
+            sub_frame.set_cmd_code(cmd_code_def.CLOUD_PORTAL_SUB_MEMBER_ASSOC_MSG)
+            sub_frame.set_receiver_pid(self.get_worker().get_pid("SubscriberManApp"))
+            sub_frame.add_data(buf)
+            self.wait_for_ack(sub_frame, 5)
+
+    def _on_round_timeout(self, round_id, r):
+        """
+        Method: _on_round_timeout
+        Description: 命令Round超时处理
+        Parameter: 
+            round_id: 
+            r: 
+        Return: 
+        Others: 
+        """
+        tracelog.error('send message to SubscriberManApp, ack timeout')        
+        
+    def _on_round_over(self, round_id, r):        
+        """
+        Method: _on_round_over
+        Description: 接收订阅者管理模块的响应，构造响应返回给WEB
+        Parameter: 
+            round_id: 
+            r: 
+        Return: 
+        Others: 
+        """
+        frame = r.get_response_frame()
+        buf = frame.get_data()
+        self.get_worker().get_app().send_ack_dispatch(self._req_frame, (buf, ))
+
+
+class PortalSubscriberAdminAssociateHandler(bf.CmdHandler):
+    """
+    Class: PortalSubscriberAdminAssociateHandler
+    Description: Portal下发的订阅者绑定管理员的命令handler
+    Base: CmdHandler
+    Others: 
+    """
+
+
+    def handle_cmd(self, frame):
+        """
+        Method:    handle_cmd
+        Description: 处理订阅者绑定管理员的命令消息
+        Parameter: 
+            frame: AppFrame
+        Return: 
+        Others: 
+        """
+        tracelog.info(self)
+                
+        result = basic_rep_to_web.BasicRepToWeb()
+        result.init_all_attr()
+        tracelog.info('subscriber cfg worker recv admin frame: %s' % frame)
+        
+        self._req_frame = frame
+        buf = frame.get_data()
+        
+        try:
+            assoc_req = msg_params_def.PortalSubscriberAdminAssociateReq.deserialize(buf)
+        except:
+            result.return_code = err_code_mgr.ERR_PORTAL_DESERIALIZE_ERROR
+            result.description = err_code_mgr.get_error_msg(err_code_mgr.ERR_PORTAL_DESERIALIZE_ERROR,
+                                                            cmd = 'PORTAL_SUBSCRIBER_ADMIN_ASSOCIATE',
+                                                            param_name = 'PortalSubscriberAdminAssociateReq')
+            result.user_session = ''
+            self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+            return
+
+        self._message = assoc_req
+        # 检查订阅者是否存在
+        subs = self.get_worker().get_app().get_mit_manager().rdm_find('Subscriber',
+                                                                      subscriber_open_id = assoc_req.subscriber_open_id)   
+
+        if len(subs) == 0:
+            result.return_code = err_code_mgr.ERR_PORTAL_SUBSCRIBER_NOT_EXISTS
+            result.description = err_code_mgr.get_error_msg(err_code_mgr.ERR_PORTAL_SUBSCRIBER_NOT_EXISTS)
+
+            result.prepare_for_ack(assoc_req, result.return_code, result.description)
+            self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+            return
+        else:
+            sub_frame = bf.AppFrame()
+            sub_frame.set_cmd_code(cmd_code_def.CLOUD_PORTAL_SUB_ADMIN_ASSOC_MSG)
+            sub_frame.set_receiver_pid(self.get_worker().get_pid("SubscriberManApp"))
+            sub_frame.add_data(buf)
+            self.wait_for_ack(sub_frame, 5)
+
+    def _on_round_timeout(self, round_id, r):
+        """
+        Method: _on_round_timeout
+        Description: 命令Round超时处理
+        Parameter: 
+            round_id: 
+            r: 
+        Return: 
+        Others: 
+        """
+        tracelog.error('send message to SubscriberManApp, ack timeout')        
+        
+    def _on_round_over(self, round_id, r):        
+        """
+        Method: _on_round_over
+        Description: 接收订阅者管理模块的响应，构造响应返回给WEB
+        Parameter: 
+            round_id: 
+            r: 
+        Return: 
+        Others: 
+        """
+        frame = r.get_response_frame()
+        buf = frame.get_data()
+        self.get_worker().get_app().send_ack_dispatch(self._req_frame, (buf, ))
+
+            
 class SubscriberConfigWorker(bf.CmdWorker):
     """
     Class: SubscriberConfigWorker
@@ -532,7 +863,9 @@ class SubscriberConfigWorker(bf.CmdWorker):
 
         self.register_handler(PortalSubscriberInfoQueryHandler(), cmd_code_def.PORTAL_SUBSCRIBER_INFO_QUERY)
         self.register_handler(PortalSubscriberGroupAssociateHandler(), cmd_code_def.PORTAL_SUBSCRIBER_GROUP_ASSOCIATE)
+        self.register_handler(PortalSubscriberGroupMsgPushHandler(), cmd_code_def.PORTAL_SUBSCRIBER_GROUP_MSG_PUSH)
 
-        #self.register_handler(PortalSubscriberMemberAssociateHandler(), cmd_code_def.PORTAL_SUBSCRIBER_MEMBER_ASSOCIATE)
+        self.register_handler(PortalSubscriberMemberAssociateHandler(), cmd_code_def.PORTAL_SUBSCRIBER_MEMBER_ASSOCIATE)
+        self.register_handler(PortalSubscriberAdminAssociateHandler(), cmd_code_def.PORTAL_SUBSCRIBER_ADMIN_ASSOCIATE)
         return 0
 

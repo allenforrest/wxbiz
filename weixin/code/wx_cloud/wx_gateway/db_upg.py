@@ -20,13 +20,13 @@ import mit
 
 import msg_params_def
 
-from moc_wx import Article as wx_article
-from moc_wx import Event as wx_event
-from moc_wx import Group as wx_group
+from moc_wx import Article as wx_article #
+from moc_wx import Event as wx_event #
+from moc_wx import Group as wx_group 
 from moc_wx import HelpTips as wx_helptips
-from moc_wx import Subject as wx_subject
+from moc_wx import Subject as wx_subject #
 from moc_wx import Member as wx_member
-from moc_wx import Subscriber as wx_subscriber
+from moc_wx import Subscriber as wx_subscriber #
 from moc_wx import WXBizInfo as wx_bizinfo
 
 from moc_wx_old import Article as wxo_article
@@ -49,50 +49,57 @@ if __name__=='__main__':
     old_mit.regist_moc(wxo_member.Member, wxo_member.MemberRule)
     old_mit.regist_moc(wxo_subscriber.Subscriber, wxo_subscriber.SubscriberRule)
     old_mit.regist_moc(wxo_bizinfo.WXBizInfo, wxo_bizinfo.WXBizInfoRule)
+    old_mit.regist_complex_attr_type(msg_params_def.GroupList)
+    old_mit.regist_complex_attr_type(msg_params_def.VegetableList)
+    
     old_mit.open_sqlite("../../data/sqlite/old_wx_cloud.db")
 
     new_mit = mit.Mit()
     new_mit.regist_moc(wx_article.Article, wx_article.ArticleRule)
-    new_mit.regist_moc(wx_event.Event, wx_event.EventRule)
     new_mit.regist_moc(wx_group.Group, wx_group.GroupRule)
     new_mit.regist_moc(wx_helptips.HelpTips, wx_helptips.HelpTipsRule)
     new_mit.regist_moc(wx_subject.Subject, wx_subject.SubjectRule)
     new_mit.regist_moc(wx_member.Member, wx_member.MemberRule)
     new_mit.regist_moc(wx_subscriber.Subscriber, wx_subscriber.SubscriberRule)
     new_mit.regist_moc(wx_bizinfo.WXBizInfo, wx_bizinfo.WXBizInfoRule)
+    new_mit.regist_complex_attr_type(msg_params_def.GroupList)
+    new_mit.regist_complex_attr_type(msg_params_def.VegetableList)
+
     new_mit.open_sqlite("../../data/sqlite/wx_cloud.db")
 
+    evt_mit = mit.Mit()
+    evt_mit.regist_moc(wx_event.Event, wx_event.EventRule)
+    evt_mit.open_sqlite("../../data/sqlite/wx_event.db")
 
     old_arts = old_mit.rdm_find('Article')
     for old_art in old_arts:
-        new_art = new_mit.gen_rdm("Article")
-        new_art.article_id = old_art.article_id
-        new_art.wx_news_id = old_art.wx_news_id
-        new_art.title = old_art.title
-        new_art.subject_id = old_art.subject_id
-        new_art.description = old_art.description
-        new_art.pic_url = old_art.pic_url
-        new_art.content_url = old_art.content_url
-        new_art.content = old_art.content
-        new_art.push_timer = old_art.push_timer
-        new_art.push_times = old_art.push_times
-        new_art.counter = old_art.counter
-        
-        r = new_mit.rdm_add(new_art)
-        moid = new_mit.gen_moid('Article', article_id = new_art.article_id)
-        gids = msg_params_def.GroupList()
-        gids.group_ids = [1]
-        rr = new_mit.mod_complex_attr('Article', moid = moid, group_ids = gids)
+        old_id = old_art.article_id
+        grps = old_mit.lookup_attrs('Article', ['group_ids'], article_id = old_id)
+        old_art.article_id = old_id + msg_params_def.ARTICLE_USERDEFINE_ID_BASE
+        old_art.subject_id = old_art.subject_id + msg_params_def.SUBJECT_USERDEFINE_ID_BASE
+        url = old_art.content_url
+        pos = url.find('articleId/') + len('articleId/')
+        new_url = url[:pos] + str(old_art.article_id)
+        old_art.content_url = new_url
+        r = new_mit.rdm_add(old_art)
+        moid = new_mit.gen_moid('Article', article_id = old_art.article_id)
+        rr = new_mit.mod_complex_attr('Article', moid = moid, group_ids = grps[0][0])
         
         if rr.get_err_code() == 0 and r.get_err_code() == 0:
-            print "Article table upgrade: article_id %d success." % (new_art.article_id)
+            print "Article table upgrade: article_id %d, new id %d success." % (old_id, old_art.article_id)
         else:
-            print "Article table upgrade: article_id %d failed." % (new_art.article_id)
+            print "Article table upgrade: article_id %d, new id %d failed." % (old_id, old_art.article_id)
         
 
     evts = old_mit.rdm_find('Event')
     for evt in evts:
-        r = new_mit.rdm_add(evt)
+        new_evt = evt_mit.gen_rdm("Event")
+        new_evt.event_id = evt.event_id
+        new_evt.event_type = evt.event_type
+        new_evt.content = evt.content
+        new_evt.date = '2013-07-21'
+        new_evt.read_flag = evt.read_flag
+        r = evt_mit.rdm_add(new_evt)
         if r.get_err_code() == 0:
             print "Event table upgrade: event_id %d success." % (evt.event_id)
         else:
@@ -116,14 +123,18 @@ if __name__=='__main__':
 
     grps = old_mit.rdm_find('Subject')
     for grp in grps:
+        old_id = grp.subject_id
+        grp.subject_id = old_id + msg_params_def.SUBJECT_USERDEFINE_ID_BASE
         r = new_mit.rdm_add(grp)
         if r.get_err_code() == 0:
-            print "Subject table upgrade: subject_id %d success." % (grp.subject_id)
+            print "Subject table upgrade: subject_id %d, new id %d success." % (old_id, grp.subject_id)
         else:
-            print "Subject table upgrade: subject_id %d failed." % (grp.subject_id)             
+            print "Subject table upgrade: subject_id %d, new id %d failed." % (old_id, grp.subject_id)             
 
     old_subs = old_mit.rdm_find('Subscriber')
     for old_sub in old_subs:
+        grps = old_mit.lookup_attrs('Subscriber', ['group_ids'], subscriber_open_id = old_sub.subscriber_open_id)
+        
         new_sub = new_mit.gen_rdm("Subscriber")
         new_sub.subscriber_open_id = old_sub.subscriber_open_id
         new_sub.subscribe_seq_no = old_sub.subscribe_seq_no
@@ -134,12 +145,11 @@ if __name__=='__main__':
         new_sub.city = old_sub.city
         new_sub.sub_time = old_sub.sub_time
         new_sub.assoc_member_id = old_sub.assoc_member_id
+        new_sub.admin_flag = 'False'
         
         r = new_mit.rdm_add(new_sub)
         moid = new_mit.gen_moid('Subscriber', subscriber_open_id = new_sub.subscriber_open_id)
-        gids = msg_params_def.GroupList()
-        gids.group_ids = [1]
-        rr = new_mit.mod_complex_attr('Subscriber', moid = moid, group_ids = gids)
+        rr = new_mit.mod_complex_attr('Subscriber', moid = moid, group_ids = grps[0][0])
         
         if rr.get_err_code() == 0 and r.get_err_code() == 0:
             print "Subscriber table upgrade: subscriber_open_id %s success." % (new_sub.subscriber_open_id)
@@ -149,16 +159,9 @@ if __name__=='__main__':
 
     old_infos = old_mit.rdm_find('WXBizInfo')
     for old_info in old_infos:
-        new_info = new_mit.gen_rdm("WXBizInfo")
-        new_info.biz_id = old_info.biz_id
-        new_info.access_token = old_info.access_token
-        new_info.login_user = old_info.login_user
-        new_info.login_pwd = old_info.login_pwd
-        new_info.auto_ip_update = 'False'
-        
-        r = new_mit.rdm_add(new_info)
+        r = new_mit.rdm_add(old_info)
         if r.get_err_code() == 0:
-            print "WXBizInfo table upgrade: biz_id %d success." % (new_info.biz_id)
+            print "WXBizInfo table upgrade: biz_id %d success." % (old_info.biz_id)
         else:
-            print "WXBizInfo table upgrade: biz_id %d failed." % (new_info.biz_id)
+            print "WXBizInfo table upgrade: biz_id %d failed." % (old_info.biz_id)
     

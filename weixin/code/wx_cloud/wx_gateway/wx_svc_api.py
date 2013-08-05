@@ -48,12 +48,17 @@ WX_WEB_DEL_NEWS_REFERER = 'https://mp.weixin.qq.com/cgi-bin/operate_appmsg?token
 WX_WEB_DEL_IMG_URL = 'https://mp.weixin.qq.com/cgi-bin/modifyfile?oper=del&lang=zh_CN&t=ajax-response'
 WX_WEB_DEL_IMG_REFERER = 'https://mp.weixin.qq.com/cgi-bin/filemanagepage?t=wxm-file&lang=zh_CN&token=%s&type=2&pagesize=10&pageidx=0'
 
+WX_WEB_GET_HEAD_IMG_URL = 'https://mp.weixin.qq.com/cgi-bin/getheadimg?token=%s&fakeid=%s'
+
 WX_WEB_ITF_CFG_INFO_MOD_URL = 'https://mp.weixin.qq.com/cgi-bin/callbackprofile?t=ajax-response&lang=zh_CN'
 WX_WEB_ITF_CFG_INFO_MOD_REFERER = 'https://mp.weixin.qq.com/cgi-bin/devapply?opcode=getinfo&t=wxm-developer-api-reg-port&token=%s&lang=zh_CN'
 
 WX_WEB_ITF_CFG_INFO_GET_URL = 'https://mp.weixin.qq.com/cgi-bin/operadvancedfunc?op=list&t=wxm-developer-api&token=%s&lang=zh_CN'
 
 WX_WEB_GET_WAN_IP_URL = 'http://ip5.me'
+
+# 扩大requests库中默认重试次数（0->3）
+requests.adapters.DEFAULT_RETRIES = 3
 
 class WXServiceAPI(object):
 
@@ -62,11 +67,10 @@ class WXServiceAPI(object):
         self._pwd = md5.md5(pwd).hexdigest()
         self._token = None
         self._biz_fakeid = None
-        self._requests_session = None
+        self._requests_session = requests.session()
         self._login_succ = False
     
     def _login(self):
-        self._requests_session = requests.session()
         self._requests_session.cookies.clear_session_cookies()
         param = {}
         param['username'] = self._username
@@ -75,7 +79,7 @@ class WXServiceAPI(object):
         
         resp = self._requests_session.get(WX_WEB_LOGIN_URL, verify = True, params = param)
         if resp.status_code == 200:
-            resp_json = json.loads(resp.text)
+            resp_json = resp.json()
             err_msg = resp_json['ErrMsg']
             self._token = err_msg[err_msg.find('token=') + 6:]
             
@@ -184,6 +188,10 @@ class WXServiceAPI(object):
                 return None
                         
             # {"ret":"0", "msg":"ok"}
+            resp_json = resp.json()
+            if resp_json['msg'].find('need verify code') >= 0:
+                self._login_succ = False
+            
             return resp.text
         else:
             return ''            
@@ -209,6 +217,10 @@ class WXServiceAPI(object):
                 return None
             
             # {"ret":"0", "msg":"ok"}
+            resp_json = resp.json()
+            if resp_json['msg'].find('need verify code') >= 0:
+                self._login_succ = False
+                
             return resp.text
         else:
             return ''
@@ -217,6 +229,7 @@ class WXServiceAPI(object):
         if self._login_succ is False:
             self._login()
 
+        tracelog.info('try to upload img file %s' % file_name)
         try:
             ff = open(file_name, 'rb')
             file_buf = ff.read()
@@ -359,7 +372,27 @@ class WXServiceAPI(object):
                 return None                
         else:
             tracelog.error('create news failed(status code %d)' % resp.status_code)
-            return None         
+            return None
+        
+    def save_head_img(self, fakeid, img_file): 
+        if self._login_succ is False:
+            self._login()
+            
+        resp = self._requests_session.get(WX_WEB_GET_HEAD_IMG_URL % (self._token, fakeid), verify = True)
+        if resp.status_code == 200:
+            try:
+                f = open(img_file, 'wb')
+                f.write(resp.content)
+                f.close()
+            except Exception, e:
+                tracelog.error('save img file %s for %s operation failed: %s' % (img_file, fakeid, e))
+                return False
+            tracelog.info('save img file %s for %s succ' % (img_file, fakeid))
+            return True
+        else:
+            tracelog.error('save img file %s for %s failed(status code %d)' % (img_file, fakeid, resp.status_code))
+            return False
+            
 
     def get_itf_cfg_info(self):
         if self._login_succ is False:
@@ -367,8 +400,8 @@ class WXServiceAPI(object):
         
         resp = self._requests_session.get(WX_WEB_ITF_CFG_INFO_GET_URL % self._token, verify = True)
         if resp.status_code == 200:
-            prefix = '<dd class="dev_tip"><label>URL：</label><strong>'
-            s = resp.text.find(prefix) + len(prefix) - 1
+            prefix = '<dd class="dev_tip"><label>URL'
+            s = resp.text.find(prefix) + len(prefix) + 17
             e = resp.text.find('</strong></dd>', s)
             itf_cfg_url = resp.text[s:e]
             return itf_cfg_url
@@ -419,29 +452,31 @@ class WXServiceAPI(object):
 
 
 if __name__ == '__main__':
-    wx_api = WXServiceAPI('allenxu@gmail.com', 'Xuweinan812185')
+    wx_api = WXServiceAPI('brxhaiqing@163.com', 'liuhaiqing')
     
     print 'my fakeid %s, token %s' % (wx_api.get_biz_fakeid(), wx_api._token)
+
+    #print wx_api.get_itf_cfg_info()
     
-    print wx_api.get_itf_cfg_info()
+    #url = 'http://116.227.117.2/index.php/weixin/signature/index'
+    #wx_api.mod_itf_cfg_info(url, '12345')
     
-    """
+    
+    
     subs = wx_api.get_subscribers_by_group(0)
-    print subs
+    #print subs.decode('utf-8').encode('gbk')
     
     sub_list = json.loads(subs)
     for sub in sub_list:
         print 'sub fakeid %s, nick %s' % (sub['fakeId'], sub['nickName'])
-        last_msg = wx_api.get_subscriber_last_msgs(sub['fakeId'])
-        print last_msg
-        lmo = json.loads(last_msg)
-        for l in lmo:
-            print l['content']
-            print l['content'].encode('utf-8').find('您是第'.decode('gbk').encode('utf-8'))
-    
+
+        head_img_file = '%s.jpg' % sub['fakeId']
+        wx_api.save_head_img(sub['fakeId'], head_img_file)
+        
+    """
     #news_id = wx_api.create_news('1.jpg', 'xuweinan1', 'xuweinan1 create', 'hello world1')
     #print news_id
     
     #print wx_api.del_news('10000043')
     """
-    #wx_api.mod_itf_cfg_info('http://whatsnfc.sinaapp.com/weixin', 'allenforrest')
+    

@@ -4,28 +4,28 @@ Copyright (C), 2012-2015, Anything Connected Possibilities
 Author: ACP2013
 Version: 1.0
 Date: 2013-05-18
-Description: 订阅者对象定义（用于订阅者状态机）
+Description: 会员对象定义（用于会员状态机）
 Others:      
 Key Class&Method List: 
-    1. Subscriber
+    1. Member
         
 History: 
-1. Date: 2013-05-18
+1. Date: 2013-07-05
    Author: Allen
    Modification: 新建文件
 """
 
 import time
 
-class Subscriber(object):
+class Member(object):
     """
-    Class: Subscriber
+    Class: Member
     Description: 任务基类
     Base: 
     Others: 
     """
 
-    def __init__(self, spec, group_ids, state):
+    def __init__(self, spec, state):
         """
         Method: __init__
         Description: 类初始化
@@ -36,39 +36,22 @@ class Subscriber(object):
         Others: 
         """
         self.spec = spec
-        self.assoc_mbr_spec = None
-        self.group_ids = group_ids
-        self.last_frame = None
+        self.assoc_sub_spec = None
+        self.delivery_id = None
+        self.today = time.time()
         self.state = state
         self.old_state = None
         self.state_time = time.time()
         self.old_state_time = 0
 
-    def set_fakeid(self, fake_id):
-        self.spec.fake_id = fake_id
-        
-    def set_assoc_member(self, mbr_spec):
-        self.assoc_mbr_spec = mbr_spec
+    def set_delivery_id(self, delivery_id):
+        self.delivery_id = delivery_id
 
-    def set_detail_info(self, weixin_id, nickname, gender, city):
-        self.spec.weixin_id = weixin_id
-        self.spec.nickname = nickname
-        self.spec.gender = gender
-        self.spec.city = city
-    
-    def set_groups(self, group_ids):
-        self.group_ids = group_ids
+    def set_assoc_subscriber(self, sub_spec):
+        self.assoc_sub_spec = sub_spec
         
-    def set_admin_flag(self, flag):
-        self.spec.admin_flag = flag
-        
-    def save_frame(self, frame):
-        del self.last_frame
-        self.last_frame = frame
-
-    def free_frame(self):
-        del self.last_frame
-        self.last_frame = None
+    def set_today(self, today):
+        self.today = today
 
     def set_state(self, state):
         """
@@ -87,12 +70,6 @@ class Subscriber(object):
         self.old_state_time = self.state_time
         self.state_time = time.time()
 
-    def get_last_frame(self):
-        return self.last_frame
-
-    def get_assoc_member(self):
-        return self.assoc_mbr_spec
-        
     def get_state(self):
         """
         Method: get_state
@@ -126,17 +103,15 @@ class Subscriber(object):
 
         return self.spec
 
-    def get_group_ids(self):
-        """
-        Method: get_group_ids
-        Description: 
-        Parameter: 无
-        Return: 对象
-        Others: 
-        """
+    def get_delivery_id(self):
+        return self.delivery_id
 
-        return self.group_ids
-        
+    def get_assoc_subscriber(self):
+        return self.assoc_sub_spec
+
+    def get_today(self):
+        return self.today
+
     def get_id(self):
         """
         Method: get_id
@@ -146,7 +121,7 @@ class Subscriber(object):
         Others: 
         """
 
-        return self.spec.subscriber_open_id
+        return self.spec.member_id
     
     def get_state_time(self):
         """

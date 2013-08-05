@@ -15,6 +15,7 @@ History:
 import import_paths
 
 import os
+import time
 
 import bundleframework as bf
 import basic_rep_to_web
@@ -78,8 +79,9 @@ class PortalContentArticleCreateHandler(bf.CmdHandler):
         article_moc.title = article_cfg.title
         article_moc.description = article_cfg.description
         article_moc.subject_id = int(article_cfg.subject_id)
-        article_moc.pic_url = article_cfg.pic_url
-        article_moc.content_url = "%s/%s" % (article_cfg.content_url, article_moc.article_id)
+        article_moc.pic_url = self.get_worker().update_url(article_cfg.pic_url)
+        content_url = "%s/%s" % (article_cfg.content_url, article_moc.article_id)
+        article_moc.content_url = self.get_worker().update_url(content_url)
         article_moc.content = article_cfg.content
         article_moc.push_timer = article_cfg.push_timer
         article_moc.push_times = article_cfg.push_times
@@ -116,22 +118,29 @@ class PortalContentArticleCreateHandler(bf.CmdHandler):
                 times = 1
             else:
                 times = int(article_moc.push_times)
-            self.get_worker().get_app().get_push_task_manager().del_task(article_moc.article_id)
-            self.get_worker().get_app().get_push_task_manager().add_task(article_moc.push_timer, 
+
+            time_stru = time.strptime(article_moc.push_timer, '%Y-%m-%d %H:%M:%S')
+            abs_time = time.mktime(time_stru)   
+                
+            self.get_worker().get_app().get_push_task_manager().del_task(msg_params_def.PORTAL_TASK_PUSH_ARTICLE,
+                                                                         article_moc.article_id)
+            self.get_worker().get_app().get_push_task_manager().add_task(msg_params_def.PORTAL_TASK_PUSH_ARTICLE,
+                                                                         abs_time, 
                                                                          times,
                                                                          article_moc.article_id)
         new_frame = bf.AppFrame()
         new_frame.set_cmd_code(cmd_code_def.CLOUD_PORTAL_CONTENT_UPDATE_MSG)
         self.get_worker().get_app().dispatch_frame_to_process_by_pid(self.get_worker().get_pid("SubscriberManApp"), new_frame)        
         
-        # 给WEB回成功响应
-        result.return_code = err_code_mgr.ER_SUCCESS
-        result.description = err_code_mgr.get_error_msg(err_code_mgr.ER_SUCCESS)       
-        result.prepare_for_ack(article_cfg, result.return_code, result.description)
-
-        self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+        if frame.get_sender_pid() == self.get_worker().get_pid('WebGate'):
+            # 给WEB回成功响应
+            result.return_code = err_code_mgr.ER_SUCCESS
+            result.description = err_code_mgr.get_error_msg(err_code_mgr.ER_SUCCESS)       
+            result.prepare_for_ack(article_cfg, result.return_code, result.description)
+    
+            self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
         
-        if article_cfg.pic_url != '' and article_cfg.pic_url.find(msg_params_def.LOCAL_HOST_DOMAIN) >= 0:
+        if article_cfg.pic_url != '':
             create_frame = bf.AppFrame()
             create_frame.set_cmd_code(cmd_code_def.CLOUD_PORTAL_ARTICLE_UPLOAD_MSG)
             create_frame.set_receiver_pid(self.get_worker().get_pid('SubscriberManApp'))
@@ -139,6 +148,10 @@ class PortalContentArticleCreateHandler(bf.CmdHandler):
             create_frame.add_data(str(self._article_id))
             self.get_worker().get_app().dispatch_frame_to_process_by_pid(self.get_worker().get_pid("SubscriberManApp"), create_frame)        
         
+        # 发送关键操作事件通知
+        oper_type = msg_params_def.EVENT_PORTAL_OPERATION_ADD + msg_params_def.EVENT_PORTAL_OBJECT_ARTICLE
+        self.get_worker().get_app().send_portal_operation_event(article_cfg.user_session, oper_type.decode('gbk').encode('utf-8'), article_cfg.title)
+
 
 class PortalContentArticleModifyHandler(bf.CmdHandler):
     """
@@ -197,7 +210,7 @@ class PortalContentArticleModifyHandler(bf.CmdHandler):
         article_moc[0].title = article_mod.title
         article_moc[0].description = article_mod.description
         article_moc[0].subject_id = int(article_mod.subject_id)
-        article_moc[0].pic_url = article_mod.pic_url
+        article_moc[0].pic_url = self.get_worker().update_url(article_mod.pic_url)
         article_moc[0].content = article_mod.content
         article_moc[0].push_timer = article_mod.push_timer
         article_moc[0].push_times = article_mod.push_times
@@ -225,8 +238,14 @@ class PortalContentArticleModifyHandler(bf.CmdHandler):
                 times = 1
             else:
                 times = int(article_moc[0].push_times)
-            self.get_worker().get_app().get_push_task_manager().del_task(article_moc[0].article_id)
-            self.get_worker().get_app().get_push_task_manager().add_task(article_moc[0].push_timer, 
+
+            time_stru = time.strptime(article_moc[0].push_timer, '%Y-%m-%d %H:%M:%S')
+            abs_time = time.mktime(time_stru)
+                            
+            self.get_worker().get_app().get_push_task_manager().del_task(msg_params_def.PORTAL_TASK_PUSH_ARTICLE,
+                                                                         article_moc[0].article_id)
+            self.get_worker().get_app().get_push_task_manager().add_task(msg_params_def.PORTAL_TASK_PUSH_ARTICLE,
+                                                                         abs_time, 
                                                                          times,
                                                                          article_moc[0].article_id)
 
@@ -241,7 +260,7 @@ class PortalContentArticleModifyHandler(bf.CmdHandler):
 
         self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
 
-        if article_mod.pic_url != '' and article_mod.pic_url.find(msg_params_def.LOCAL_HOST_DOMAIN) >= 0:
+        if article_mod.pic_url != '':
             mod_frame = bf.AppFrame()
             mod_frame.set_cmd_code(cmd_code_def.CLOUD_PORTAL_ARTICLE_UPLOAD_MSG)
             mod_frame.set_receiver_pid(self.get_worker().get_pid('SubscriberManApp'))
@@ -249,6 +268,10 @@ class PortalContentArticleModifyHandler(bf.CmdHandler):
             mod_frame.add_data(str(self._article_id))
             self.get_worker().get_app().dispatch_frame_to_process_by_pid(self.get_worker().get_pid("SubscriberManApp"), mod_frame)        
             
+        # 发送关键操作事件通知
+        oper_type = msg_params_def.EVENT_PORTAL_OPERATION_MOD + msg_params_def.EVENT_PORTAL_OBJECT_ARTICLE
+        self.get_worker().get_app().send_portal_operation_event(article_mod.user_session, oper_type.decode('gbk').encode('utf-8'), article_mod.title)
+
 
 class PortalContentArticleRemoveHandler(bf.CmdHandler):
     """
@@ -290,17 +313,19 @@ class PortalContentArticleRemoveHandler(bf.CmdHandler):
         if len(articles) == 1:
             wx_news_id = articles[0].wx_news_id                     
             # 删除本地图片文件
-            if articles[0].pic_url.find('upload/memory.png') < 0:
+            if articles[0].pic_url.find(msg_params_def.PORTAL_LOGO_IMG_FILE_LOCAL_PATH) < 0 and articles[0].pic_url.find(msg_params_def.WX_HEAD_IMG_FILE_SAVE_LOCAL_PATH) < 0:
                 try:
                     pic_url = articles[0].pic_url.strip('http://')
-                    pic_path = msg_params_def.PORTAL_IMG_FILE_LOCAL_PATH_PREFIX + pic_url[pic_url.find('/'):]
+                    pic_path = msg_params_def.PORTAL_IMG_FILE_LOCAL_PATH_PREFIX + pic_url[pic_url.find('/'):].lstrip('/')
                     os.remove(pic_path)
                 except Exception, e:
                     tracelog.error('del img file(%s) in local path failed(%s)' % (pic_path, e))
-            
+                    
+            title = articles[0].title            
             self.get_worker().get_app().get_mit_manager().rdm_remove(articles[0])
 
-        self.get_worker().get_app().get_push_task_manager().del_task(article_rmv.article_id)
+        self.get_worker().get_app().get_push_task_manager().del_task(msg_params_def.PORTAL_TASK_PUSH_ARTICLE,
+                                                                     int(article_rmv.article_id))
 
         new_frame = bf.AppFrame()
         new_frame.set_cmd_code(cmd_code_def.CLOUD_PORTAL_CONTENT_UPDATE_MSG)
@@ -321,6 +346,10 @@ class PortalContentArticleRemoveHandler(bf.CmdHandler):
         del_frame.add_data(wx_news_id)
         
         self.get_worker().get_app().dispatch_frame_to_process_by_pid(self.get_worker().get_pid("SubscriberManApp"), del_frame)        
+
+        # 发送关键操作事件通知
+        oper_type = msg_params_def.EVENT_PORTAL_OPERATION_DEL + msg_params_def.EVENT_PORTAL_OBJECT_ARTICLE
+        self.get_worker().get_app().send_portal_operation_event(article_rmv.user_session, oper_type.decode('gbk').encode('utf-8'), title)
 
 
 class PortalContentArticleQueryHandler(bf.CmdHandler):
@@ -538,6 +567,9 @@ class PortalContentSubjectCreateHandler(bf.CmdHandler):
 
         self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
 
+        # 发送关键操作事件通知
+        oper_type = msg_params_def.EVENT_PORTAL_OPERATION_ADD + msg_params_def.EVENT_PORTAL_OBJECT_SUBJECT
+        self.get_worker().get_app().send_portal_operation_event(sub_cfg.user_session, oper_type.decode('gbk').encode('utf-8'), sub_cfg.name)
 
 class PortalContentSubjectModifyHandler(bf.CmdHandler):
     """
@@ -607,6 +639,10 @@ class PortalContentSubjectModifyHandler(bf.CmdHandler):
 
         self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
 
+        # 发送关键操作事件通知
+        oper_type = msg_params_def.EVENT_PORTAL_OPERATION_MOD + msg_params_def.EVENT_PORTAL_OBJECT_SUBJECT
+        self.get_worker().get_app().send_portal_operation_event(sub_mod.user_session, oper_type.decode('gbk').encode('utf-8'), sub_mod.name)
+
 
 class PortalContentSubjectRemoveHandler(bf.CmdHandler):
     """
@@ -645,7 +681,8 @@ class PortalContentSubjectRemoveHandler(bf.CmdHandler):
             return
 
         subs = self.get_worker().get_app().get_mit_manager().rdm_find(moc_name = "Subject", subject_id = int(sub_rmv.subject_id))
-        if len(subs) == 1:                                    
+        if len(subs) == 1:
+            name = subs[0].name
             self.get_worker().get_app().get_mit_manager().rdm_remove(subs[0])
             
         arts = self.get_worker().get_app().get_mit_manager().rdm_find(moc_name = "Article", subject_id = int(sub_rmv.subject_id))
@@ -662,6 +699,10 @@ class PortalContentSubjectRemoveHandler(bf.CmdHandler):
         result.prepare_for_ack(sub_rmv, result.return_code, result.description)
 
         self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+
+        # 发送关键操作事件通知
+        oper_type = msg_params_def.EVENT_PORTAL_OPERATION_DEL + msg_params_def.EVENT_PORTAL_OBJECT_SUBJECT
+        self.get_worker().get_app().send_portal_operation_event(sub_rmv.user_session, oper_type.decode('gbk').encode('utf-8'), name)
 
 
 class PortalContentSubjectQueryHandler(bf.CmdHandler):
@@ -787,6 +828,10 @@ class PortalContentHelpTipsSetHandler(bf.CmdHandler):
 
         self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
 
+        # 发送关键操作事件通知
+        oper_type = msg_params_def.EVENT_PORTAL_OPERATION_MOD + msg_params_def.EVENT_PORTAL_OBJECT_HELPTIPS
+        self.get_worker().get_app().send_portal_operation_event(help_cfg.user_session, oper_type.decode('gbk').encode('utf-8'), '')
+
 
 class PortalContentHelpTipsQueryHandler(bf.CmdHandler):
     """
@@ -871,7 +916,54 @@ class PortalContentNewsIdUpdateHandler(bf.CmdHandler):
         self.get_worker().get_app().get_mit_manager().rdm_mod(arts[0])
 
         tracelog.info('update article(id %d) to wx portal (news id %s) success!' % (article_id, wx_news_id))
+
+
+class PortalContentWanIpUpdateHandler(bf.CmdHandler):
+    """
+    Class: PortalContentWanIpUpdateHandler
+    Description: 
+    Base: CmdHandler
+    Others: 
+    """
+
+
+    def handle_cmd(self, frame):
+        """
+        Method:    handle_cmd
+        Description: 
+        Parameter: 
+            frame: AppFrame
+        Return: 
+        Others: 
+        """
+        tracelog.info(self)
+        new_ip = frame.get_data()
+        old_ip = self.get_worker().get_wan_ip()
         
+        tracelog.info('new wan ip %s, old wan ip %s' % (new_ip, old_ip))
+        
+        self.get_worker().update_wan_ip(new_ip)
+        
+        arts = self.get_worker().get_app().get_mit_manager().rdm_find("Article")
+        for art in arts:
+            mod_flag = False
+            if art.pic_url.find(new_ip) < 0:
+                mod_flag = True
+                u = art.pic_url.strip('http://')
+                art.pic_url = 'http://' + new_ip + u[u.find('/'):]
+                
+            if art.content_url.find(new_ip) < 0:
+                mod_flag = True
+                u = art.content_url.strip('http://')
+                art.content_url = 'http://' + new_ip + u[u.find('/'):]
+                
+            if mod_flag is True:
+                tracelog.info('update article(id %d) all url!' % art.article_id)
+                self.get_worker().get_app().get_mit_manager().rdm_mod(art)
+                new_frame = bf.AppFrame()
+                new_frame.set_cmd_code(cmd_code_def.CLOUD_PORTAL_CONTENT_UPDATE_MSG)
+                self.get_worker().get_app().dispatch_frame_to_process_by_pid(self.get_worker().get_pid("SubscriberManApp"), new_frame)        
+
 
 class PortalContentArticlePushHandler(bf.CmdHandler):
     """
@@ -913,7 +1005,8 @@ class PortalContentArticlePushHandler(bf.CmdHandler):
                                                                               [
                                                                                'article_id',
                                                                                'wx_news_id',
-                                                                               'group_ids'
+                                                                               'group_ids',
+                                                                               'title'
                                                                                ],
                                                                               article_id = int(push_info.article_id))
         if len(articles) == 0:                                    
@@ -963,6 +1056,110 @@ class PortalContentArticlePushHandler(bf.CmdHandler):
 
         self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
 
+        # 发送关键操作事件通知
+        oper_type = msg_params_def.EVENT_PORTAL_OPERATION_PUSH + msg_params_def.EVENT_PORTAL_OBJECT_ARTICLE
+        self.get_worker().get_app().send_portal_operation_event(push_info.user_session, oper_type.decode('gbk').encode('utf-8'), articles[0][3])
+
+
+class PortalContentArticlePreviewHandler(bf.CmdHandler):
+    """
+    Class: PortalContentArticlePreviewHandler
+    Description: Portal下发的主题内容预览推送的命令handler
+    Base: CmdHandler
+    Others: 
+    """
+
+
+    def handle_cmd(self, frame):
+        """
+        Method:    handle_cmd
+        Description: 处理主题内容预览推送的命令消息
+        Parameter: 
+            frame: AppFrame
+        Return: 
+        Others: 
+        """
+        tracelog.info(self)
+        
+        result = basic_rep_to_web.BasicRepToWeb()
+        result.init_all_attr()
+        tracelog.info('content man worker recv article preview frame: %s' % frame)
+        buf = frame.get_data()
+        
+        try:
+            push_info = msg_params_def.PortalContentArticleSubscriberPush.deserialize(buf)
+        except:
+            result.return_code = err_code_mgr.ERR_PORTAL_DESERIALIZE_ERROR
+            result.description = err_code_mgr.get_error_msg(err_code_mgr.ERR_PORTAL_DESERIALIZE_ERROR,
+                                                            cmd = 'PORTAL_CONTENT_ARTICLE_ADMIN_PUSH',
+                                                            param_name = 'PortalContentArticleSubscriberPush')
+            result.user_session = ''
+            self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+            return
+
+        articles = self.get_worker().get_app().get_mit_manager().lookup_attrs("Article",
+                                                                              [
+                                                                               'article_id',
+                                                                               'wx_news_id',
+                                                                               'group_ids',
+                                                                               'title'
+                                                                               ],
+                                                                              article_id = int(push_info.article_id))
+        if len(articles) == 0:                                    
+            result.return_code = err_code_mgr.ERR_PORTAL_ARTICLE_NOT_EXISTS
+            result.description = err_code_mgr.get_error_msg(err_code_mgr.ERR_PORTAL_ARTICLE_NOT_EXISTS)
+            
+            result.prepare_for_ack(push_info, result.return_code, result.description)
+            self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+            return
+        
+        if len(articles[0][1]) == 0:
+            result.return_code = err_code_mgr.ERR_PORTAL_ARTICLE_NOT_UPLOADED
+            result.description = err_code_mgr.get_error_msg(err_code_mgr.ERR_PORTAL_ARTICLE_NOT_UPLOADED)
+            
+            result.prepare_for_ack(push_info, result.return_code, result.description)
+            self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+            return
+            
+        # 构造推送消息发给SubscriberManApp，由它分发给各个订阅者
+        push_msg = msg_params_def.CloudPortalArticlePushMessage()
+        push_msg.init_all_attr()
+        push_msg.article_id = articles[0][0]
+        push_msg.wx_news_id = articles[0][1]
+        
+        subs = self.get_worker().get_app().get_mit_manager().rdm_find("Subscriber", admin_flag = 'True')
+        if len(subs) == 0:
+            result.return_code = err_code_mgr.ERR_PORTAL_SUBSCRIBER_ADMIN_NOT_EXISTS
+            result.description = err_code_mgr.get_error_msg(err_code_mgr.ERR_PORTAL_SUBSCRIBER_ADMIN_NOT_EXISTS)
+            
+            result.prepare_for_ack(push_info, result.return_code, result.description)
+            self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+            return
+        
+        push_msg.sub_open_ids = [subs[0].subscriber_open_id]      
+        
+        push_frame = bf.AppFrame()
+        push_frame.set_cmd_code(cmd_code_def.CLOUD_PORTAL_ARTICLE_PUSH_MSG)
+        push_frame.add_data(push_msg.serialize())
+        self.get_worker().get_app().dispatch_frame_to_process_by_pid(self.get_worker().get_pid("SubscriberManApp"), push_frame)
+        
+        # 给WEB回成功响应
+        result.return_code = err_code_mgr.ER_SUCCESS
+        result.description = err_code_mgr.get_error_msg(err_code_mgr.ER_SUCCESS)       
+        result.prepare_for_ack(push_info, result.return_code, result.description)
+
+        self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+
+        # 发送关键操作事件通知
+        oper_type = msg_params_def.EVENT_PORTAL_OPERATION_PUSH + msg_params_def.EVENT_PORTAL_OBJECT_ARTICLE
+        self.get_worker().get_app().send_portal_operation_event(push_info.user_session, oper_type.decode('gbk').encode('utf-8'), articles[0][3])
+
+
+class PortalContentMgrInitMsgHandler(bf.CmdHandler):
+    
+    def handle_cmd(self, frame):
+        pass
+
         
 class ContentConfigWorker(bf.CmdWorker):
     """
@@ -985,6 +1182,7 @@ class ContentConfigWorker(bf.CmdWorker):
         """
 
         bf.CmdWorker.__init__(self, "ContentConfigWorker", min_task_id, max_task_id)
+        self.__wan_ip = None
         
     def ready_for_work(self):
         """
@@ -1010,7 +1208,30 @@ class ContentConfigWorker(bf.CmdWorker):
         self.register_handler(PortalContentHelpTipsSetHandler(),   cmd_code_def.PORTAL_CONTENT_HELPTIPS_SET)
         self.register_handler(PortalContentHelpTipsQueryHandler(), cmd_code_def.PORTAL_CONTENT_HELPTIPS_QUERY)
         
-        self.register_handler(PortalContentArticlePushHandler(),   cmd_code_def.PORTAL_CONTENT_ARTICLE_SUBSCRIBER_PUSH)
-        self.register_handler(PortalContentNewsIdUpdateHandler(),    cmd_code_def.CLOUD_PORTAL_NEWS_ID_UPDATE_MSG)
+        self.register_handler(PortalContentArticlePushHandler(),    cmd_code_def.PORTAL_CONTENT_ARTICLE_SUBSCRIBER_PUSH)
+        self.register_handler(PortalContentArticlePreviewHandler(), cmd_code_def.PORTAL_CONTENT_ARTICLE_ADMIN_PUSH)
+        self.register_handler(PortalContentNewsIdUpdateHandler(),   cmd_code_def.CLOUD_PORTAL_NEWS_ID_UPDATE_MSG)
+        self.register_handler(PortalContentWanIpUpdateHandler(),    cmd_code_def.CLOUD_PORTAL_WAN_IP_UPDATE_MSG)
+        
+        self.register_handler(PortalContentMgrInitMsgHandler(), cmd_code_def.CLOUD_PORTAL_CONTENT_MGR_INIT_MSG)
+
+        #frame = bf.AppFrame()
+        #frame.set_cmd_code(cmd_code_def.CLOUD_PORTAL_CONTENT_MGR_INIT_MSG)
+        #self.dispatch_frame_to_worker('ContentConfigWorker', frame)
+        
         return 0
 
+    def update_wan_ip(self, ip):
+        self.__wan_ip = ip
+        
+    def get_wan_ip(self):
+        return self.__wan_ip
+    
+    def update_url(self, url):
+        if self.__wan_ip is None:
+            return url
+        else:
+            u = url.strip('http://')
+            new_url = 'http://' + self.__wan_ip + u[u.find('/'):]
+            return new_url
+            

@@ -22,9 +22,32 @@ import type_def
 LOCAL_HOST_DOMAIN = 'mshow.wx.viewiot.net'
 
 ###############################################################################################
-PORTAL_IMG_FILE_LOCAL_PATH_PREFIX = '/usr/local/apache/htdocs/weixinpublic'
-PORTAL_IMG_FILE_SAVE_LOCAL_PATH = '%s/js/ueditor/php/upload/%s'
-PORTAL_IMG_FILE_USER_SHARE_MSG = '/js/ueditor/php/upload/memory.png'
+"""
+MSG_A_MILK = 'aptamil'
+MSG_H_MILK = 'hipp'
+MSG_ACK_KNOWN = 'ok'
+
+LL_WX_INFO = ['oXnCzjgRMGKw_kZ5bpClTouSBycQ', '1968919201']
+XWN_WX_INFO = ['oXnCzjrdxRpzySXYKFKhuCuTmIXo', '739542740']
+
+ALL_MILK_OPENID = [LL_WX_INFO[0], XWN_WX_INFO[0]]
+
+MILK_MAP = {MSG_A_MILK: [LL_WX_INFO, ],
+            MSG_H_MILK: [XWN_WX_INFO, ]}
+"""
+
+###############################################################################################
+#PORTAL_IMG_FILE_LOCAL_PATH_PREFIX = '/usr/local/apache/htdocs/weixinpublic/'
+PORTAL_IMG_FILE_LOCAL_PATH_PREFIX = '/work/weixin_public/web/weixinpublic/'
+
+PORTAL_IMG_FILE_SAVE_LOCAL_PATH = 'js/ueditor/php/upload/'
+PORTAL_LOGO_IMG_FILE_LOCAL_PATH = 'js/ueditor/php/upload/logo.jpg'
+WX_HEAD_IMG_FILE_SAVE_LOCAL_PATH = 'js/ueditor/php/upload/headimg/'
+
+WX_MEMBER_MENU_CFG_ARTICLE_IMG_URL = 'js/ueditor/php/upload/menu.png'
+WX_MEMBER_MBR_ASSOC_ARTICLE_IMG_URL = 'js/ueditor/php/upload/member.png'
+WX_MEMBER_MENU_CFG_PORTAL_URL  = 'index.php/weixin/delivery/bookMenu/member_id/'
+WX_MEMBER_MBR_ASSOC_PORTAL_URL = 'index.php/weixin/subscriber/userAssoMember/subscriber_open_id/'
 
 PORTAL_CLOUD_IMAGE_UPLOAD_NEW = 'upload'
 PORTAL_CLOUD_IMAGE_UPLOAD_MOD = 'modify'
@@ -41,9 +64,16 @@ WX_MSG_TYPE_MUSIC    = 'music'
 
 ###############################################################################################
 PORTAL_SUBJECT_TYPE_ALL = 'all'
+PORTAL_TASK_PUSH_ARTICLE = 'article'
+PORTAL_TASK_MEMBER_DAILY = 'member'
 
 ###############################################################################################
-WX_TXT_SUBSCRIBE_TIPS = """欢迎您的关注，您是第%d位订阅者。"""
+
+#WX_TXT_SUBSCRIBE_TIPS = """欢迎您的关注，您是第%d位订阅者。"""
+
+WX_TXT_SUBSCRIBE_TITLE = """欢迎您的关注"""
+
+WX_TXT_SUBSCRIBE_TIPS = """#%d#"""
 
 WX_TXT_SUBJECT_TIPS = """
 目前有如下栏目供查阅：
@@ -51,27 +81,76 @@ WX_TXT_SUBJECT_TIPS = """
 请输入栏目号。 
 """
 
-WX_TXT_ERROR_INPUT = """对不起，没找到您输入的栏目号。"""
+WX_TXT_ERROR_INPUT = """对不起，您输入的栏目号无效。"""
+
+WX_TXT_INVALID_MEMBER = """对不起，您还不是农庄会员，或者还没有绑定会员，请输入「会员」进行会员微信绑定。"""
 
 WX_TXT_NULL_SUBJECT = """该栏目的内容正在建设中，敬请期待。"""
 
 WX_TXT_WELCOME_SHARE = """感谢您的反馈和分享。"""
 
+"""
+使用帮助：
+1、直接输入栏目编号查阅栏目内的新鲜内容。
+2、如果您已加入农庄会员，请输入「会员」进行微信绑定。
+3、会员享受配送菜单自选服务，输入「菜单」即可进行本周菜单自选。
+"""
+
 WX_TXT_UNKNOWN_SUBSCRIBER = """对不起，您的订阅出现异常，请您先取消关注本公众账号，然后重新关注，即可恢复，给您带来不便表示歉意。"""
 
-PORTAL_TXT_MSG_SHARE_TITLE = """%s的真诚分享"""
+PORTAL_TXT_MSG_SHARE_TXT_TITLE = """%s：「%s」"""
 
-PORTAL_TXT_MSG_SHARE_CONTENT = """来自%s的分享与建议（%s）：
+PORTAL_TXT_MSG_SHARE_PIC_TITLE = """%s的图片分享 """
+
+PORTAL_TXT_MSG_SHARE_CONTENT = """来自%s（%s）：
 %s
 """
 
 PORTAL_TXT_MSG_SHARE_IMG = """来自%s的图片分享（%s）"""
 
-###############################################################################################
-SUBSCRIBER_DEFAULT_GROUP = 1
-SUBSCRIBER_USERDEFINE_GROUP_BASE = 100
+PORTAL_TXT_MENU_CFG_NOTIFY_TXT = """尊敬的%s会员（卡号：%s）：
+本周菜品配送日期：%s
+请输入「菜单」进行配送菜单自选。
+自选截止日期为配送日期前两天。"""
 
-SUBJECT_DEFAULT_TRIGGER = 0
+PORTAL_TXT_DELIVERY_EXPIRED_NOTIFY_TXT = """尊敬的%s会员（卡号：%s）：
+您的会员卡有效日期：%s
+菜品配送服务即将到期，欢迎您联系农庄续签会员。"""
+
+PORTAL_TXT_DELIVERY_DIY_NOTIFY_TXT = """尊敬的%s会员（卡号：%s）：
+本周菜品配送日期：%s
+本周您自选了菜品，您的配送菜单如下：
+%s
+敬请期待。
+"""
+
+PORTAL_TXT_DELIVERY_DEFAULT_NOTIFY_TXT = """尊敬的%s会员（卡号：%s）：
+本周菜品配送日期：%s
+本周您没有自选菜品，半日闲农庄将为您精选合理搭配菜单，敬请期待。
+"""
+
+PORTAL_TXT_MENU_CFG_TITLE = """本周配送菜单自选"""
+
+PORTAL_TXT_MENU_CFG_DESCRIPTION = """尊敬的会员，本周生态菜品配送计划开始，请点击“阅读正文”进行配送菜单自选。 """
+
+PORTAL_TXT_MBR_ASSOC_TITLE = """农庄会员微信认证"""
+
+PORTAL_TXT_MBR_ASSOC_DESCRIPTION = """尊敬的微信用户，如果您已经加入半日闲生态农庄的会员俱乐部，请务必通过微信认证会员号，享受每周配送菜单自选服务。请点击“阅读正文”进行会员绑定。 """
+
+PORTAL_TXT_DEFAULT_MENU = """默认菜单"""
+
+###############################################################################################
+# 用户创建的分组从100起始，1-99为系统预留
+GROUP_SYS_DEFAULT = 1
+GROUP_USERDEFINE_ID_BASE = 100
+
+# 用户创建的主题从100起始，1-99为系统预留
+ARTICLE_SYS_MENU_CFG = 1
+ARTICLE_SYS_MEMBER_ASSOC = 2
+ARTICLE_USERDEFINE_ID_BASE = 100
+
+SUBJECT_SYS_INNER_DEF = 1 
+SUBJECT_USERDEFINE_ID_BASE = 100
 
 class GroupList(serializable_obj.JsonSerializableObj):
     """
@@ -144,10 +223,29 @@ class PortalSubscriberMemberAssociateReq(basic_rep_to_web.BasicReqFromWeb):
 
     __ATTR_DEF__ = {
                     "subscriber_open_id": type_def.TYPE_STRING, # 订阅者openID
-                    "member_id": type_def.TYPE_STRING           # 会员ID
+                    "member_id": type_def.TYPE_STRING,          # 会员ID
+                    "name": type_def.TYPE_STRING,               # 会员姓名
+                    "cellphone": type_def.TYPE_STRING           # 联系方式 
                    }
     __ATTR_DEF__.update(basic_rep_to_web.BasicReqFromWeb.__ATTR_DEF__)
-    
+
+
+# PORTAL_SUBSCRIBER_ADMIN_ASSOCIATE:
+# 1. 请求消息结构：PortalSubscriberAdminAssociateReq
+# 2. 响应消息结构：basic_rep_to_web.BasicRepToWeb
+class PortalSubscriberAdminAssociateReq(basic_rep_to_web.BasicReqFromWeb):
+    """
+    Class: PortalSubscriberAdminAssociateReq
+    Description: 订阅者管理员身份设置
+    Base: BasicReqFromWeb
+    Others: 
+    """
+
+    __ATTR_DEF__ = {
+                    "subscriber_open_id": type_def.TYPE_STRING, # 订阅者openID
+                   }
+    __ATTR_DEF__.update(basic_rep_to_web.BasicReqFromWeb.__ATTR_DEF__)
+        
 
 # PORTAL_SUBSCRIBER_INFO_QUERY:
 # 1. 请求消息结构：PortalSubscriberInfoQueryReq
@@ -168,6 +266,8 @@ class Subscriber(serializable_obj.JsonSerializableObj):
                     "city": type_def.TYPE_STRING,               # 城市
                     "group_ids": [type_def.TYPE_STRING],        # 分组ID列表
                     "member_flag": type_def.TYPE_BOOL,          # 是否已加入会员
+                    "head_img": type_def.TYPE_STRING,           # 头像图片文件
+                    "admin_flag": type_def.TYPE_BOOL,           # 是否是管理员
                     "assoc_member_id": type_def.TYPE_STRING,    # 关联的会员ID
                     "assoc_member_name": type_def.TYPE_STRING   # 关联的会员姓名
                    }
@@ -304,6 +404,24 @@ class PortalSubscriberGroupAssociateReq(basic_rep_to_web.BasicReqFromWeb):
     __ATTR_DEF__.update(basic_rep_to_web.BasicReqFromWeb.__ATTR_DEF__)
 
 
+# PORTAL_SUBSCRIBER_GROUP_MSG_PUSH:
+# 1. 请求消息结构：PortalSubscriberGroupMsgPushReq
+# 2. 响应消息结构：basic_rep_to_web.BasicRepToWeb
+class PortalSubscriberGroupMsgPushReq(basic_rep_to_web.BasicReqFromWeb):
+    """
+    Class: PortalSubscriberGroupMsgPushReq
+    Description: 订阅者消息群发
+    Base: BasicReqFromWeb
+    Others: 
+    """
+
+    __ATTR_DEF__ = {
+                    "group_ids": [type_def.TYPE_STRING],   # 分组ID列表
+                    "text_msg": type_def.TYPE_STRING       # 回复的文本消息
+                   }
+    __ATTR_DEF__.update(basic_rep_to_web.BasicReqFromWeb.__ATTR_DEF__)
+    
+
 # PORTAL_MEMBER_MEMBER_CREATE:
 # 1. 请求消息结构：PortalMemberMemberCreateModReq
 # 2. 响应消息结构：basic_rep_to_web.BasicRepToWeb
@@ -325,7 +443,7 @@ class Member(serializable_obj.JsonSerializableObj):
                     "weixin_id": type_def.TYPE_STRING,          # 微信号
                     "delivery_addr": type_def.TYPE_STRING,      # 配送地址
                     "delivery_time": type_def.TYPE_STRING,      # 配送时间
-                    "delivery_menu_id": type_def.TYPE_STRING,   # 配送菜单ID
+                    "delivery_expiry": type_def.TYPE_STRING,    # 配送截止日期（有效期）
                     "subscribe_flag": type_def.TYPE_BOOL,       # 是否已订阅
                     "nickname": type_def.TYPE_STRING,           # 微信昵称
                    }
@@ -342,12 +460,13 @@ class PortalMemberMemberCreateModReq(basic_rep_to_web.BasicReqFromWeb):
                     "member_id": type_def.TYPE_STRING,          # 会员ID
                     "name": type_def.TYPE_STRING,               # 姓名
                     "cellphone": type_def.TYPE_STRING,          # 联系方式
-                    "wx_nick": type_def.TYPE_STRING,            # 微信昵称
                     "delivery_addr": type_def.TYPE_STRING,      # 配送地址
-                    "delivery_time": type_def.TYPE_STRING,      # 配送时间
+                    "delivery_time": type_def.TYPE_STRING,      # 配送时间(1-7，星期几)
+                    "delivery_expiry": type_def.TYPE_STRING,    # 配送截止日期（有效期）
                    }
     __ATTR_DEF__.update(basic_rep_to_web.BasicReqFromWeb.__ATTR_DEF__)
-    
+
+
 
 # PORTAL_MEMBER_MEMBER_REMOVE:
 # 1. 请求消息结构：PortalMemberMemberRemoveReq
@@ -367,12 +486,26 @@ class PortalMemberMemberRemoveReq(basic_rep_to_web.BasicReqFromWeb):
 
     
 # PORTAL_MEMBER_MEMBER_QUERY:
-# 1. 请求消息结构：CommonQueryReq
+# 1. 请求消息结构：PortalMemberMemberQueryReq
 # 2. 响应消息结构：PortalMemberMemberQueryRsp
+class PortalMemberMemberQueryReq(CommonQueryReq):
+    """
+    Class: PortalSubscriberInfoQueryReq
+    Description: 查询会员信息响应(如果请求消息中num_per_page/current_page为0，则查询所有结果)
+    Base: CommonQueryReq
+    Others: 
+    """
+
+    __ATTR_DEF__ = {
+                    "member_id": type_def.TYPE_STRING  # 会员ID
+                    }
+    __ATTR_DEF__.update(CommonQueryReq.__ATTR_DEF__)
+
+
 class PortalMemberMemberQueryRsp(basic_rep_to_web.BasicRepToWeb):
     """
     Class: PortalMemberMemberQueryRsp
-    Description: 查询会员信息响应
+    Description: 查询会员信息响应(如果请求消息中num_per_page/current_page为0，则查询所有结果)
     Base: BasicRepToWeb
     Others: 
     """
@@ -384,9 +517,41 @@ class PortalMemberMemberQueryRsp(basic_rep_to_web.BasicRepToWeb):
     __ATTR_DEF__.update(basic_rep_to_web.BasicRepToWeb.__ATTR_DEF__)
 
 
+# PORTAL_DELIVERY_MEMBER_MENU_CFG:
+# 1. 请求消息结构：PortalDeliveryMemberMenuCfgReq
+# 2. 响应消息结构：basic_rep_to_web.BasicRepToWeb
+class PortalDeliveryMemberMenuCfgReq(basic_rep_to_web.BasicReqFromWeb):
+    """
+    Class: PortalDeliveryMemberMenuCfgReq
+    Description: 配置会员的配送菜单
+    Base: BasicReqFromWeb
+    Others: 
+    """
+
+    __ATTR_DEF__ = {
+                    "member_id": type_def.TYPE_STRING,      # 会员ID
+                    "vegetables": [type_def.TYPE_STRING]    # 菜品清单(菜品ID列表)
+                   }
+    __ATTR_DEF__.update(basic_rep_to_web.BasicReqFromWeb.__ATTR_DEF__)
+
+
 # PORTAL_DELIVERY_VEGETABLE_CREATE:
 # 1. 请求消息结构：PortalDeliveryVegetableCreateReq
 # 2. 响应消息结构：basic_rep_to_web.BasicRepToWeb
+
+class VegetableList(serializable_obj.JsonSerializableObj):
+    """
+    Class: VegetableList
+    Description: 菜品列表
+    Base: JsonSerializableObj
+    Others: 
+    """
+
+    __ATTR_DEF__ = {
+                    "vegetables": [type_def.TYPE_STRING]    # 菜品清单(菜品ID列表)
+                    }
+
+
 class Vegetable(serializable_obj.JsonSerializableObj):
     """
     Class: Vegetable
@@ -452,8 +617,21 @@ class PortalDeliveryVegetableRemoveReq(basic_rep_to_web.BasicReqFromWeb):
 
 
 # PORTAL_DELIVERY_VEGETABLE_QUERY:
-# 1. 请求消息结构：CommonQueryReq
+# 1. 请求消息结构：PortalDeliveryVegetableQueryReq
 # 2. 响应消息结构：PortalDeliveryVegetableQueryRsp
+class PortalDeliveryVegetableQueryReq(CommonQueryReq):
+    """
+    Class: PortalDeliveryVegetableQueryReq
+    Description: 查询菜品信息请求
+    Base: CommonQueryReq
+    Others: 
+    """
+
+    __ATTR_DEF__ = {
+                    "v_id": type_def.TYPE_STRING    # 菜品ID
+                    }
+    __ATTR_DEF__.update(CommonQueryReq.__ATTR_DEF__)
+    
 class PortalDeliveryVegetableQueryRsp(basic_rep_to_web.BasicRepToWeb):
     """
     Class: PortalDeliveryVegetableQueryRsp
@@ -570,8 +748,8 @@ class DeliveryReport(serializable_obj.JsonSerializableObj):
                     "name": type_def.TYPE_STRING,               # 真实姓名
                     "cellphone": type_def.TYPE_STRING,          # 联系方式
                     "delivery_addr": type_def.TYPE_STRING,      # 配送地址
-                    "delivery_menu_id": type_def.TYPE_STRING,   # 配送菜单ID
-                    "delivery_time": type_def.TYPE_STRING,      # 配送时间
+                    "delivery_time": type_def.TYPE_STRING,      # 配送时间(本次配送的准确日期)
+                    "vegetables": [type_def.TYPE_STRING]        # 配送菜单(菜品名称列表)
                    }
         
 class PortalDeliveryReportQueryReq(CommonQueryReq):
@@ -829,13 +1007,152 @@ class PortalContentArticleSubscriberPush(basic_rep_to_web.BasicReqFromWeb):
     __ATTR_DEF__.update(basic_rep_to_web.BasicReqFromWeb.__ATTR_DEF__)
     
 
+
+# PORTAL_CONTENT_KEYWORD_RULE_CREATE:
+# PORTAL_CONTENT_KEYWORD_RULE_MODIFY: 
+# 1. 请求消息结构：PortalContentKeywordRuleCreateReq
+# 2. 响应消息结构：basic_rep_to_web.BasicRepToWeb
+
+KEYWORD_RULE_MATCH_TYPE_TEXT = 'text'
+KEYWORD_RULE_MATCH_TYPE_ARTICLE = 'article'
+
+class Keyword(serializable_obj.JsonSerializableObj):
+    """
+    Class: KeyWord
+    Description: 关键字参数
+    Base: JsonSerializableObj
+    Others: 
+    """
+
+    __ATTR_DEF__ = {
+                    "keyword": type_def.TYPE_STRING,          # 关键字
+                    "wholeword_match": type_def.TYPE_BOOL     # 是否全词匹配
+                   }
+
+class KeywordRule(serializable_obj.JsonSerializableObj):
+    """
+    Class: KeywordRule
+    Description: 关键字匹配规则
+    Base: JsonSerializableObj
+    Others: 
+    """
+    
+    __ATTR_DEF__ = {
+                    "rule_id": type_def.TYPE_STRING,    # 规则ID        
+                    "rule_name": type_def.TYPE_STRING,  # 规则名
+                    "keywords": [Keyword],              # 关键字列表
+                    "match_type": type_def.TYPE_STRING, # 匹配类型（文本消息、主题内容）
+                    "contents": [type_def.TYPE_STRING]  # 内容（文本消息内容、主题内容列表）
+                   }
+
+
+class PortalContentKeywordRuleCreateReq(basic_rep_to_web.BasicReqFromWeb):
+    """
+    Class: PortalContentKeywordRuleCreateModReq
+    Description: 创建关键字匹配规则
+    Base: BasicReqFromWeb
+    Others: 
+    """
+
+    __ATTR_DEF__ = {
+                    "rule_name": type_def.TYPE_STRING,  # 规则名
+                    "keywords": [Keyword],              # 关键字列表
+                    "match_type": type_def.TYPE_STRING, # 匹配类型（文本消息、主题内容）
+                    "contents": [type_def.TYPE_STRING]  # 内容（文本消息内容、主题内容列表）
+                   }
+    __ATTR_DEF__.update(basic_rep_to_web.BasicReqFromWeb.__ATTR_DEF__)
+
+
+# PORTAL_CONTENT_KEYWORD_RULE_MODIFY: 
+# 1. 请求消息结构：PortalContentKeywordRuleModReq
+# 2. 响应消息结构：basic_rep_to_web.BasicRepToWeb
+class PortalContentKeywordRuleModReq(basic_rep_to_web.BasicReqFromWeb):
+    """
+    Class: PortalContentKeywordRuleCreateModReq
+    Description: 创建关键字匹配规则
+    Base: BasicReqFromWeb
+    Others: 
+    """
+
+    __ATTR_DEF__ = {
+                    "rule_id": type_def.TYPE_STRING,    # 规则ID        
+                    "rule_name": type_def.TYPE_STRING,  # 规则名
+                    "keywords": [Keyword],              # 关键字列表
+                    "match_type": type_def.TYPE_STRING, # 匹配类型（文本消息、主题内容）
+                    "contents": [type_def.TYPE_STRING]  # 内容（文本消息内容、主题内容列表）
+                   }
+    __ATTR_DEF__.update(basic_rep_to_web.BasicReqFromWeb.__ATTR_DEF__)
+
+
+# PORTAL_CONTENT_KEYWORD_RULE_REMOVE:
+# 1. 请求消息结构：PortalContentKeywordRuleRemoveReq
+# 2. 响应消息结构：basic_rep_to_web.BasicRepToWeb
+class PortalContentKeywordRuleRemoveReq(basic_rep_to_web.BasicReqFromWeb):
+    """
+    Class: PortalContentKeywordRuleRemoveReq
+    Description: 删除关键字匹配规则
+    Base: BasicReqFromWeb
+    Others: 
+    """
+
+    __ATTR_DEF__ = {
+                    "rule_id": type_def.TYPE_STRING    # 规则ID        
+                   }
+    __ATTR_DEF__.update(basic_rep_to_web.BasicReqFromWeb.__ATTR_DEF__)
+
+
+# PORTAL_CONTENT_KEYWORD_RULE_QUERY:
+# 1. 请求消息结构：PortalContentKeywordRuleQueryReq
+# 2. 响应消息结构：PortalContentKeywordRuleQueryRsp
+class PortalContentKeywordRuleQueryReq(CommonQueryReq):
+    """
+    Class: PortalContentKeywordRuleQueryReq
+    Description: 查询关键字规则请求
+    Base: CommonQueryReq
+    Others: 
+    """
+
+    __ATTR_DEF__ = {
+                    "rule_id": type_def.TYPE_STRING    # 规则ID        
+                    }
+    __ATTR_DEF__.update(CommonQueryReq.__ATTR_DEF__)
+    
+class PortalContentKeywordRuleQueryRsp(basic_rep_to_web.BasicRepToWeb):
+    """
+    Class: PortalContentKeywordRuleQueryRsp
+    Description: 查询关键字规则响应
+    Base: BasicRepToWeb
+    Others: 
+    """
+
+    __ATTR_DEF__ = {
+                    "count": type_def.TYPE_INT32,   # 规则数
+                    "rules": [KeywordRule]          # 规则列表
+                   }
+    __ATTR_DEF__.update(basic_rep_to_web.BasicRepToWeb.__ATTR_DEF__)
+    
+
 # PORTAL_EVENT_EVENT_REPORT:
 # 1. 请求消息结构：PortalEventEventReportReq
 # 2. 响应消息结构：basic_rep_to_web.BasicRepToWeb
-EVENT_TYPE_SUBSCRIBE = 'subscribe'
-EVENT_TYPE_MESSAGE = 'message'
-EVENT_TYPE_DELIVERY = 'delivery'
-EVENT_TYPE_USERLOGIN = 'login'
+EVENT_TYPE_SUBSCRIBE  = 'subscribe'  # 订阅事件
+EVENT_TYPE_MESSAGE    = 'message'    # 订阅者消息事件 
+EVENT_TYPE_DELIVERY   = 'delivery'   # 会员菜品配送事件
+EVENT_TYPE_USERLOGIN  = 'login'      # 管理用户登录事件
+EVENT_TYPE_PORTALOPER = 'operation'  # 后台重要操作事件
+EVENT_TYPE_MENUCFG    = 'menucfg'    # 会员菜单自选事件
+
+EVENT_PORTAL_OPERATION_ADD  = '创建'
+EVENT_PORTAL_OPERATION_MOD  = '修改'
+EVENT_PORTAL_OPERATION_DEL  = '删除'
+EVENT_PORTAL_OPERATION_PUSH = '推送'
+
+EVENT_PORTAL_OBJECT_SUBJECT   = '栏目'
+EVENT_PORTAL_OBJECT_ARTICLE   = '主题'
+EVENT_PORTAL_OBJECT_HELPTIPS  = '欢迎词'
+EVENT_PORTAL_OBJECT_MEMBER    = '会员'
+EVENT_PORTAL_OBJECT_VEGETABLE = '菜品'
+
 class PortalEventEventReportReq(basic_rep_to_web.BasicReqFromWeb):
     """
     Class: PortalEventEventReportReq
@@ -933,7 +1250,24 @@ class UserLoginEvent(serializable_obj.JsonSerializableObj):
     __ATTR_DEF__ = {
                     "user_id": type_def.TYPE_STRING,    # 用户名
                     "login_time": type_def.TYPE_STRING  # 登录时间
-                    }    
+                    }
+    
+
+class PortalOperEvent(serializable_obj.JsonSerializableObj):
+    """
+    Class: PortalOperEvent
+    Description: Portal重要操作事件
+    Base: JsonSerializableObj
+    Others: 
+    """
+
+    __ATTR_DEF__ = {
+                    "user_id": type_def.TYPE_STRING,    # 用户名
+                    "oper_time": type_def.TYPE_STRING,  # 操作时间
+                    "oper_type": type_def.TYPE_STRING,  # 操作类别
+                    "content": type_def.TYPE_STRING     # 操作内容
+                    } 
+
 
 class MemberConfigMenuEvent(serializable_obj.JsonSerializableObj):
     """
@@ -949,7 +1283,8 @@ class MemberConfigMenuEvent(serializable_obj.JsonSerializableObj):
                     "nickname": type_def.TYPE_STRING,           # 昵称
                     "member_id": type_def.TYPE_STRING,          # 会员ID
                     "name": type_def.TYPE_STRING,               # 姓名
-                    "menu": type_def.TYPE_STRING                # 自选菜单
+                    "menu": type_def.TYPE_STRING,               # 自选菜单(文本)
+                    "time": type_def.TYPE_STRING                # 日期(文本)
                     }       
 
 class PortalEventEventQueryReq(CommonQueryReq):
@@ -964,6 +1299,7 @@ class PortalEventEventQueryReq(CommonQueryReq):
                     "event_type": type_def.TYPE_STRING  # 事件类型（为空则查询所有事件，否则按照事件类型查询）
                     }
     __ATTR_DEF__.update(CommonQueryReq.__ATTR_DEF__)
+
         
 class PortalEventEventQueryRsp(basic_rep_to_web.BasicRepToWeb):
     """
@@ -983,10 +1319,10 @@ class PortalEventEventQueryRsp(basic_rep_to_web.BasicRepToWeb):
 # 1. 请求消息结构：basic_rep_to_web.BasicReqFromWeb
 # 2. 响应消息结构：PortalEventUnreadQueryRsp
 
-class EventUnreadNum(serializable_obj.JsonSerializableObj):
+class EventNum(serializable_obj.JsonSerializableObj):
     __ATTR_DEF__ = {
                     "event_type": type_def.TYPE_STRING,  # 事件类型
-                    "unread_num": type_def.TYPE_INT32    # 未读事件数量
+                    "num": type_def.TYPE_INT32           # 事件数量
                    }    
 
 class PortalEventUnreadQueryRsp(basic_rep_to_web.BasicRepToWeb):
@@ -998,10 +1334,11 @@ class PortalEventUnreadQueryRsp(basic_rep_to_web.BasicRepToWeb):
     """
 
     __ATTR_DEF__ = {
-                    "count": type_def.TYPE_INT32,       # 事件类型数(目前为4）
-                    'event_unread_nums': [EventUnreadNum]
+                    "count": type_def.TYPE_INT32,          # 事件类型数(目前为5）
+                    'event_unread_nums': [EventNum]
                    }
     __ATTR_DEF__.update(basic_rep_to_web.BasicRepToWeb.__ATTR_DEF__)
+
 
 # PORTAL_EVENT_READ_NOTIFY:
 # 1. 请求消息结构：PortalEventReadNotifyReq
@@ -1052,6 +1389,24 @@ class PortalEventMessageShareReq(basic_rep_to_web.BasicReqFromWeb):
                     'subject_id': type_def.TYPE_STRING          # 分享到的栏目ID
                    }
     __ATTR_DEF__.update(basic_rep_to_web.BasicReqFromWeb.__ATTR_DEF__)  
+    
+
+# PORTAL_EVENT_DAILY_STATS:
+# 1. 请求消息结构：basic_rep_to_web.BasicReqFromWeb
+# 2. 响应消息结构：PortalEventDailyStatsRsp
+class PortalEventDailyStatsRsp(basic_rep_to_web.BasicRepToWeb):
+    """
+    Class: PortalEventMessageShareReq
+    Description: 订阅者消息分享到指定栏目
+    Base: BasicReqFromWeb
+    Others: 
+    """
+    __ATTR_DEF__ = {
+                    "count": type_def.TYPE_INT32,          # 事件类型数(目前为5）
+                    'event_daily_nums': [EventNum]
+                   }
+    __ATTR_DEF__.update(basic_rep_to_web.BasicRepToWeb.__ATTR_DEF__)
+    
 
 ##############################################################################
     
@@ -1224,13 +1579,13 @@ class CloudPortalArticlePushMessage(serializable_obj.JsonSerializableObj):
 class CloudPortalTextPushMessage(serializable_obj.JsonSerializableObj):
     """
     Class: CloudPortalTextPushMessage
-    Description: 文本消息推送消息
+    Description: 文本消息推送消息(支持批量)
     Base: BsonSerializableObj
     Others: 
     """
 
     __ATTR_DEF__ = {
-                    "subscriber_open_id": type_def.TYPE_STRING, # 订阅者openID
-                    "text_msg": type_def.TYPE_STRING            # 回复的文本消息
+                    "subscriber_open_ids": [type_def.TYPE_STRING], # 订阅者openID列表
+                    "text_msg": type_def.TYPE_STRING               # 回复的文本消息
                    }
 

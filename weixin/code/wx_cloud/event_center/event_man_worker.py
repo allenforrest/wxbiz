@@ -68,6 +68,7 @@ class EventCenterEventReportHandler(bf.CmdHandler):
         evt_moc.event_id = self.get_worker().get_app().get_event_seq_no_creater().get_new_no()
         evt_moc.event_type = report.event_type
         evt_moc.content = report.content
+        evt_moc.date = time.strftime('%Y-%m-%d')
         evt_moc.read_flag = False
         ret = self.get_worker().get_app().get_mit_manager().rdm_add(evt_moc)
         
@@ -268,7 +269,7 @@ class PortalContentHelpTipsQueryHandler(bf.CmdHandler):
         
         result = msg_params_def.CommonContentRsp()
         result.init_all_attr()
-        tracelog.info('content man worker recv helptips frame: %s' % frame)
+        tracelog.info('event man worker recv helptips frame: %s' % frame)
         buf = frame.get_data()
         
         try:
@@ -321,7 +322,7 @@ class EventCenterUnreadEventQueryHandler(bf.CmdHandler):
         
         result = msg_params_def.PortalEventUnreadQueryRsp()
         result.init_all_attr()
-        tracelog.info('content man worker recv article push frame: %s' % frame)
+        tracelog.info('event man worker recv unread query frame: %s' % frame)
         buf = frame.get_data()
         
         try:
@@ -341,38 +342,48 @@ class EventCenterUnreadEventQueryHandler(bf.CmdHandler):
         message_event_count = self.get_worker().get_app().get_mit_manager().count("Event", 
                                                                                     event_type = msg_params_def.EVENT_TYPE_MESSAGE,
                                                                                     read_flag = False)
-        delivery_event_count = self.get_worker().get_app().get_mit_manager().count("Event", 
-                                                                                    event_type = msg_params_def.EVENT_TYPE_DELIVERY,
+        menucfg_event_count = self.get_worker().get_app().get_mit_manager().count("Event", 
+                                                                                    event_type = msg_params_def.EVENT_TYPE_MENUCFG,
                                                                                     read_flag = False)
         login_event_count = self.get_worker().get_app().get_mit_manager().count("Event", 
                                                                                     event_type = msg_params_def.EVENT_TYPE_USERLOGIN,
                                                                                     read_flag = False)
+        oper_event_count = self.get_worker().get_app().get_mit_manager().count("Event", 
+                                                                                    event_type = msg_params_def.EVENT_TYPE_PORTALOPER,
+                                                                                    read_flag = False)
+        
         # 给WEB回成功响应
         result.return_code = err_code_mgr.ER_SUCCESS
         result.description = err_code_mgr.get_error_msg(err_code_mgr.ER_SUCCESS)
         
-        result.count = 4
         result.event_unread_nums = []
         
-        unread_num = msg_params_def.EventUnreadNum()
-        unread_num.event_type = msg_params_def.EVENT_TYPE_DELIVERY
-        unread_num.unread_num = delivery_event_count
+        unread_num = msg_params_def.EventNum()
+        unread_num.event_type = msg_params_def.EVENT_TYPE_MENUCFG
+        unread_num.num = menucfg_event_count
         result.event_unread_nums.append(unread_num)
         
-        unread_num = msg_params_def.EventUnreadNum()
+        unread_num = msg_params_def.EventNum()
         unread_num.event_type = msg_params_def.EVENT_TYPE_MESSAGE
-        unread_num.unread_num = message_event_count
+        unread_num.num = message_event_count
         result.event_unread_nums.append(unread_num)
 
-        unread_num = msg_params_def.EventUnreadNum()
+        unread_num = msg_params_def.EventNum()
         unread_num.event_type = msg_params_def.EVENT_TYPE_SUBSCRIBE
-        unread_num.unread_num = subscribe_event_count
+        unread_num.num = subscribe_event_count
         result.event_unread_nums.append(unread_num)
 
-        unread_num = msg_params_def.EventUnreadNum()
+        unread_num = msg_params_def.EventNum()
         unread_num.event_type = msg_params_def.EVENT_TYPE_USERLOGIN
-        unread_num.unread_num = login_event_count
+        unread_num.num = login_event_count
         result.event_unread_nums.append(unread_num)
+
+        unread_num = msg_params_def.EventNum()
+        unread_num.event_type = msg_params_def.EVENT_TYPE_PORTALOPER
+        unread_num.num = oper_event_count
+        result.event_unread_nums.append(unread_num)
+
+        result.count = len(result.event_unread_nums)
 
         result.prepare_for_ack(req, result.return_code, result.description)
         tracelog.info(result.serialize())
@@ -430,7 +441,7 @@ class EventCenterMessageReplyHandler(bf.CmdHandler):
         # 构造推送消息发给SubscriberManApp
         push_msg = msg_params_def.CloudPortalTextPushMessage()
         push_msg.init_all_attr()
-        push_msg.subscriber_open_id = message_event.subscriber_open_id
+        push_msg.subscriber_open_ids = [message_event.subscriber_open_id]
         push_msg.text_msg = push_info.text_msg
         
         push_frame = bf.AppFrame()
@@ -468,7 +479,7 @@ class EventCenterMessageShareHandler(bf.CmdHandler):
         
         result = basic_rep_to_web.BasicRepToWeb()
         result.init_all_attr()
-        tracelog.info('content man worker recv message share frame: %s' % frame)
+        tracelog.info('event man worker recv message share frame: %s' % frame)
         buf = frame.get_data()
         
         try:
@@ -482,7 +493,7 @@ class EventCenterMessageShareHandler(bf.CmdHandler):
             self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
             return
         
-        subs = self.get_worker().get_app().get_mit_manager().rdm_find("Subject", subject_id = int(msg_share.subject_id))
+        subs = self.get_worker().get_app().get_portal_mit_manager().rdm_find("Subject", subject_id = int(msg_share.subject_id))
         if len(subs) == 0:
             result.return_code = err_code_mgr.ERR_PORTAL_SUBJECT_NOT_EXISTS
             result.description = err_code_mgr.get_error_msg(err_code_mgr.ERR_PORTAL_SUBJECT_NOT_EXISTS)
@@ -504,20 +515,21 @@ class EventCenterMessageShareHandler(bf.CmdHandler):
         
         add_article = msg_params_def.PortalContentArticleCreateReq()
         add_article.init_all_attr()
-        add_article.user_session = ''
-        add_article.title = msg_params_def.PORTAL_TXT_MSG_SHARE_TITLE.decode('gbk').encode('utf-8') % msg_event.nickname
+        add_article.user_session = msg_share.user_session
         add_article.subject_id = msg_share.subject_id
+        
+        need_download = False
         if msg_event.pic_url == '':
-            add_article.pic_url = 'http://' + msg_params_def.LOCAL_HOST_DOMAIN + msg_params_def.PORTAL_IMG_FILE_USER_SHARE_MSG
+            add_article.title = msg_params_def.PORTAL_TXT_MSG_SHARE_TXT_TITLE.decode('gbk').encode('utf-8') % (msg_event.nickname, msg_event.text_msg)
+            add_article.pic_url = 'http://%s/' % msg_params_def.LOCAL_HOST_DOMAIN + msg_params_def.WX_HEAD_IMG_FILE_SAVE_LOCAL_PATH + msg_event.subscriber_open_id + '.png'
             add_article.description = msg_params_def.PORTAL_TXT_MSG_SHARE_CONTENT.decode('gbk').encode('utf-8') % (msg_event.nickname, time.strftime('%Y-%m-%d %H:%M:%S'), msg_event.text_msg)
 
         else:
+            need_download = True
             pic_file_name = '%s.jpg' % str(int(time.time() * 1000))
-            img_save_path = msg_params_def.PORTAL_IMG_FILE_SAVE_LOCAL_PATH % (msg_params_def.PORTAL_IMG_FILE_LOCAL_PATH_PREFIX, pic_file_name)
-            urllib.urlretrieve(msg_event.pic_url, img_save_path)
-            pic_url = msg_params_def.PORTAL_IMG_FILE_SAVE_LOCAL_PATH % ('http://' + msg_params_def.LOCAL_HOST_DOMAIN, pic_file_name)  
+            pic_url = 'http://%s/' % msg_params_def.LOCAL_HOST_DOMAIN + msg_params_def.PORTAL_IMG_FILE_SAVE_LOCAL_PATH + pic_file_name  
+            add_article.title = msg_params_def.PORTAL_TXT_MSG_SHARE_PIC_TITLE.decode('gbk').encode('utf-8') % msg_event.nickname
             add_article.pic_url = pic_url
-            tracelog.info('share user message, source img path %s, download to local path %s, new img url %s' % (msg_event.pic_url, img_save_path, pic_url))
             add_article.description = msg_params_def.PORTAL_TXT_MSG_SHARE_IMG.decode('gbk').encode('utf-8') % (msg_event.nickname, time.strftime('%Y-%m-%d %H:%M:%S'))
         
         content_url = 'http://%s/index.php/weixin/content/showArticle/articleId' % msg_params_def.LOCAL_HOST_DOMAIN
@@ -526,7 +538,7 @@ class EventCenterMessageShareHandler(bf.CmdHandler):
         add_article.push_timer = ''
         add_article.push_times = ''
 
-        grps = self.get_worker().get_app().get_mit_manager().rdm_find('Group')
+        grps = self.get_worker().get_app().get_portal_mit_manager().rdm_find('Group')
         add_article.sub_group_ids = [str(grp.group_id) for grp in grps]
         
         new_frame = bf.AppFrame()
@@ -539,6 +551,105 @@ class EventCenterMessageShareHandler(bf.CmdHandler):
         result.description = err_code_mgr.get_error_msg(err_code_mgr.ER_SUCCESS)       
         result.prepare_for_ack(msg_share, result.return_code, result.description)
 
+        self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+
+        # 下载图片延后处理，先给WEB回响应
+        if need_download is True:
+            img_save_path = 'http://%s/' % msg_params_def.LOCAL_HOST_DOMAIN + msg_params_def.PORTAL_IMG_FILE_SAVE_LOCAL_PATH + pic_file_name
+            urllib.urlretrieve(msg_event.pic_url, img_save_path)
+            tracelog.info('share user message, source img path %s, download to local path %s, new img url %s' % (msg_event.pic_url, img_save_path, pic_url))
+
+
+class EventCenterDailyStatsHandler(bf.CmdHandler):
+    """
+    Class: EventCenterDailyStatsHandler
+    Description: Portal下发的每日统计查询的命令handler
+    Base: CmdHandler
+    Others: 
+    """
+
+
+    def handle_cmd(self, frame):
+        """
+        Method:    handle_cmd
+        Description: 处理每日统计查询的命令消息
+        Parameter: 
+            frame: AppFrame
+        Return: 
+        Others: 
+        """
+        tracelog.info(self)
+        
+        result = msg_params_def.PortalEventDailyStatsRsp()
+        result.init_all_attr()
+        tracelog.info('event man worker recv daily stats frame: %s' % frame)
+        buf = frame.get_data()
+        
+        try:
+            req = basic_rep_to_web.BasicReqFromWeb.deserialize(buf)
+        except:
+            result.return_code = err_code_mgr.ERR_PORTAL_DESERIALIZE_ERROR
+            result.description = err_code_mgr.get_error_msg(err_code_mgr.ERR_PORTAL_DESERIALIZE_ERROR,
+                                                            cmd = 'PORTAL_EVENT_DAILY_STATS',
+                                                            param_name = 'BasicReqFromWeb')
+            result.user_session = ''
+            self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+            return
+
+        today = time.strftime('%Y-%m-%d')
+        
+        sub_counter = self.get_worker().get_app().get_mit_manager().count("Event",
+                                                                                 event_type = msg_params_def.EVENT_TYPE_SUBSCRIBE,
+                                                                                 date = today)
+        msg_counter = self.get_worker().get_app().get_mit_manager().count("Event", 
+                                                                                 event_type = msg_params_def.EVENT_TYPE_MESSAGE,
+                                                                                 date = today)
+        login_counter = self.get_worker().get_app().get_mit_manager().count("Event", 
+                                                                                   event_type = msg_params_def.EVENT_TYPE_USERLOGIN,
+                                                                                   date = today)
+        menucfg_counter = self.get_worker().get_app().get_mit_manager().count("Event", 
+                                                                                      event_type = msg_params_def.EVENT_TYPE_MENUCFG,
+                                                                                      date = today)
+        operation_counter = self.get_worker().get_app().get_mit_manager().count("Event", 
+                                                                                       event_type = msg_params_def.EVENT_TYPE_PORTALOPER,
+                                                                                       date = today)
+        
+        # 给WEB回成功响应
+        result.return_code = err_code_mgr.ER_SUCCESS
+        result.description = err_code_mgr.get_error_msg(err_code_mgr.ER_SUCCESS)
+        
+        result.event_daily_nums = []
+        
+        daily_num = msg_params_def.EventNum()
+        daily_num.event_type = msg_params_def.EVENT_TYPE_MENUCFG
+        daily_num.num = menucfg_counter
+        result.event_daily_nums.append(daily_num)
+        
+        daily_num = msg_params_def.EventNum()
+        daily_num.event_type = msg_params_def.EVENT_TYPE_MESSAGE
+        daily_num.num = msg_counter
+        result.event_daily_nums.append(daily_num)
+
+        daily_num = msg_params_def.EventNum()
+        daily_num.event_type = msg_params_def.EVENT_TYPE_SUBSCRIBE
+        daily_num.num = sub_counter
+        result.event_daily_nums.append(daily_num)
+
+        daily_num = msg_params_def.EventNum()
+        daily_num.event_type = msg_params_def.EVENT_TYPE_USERLOGIN
+        daily_num.num = login_counter
+        result.event_daily_nums.append(daily_num)
+
+        daily_num = msg_params_def.EventNum()
+        daily_num.event_type = msg_params_def.EVENT_TYPE_PORTALOPER
+        daily_num.num = operation_counter
+        result.event_daily_nums.append(daily_num)
+
+        result.count = len(result.event_daily_nums)
+        
+        result.prepare_for_ack(req, result.return_code, result.description)
+        tracelog.info(result.serialize())
+         
         self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
 
         
@@ -581,6 +692,7 @@ class EventManWorker(bf.CmdWorker):
         self.register_handler(EventCenterUnreadEventQueryHandler(), cmd_code_def.PORTAL_EVENT_UNREAD_QUERY)
         self.register_handler(EventCenterMessageReplyHandler(),  cmd_code_def.PORTAL_EVENT_MESSAGE_REPLY)
         self.register_handler(EventCenterMessageShareHandler(),  cmd_code_def.PORTAL_EVENT_MESSAGE_SHARE)
-
+        self.register_handler(EventCenterDailyStatsHandler(), cmd_code_def.PORTAL_EVENT_DAILY_STATS)
+        
         return 0
 

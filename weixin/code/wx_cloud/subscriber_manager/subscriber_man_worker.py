@@ -90,8 +90,13 @@ class SubscriberWXTextMsgHandler(bf.CmdHandler):
             
             event.weixin_id = processor.get_target().get_spec().weixin_id
             event.nickname = processor.get_target().get_spec().nickname
-            event.member_id = processor.get_target().get_spec().assoc_member_id
-            event.name = ''#processor.get_target().get_spec().name
+            if processor.get_target().get_assoc_member() is not None:
+                event.member_id = processor.get_target().get_assoc_member().member_id
+                event.name = processor.get_target().get_assoc_member().name
+            else:
+                event.member_id = ''
+                event.name = ''
+                
             event.text_msg = text_msg.content
             event.pic_url = ''
             event.time = time.strftime('%Y-%m-%d %H:%M:%S')
@@ -102,6 +107,7 @@ class SubscriberWXTextMsgHandler(bf.CmdHandler):
             evt_frame.set_cmd_code(cmd_code_def.PORTAL_EVENT_EVENT_REPORT)
             evt_frame.add_data(event_report.serialize())
             self.get_worker().dispatch_frame_to_process_by_pid(self.get_worker().get_pid('EventCenterApp'), evt_frame)
+
             
 class SubscriberWXImageMsgHandler(bf.CmdHandler):
     """
@@ -239,26 +245,26 @@ class SubscriberWXEventMsgHandler(bf.CmdHandler):
                 sub_moc.subscribe_seq_no = self.get_worker().get_app().get_sub_no_creator().get_new_no()
                 sub_moc.subscriber_open_id = event_msg.subscriber_open_id
                 sub_moc.sub_time = time.strftime('%Y-%m-%d %H:%M:%S')
+                sub_moc.admin_flag = 'False'
+                gids = msg_params_def.GroupList()
+                gids.group_ids = [msg_params_def.GROUP_SYS_DEFAULT] # 初次订阅默认为未分组
+
                 tracelog.info('new subscriber: openid %s, seqno %d' % (sub_moc.subscriber_open_id, sub_moc.subscribe_seq_no))
+
+                sub = subscriber_def.Subscriber(sub_moc, gids, fsm_def.SUBSCRIBER_INIT_STATE)
+                sub.save_frame(frame.clone())
+                processor = fsm_def.StateProcessor(sub, self.get_worker())
+                processor.register_state_handler(fsm_def.SUBSCRIBER_INIT_STATE, subscriber_state_man.SubInitStateHandler(processor))
+                processor.register_state_handler(fsm_def.SUBSCRIBER_SESSION_STATE, subscriber_state_man.SubSessionStateHandler(processor))
+                
+                self.get_worker().get_state_manager().add_processor(processor)
 
                 ret = self.get_worker().get_app().get_mit_manager().rdm_add(sub_moc)
                 if ret.get_err_code() == err_code_mgr.ER_OBJECT_ADD_CONFLICT:
                     tracelog.warning('receive duplicate WX subscribe event from subscriber(sub id %d)' % event_msg.subscriber_open_id)
 
-                gids = msg_params_def.GroupList()
-                gids.group_ids = [msg_params_def.SUBSCRIBER_DEFAULT_GROUP] # 初次订阅默认为未分组
                 moid = self.get_worker().get_app().get_mit_manager().gen_moid('Subscriber', subscriber_open_id = sub_moc.subscriber_open_id)
                 self.get_worker().get_app().get_mit_manager().mod_complex_attr('Subscriber', moid = moid, group_ids = gids)
-                
-                sub = subscriber_def.Subscriber(sub_moc, gids, fsm_def.INIT_STATE)
-                sub.save_frame(frame.clone())
-                processor = fsm_def.SubscriberStateProcessor(sub, self.get_worker())
-                processor.register_state_handler(fsm_def.INIT_STATE, subscriber_state_man.SubInitStateHandler(processor))
-                processor.register_state_handler(fsm_def.SESSION_STATE, subscriber_state_man.SubSessionStateHandler(processor))
-                processor.register_state_handler(fsm_def.MENU_SELECT_STATE, subscriber_state_man.SubMenuSelectStateHandler(processor))
-                
-                self.get_worker().get_state_manager().add_processor(processor)
-                
             else:
                 tracelog.error('receive WX event(%s) msg from unknown subscriber(open_id %s)' % (event_msg.event, event_msg.subscriber_open_id))
             return
@@ -346,11 +352,16 @@ class SubscriberManInitHandler(bf.CmdHandler):
         subs = self.get_worker().get_app().get_mit_manager().rdm_find("Subscriber")
         for sub_moc in subs:
             grps = self.get_worker().get_app().get_mit_manager().lookup_attrs("Subscriber", ['group_ids'], subscriber_open_id = sub_moc.subscriber_open_id)
-            sub = subscriber_def.Subscriber(sub_moc, grps[0][0], fsm_def.SESSION_STATE)
-            processor = fsm_def.SubscriberStateProcessor(sub, self.get_worker())
-            processor.register_state_handler(fsm_def.INIT_STATE, subscriber_state_man.SubInitStateHandler(processor))
-            processor.register_state_handler(fsm_def.SESSION_STATE, subscriber_state_man.SubSessionStateHandler(processor))
-            processor.register_state_handler(fsm_def.MENU_SELECT_STATE, subscriber_state_man.SubMenuSelectStateHandler(processor))
+            sub = subscriber_def.Subscriber(sub_moc, grps[0][0], fsm_def.SUBSCRIBER_SESSION_STATE)
+
+            if sub_moc.assoc_member_id is not None and len(sub_moc.assoc_member_id) > 0:
+                mbrs = self.get_worker().get_app().get_mit_manager().rdm_find("Member", member_id = sub_moc.assoc_member_id)
+                if len(mbrs) > 0:
+                    sub.set_assoc_member(mbrs[0])
+            
+            processor = fsm_def.StateProcessor(sub, self.get_worker())
+            processor.register_state_handler(fsm_def.SUBSCRIBER_INIT_STATE, subscriber_state_man.SubInitStateHandler(processor))
+            processor.register_state_handler(fsm_def.SUBSCRIBER_SESSION_STATE, subscriber_state_man.SubSessionStateHandler(processor))
             
             self.get_worker().get_state_manager().add_processor(processor)          
 
@@ -409,7 +420,7 @@ class SubscriberContentUpdateMsgHandler(bf.CmdHandler):
                     
                 index += 1
                     
-            helptips = helps[0].content + msg_params_def.WX_TXT_SUBJECT_TIPS.decode('gbk').encode('utf-8') % sub_info
+            helptips = helps[0].content + '\r\n' + msg_params_def.WX_TXT_SUBJECT_TIPS.decode('gbk').encode('utf-8') % sub_info
             
             self.get_worker().set_helptips(helptips)
             self.get_worker().set_articles(articles)
@@ -469,6 +480,121 @@ class SubscriberGroupAssocMsgHandler(bf.CmdHandler):
         self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
 
 
+class SubscriberMemberAssocMsgHandler(bf.CmdHandler):
+    """
+    Class: SubscriberMemberAssocMsgHandler
+    Description: 订阅者会员绑定通知消息处理handler
+    Base: CmdHandler
+    Others: 
+    """
+    
+    def handle_cmd(self, frame):
+        """
+        Method:    handle_cmd
+        Description: 处理订阅者会员绑定通知消息 
+        Parameter: 
+            frame: AppFrame
+        Return: 
+        Others: 
+        """
+        tracelog.info(self)
+        
+        result = basic_rep_to_web.BasicRepToWeb()
+        result.init_all_attr()
+
+        buf = frame.get_data()
+        
+        assoc_req = msg_params_def.PortalSubscriberMemberAssociateReq.deserialize(buf)
+
+        subs = self.get_worker().get_app().get_mit_manager().rdm_find('Subscriber', subscriber_open_id = assoc_req.subscriber_open_id)        
+        if len(subs) > 0:
+            tracelog.info('subscriber %s assoc member %s succ' % (assoc_req.subscriber_open_id, assoc_req.member_id))
+            subs[0].assoc_member_id = assoc_req.member_id
+            ret = self.get_worker().get_app().get_mit_manager().rdm_mod(subs[0])
+            if ret.get_err_code() != 0:
+                result.return_code = ret.get_err_code()
+                result.description = ret.get_msg()
+                
+                result.prepare_for_ack(assoc_req, result.return_code, result.description)
+                self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+                return
+        
+        processor = self.get_worker().get_state_manager().get_processor(assoc_req.subscriber_open_id)
+        if processor is None:
+            tracelog.error('subscriber(openid %s) from mit does not setup the sm processor!' % assoc_req.subscriber_open_id)
+        else:
+            mbrs = self.get_worker().get_app().get_mit_manager().rdm_find('Member', member_id = assoc_req.member_id)
+            if len(mbrs) > 0:
+                processor.get_target().set_assoc_member(mbrs[0])
+            
+        result.return_code = err_code_mgr.ER_SUCCESS
+        result.description = err_code_mgr.get_error_msg(err_code_mgr.ER_SUCCESS)       
+        result.prepare_for_ack(assoc_req, result.return_code, result.description)
+
+        self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+
+
+class SubscriberAdminAssocMsgHandler(bf.CmdHandler):
+    """
+    Class: SubscriberAdminAssocMsgHandler
+    Description: 订阅者管理员绑定通知消息处理handler
+    Base: CmdHandler
+    Others: 
+    """
+    
+    def handle_cmd(self, frame):
+        """
+        Method:    handle_cmd
+        Description: 处理订阅者管理员绑定通知消息 
+        Parameter: 
+            frame: AppFrame
+        Return: 
+        Others: 
+        """
+        tracelog.info(self)
+        
+        result = basic_rep_to_web.BasicRepToWeb()
+        result.init_all_attr()
+
+        buf = frame.get_data()
+        
+        assoc_req = msg_params_def.PortalSubscriberAdminAssociateReq.deserialize(buf)
+        
+        old_subs = self.get_worker().get_app().get_mit_manager().rdm_find('Subscriber', admin_flag = 'True')
+        if len(old_subs) > 0:
+            old_sub_open_id = old_subs[0].subscriber_open_id
+            old_subs[0].admin_flag = 'False'
+            self.get_worker().get_app().get_mit_manager().rdm_mod(old_subs[0])
+
+            old_processor = self.get_worker().get_state_manager().get_processor(old_sub_open_id)
+            if old_processor is not None:
+                old_processor.get_target().set_admin_flag('False')
+
+        subs = self.get_worker().get_app().get_mit_manager().rdm_find('Subscriber', subscriber_open_id = assoc_req.subscriber_open_id)        
+        if len(subs) > 0:
+            subs[0].admin_flag = 'True'
+            ret = self.get_worker().get_app().get_mit_manager().rdm_mod(subs[0])
+            if ret.get_err_code() != 0:
+                result.return_code = ret.get_err_code()
+                result.description = ret.get_msg()
+                
+                result.prepare_for_ack(assoc_req, result.return_code, result.description)
+                self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+                return
+        
+        processor = self.get_worker().get_state_manager().get_processor(assoc_req.subscriber_open_id)
+        if processor is None:
+            tracelog.error('subscriber(openid %s) from mit does not setup the sm processor!' % assoc_req.subscriber_open_id)
+        else:
+            processor.get_target().set_admin_flag('True')
+            
+        result.return_code = err_code_mgr.ER_SUCCESS
+        result.description = err_code_mgr.get_error_msg(err_code_mgr.ER_SUCCESS)       
+        result.prepare_for_ack(assoc_req, result.return_code, result.description)
+
+        self.get_worker().get_app().send_ack_dispatch(frame, (result.serialize(), ))
+
+
 class SubscriberTextMsgPushHandler(bf.CmdHandler):
     """
     Class: SubscriberTextMsgPushHandler
@@ -490,13 +616,16 @@ class SubscriberTextMsgPushHandler(bf.CmdHandler):
         
         buf = frame.get_data()
         push_msg = msg_params_def.CloudPortalTextPushMessage.deserialize(buf)
-        processor = self.get_worker().get_state_manager().get_processor(push_msg.subscriber_open_id)
-        if processor is None:
-            tracelog.warning('portal text msg reply push to the unknown subscriber(openid %s)' % push_msg.subscriber_open_id)
-        else:
-            fakeid = processor.get_target().get_spec().fake_id
-            ret = self.get_worker().get_app().get_wx_service_api().send_text(fakeid, push_msg.text_msg)
-            tracelog.info('portal text msg reply push to the subscriber(openid %s, fakeid %s), ret %s' % (push_msg.subscriber_open_id, fakeid, ret))
+        
+        for open_id in push_msg.subscriber_open_ids:
+            processor = self.get_worker().get_state_manager().get_processor(open_id)
+            if processor is None:
+                tracelog.warning('portal text msg reply push to the unknown subscriber(openid %s)' % open_id)
+            else:
+                fakeid = processor.get_target().get_spec().fake_id
+
+                tracelog.info('send text msg to fake_id %s' % fakeid)
+                self.get_worker().get_app().get_task_worker().push_text(fakeid, push_msg.text_msg)
 
 
 class SubscriberArticlePushHandler(bf.CmdHandler):
@@ -572,7 +701,7 @@ class SubscriberArticleUploadHandler(bf.CmdHandler):
         if op == msg_params_def.PORTAL_CLOUD_IMAGE_UPLOAD_NEW:
             tracelog.info('create new article on WX portal(id %d)' % article_id)
             pic_url = arts[0].pic_url.strip('http://')
-            pic_path = msg_params_def.PORTAL_IMG_FILE_LOCAL_PATH_PREFIX + pic_url[pic_url.find('/'):]
+            pic_path = msg_params_def.PORTAL_IMG_FILE_LOCAL_PATH_PREFIX + pic_url[pic_url.find('/'):].lstrip('/')
             self.get_worker().get_app().get_task_worker().upload_article(article_id, pic_path, arts[0].title, arts[0].description, arts[0].content, 0)
                            
         elif op == msg_params_def.PORTAL_CLOUD_IMAGE_UPLOAD_MOD:
@@ -581,7 +710,7 @@ class SubscriberArticleUploadHandler(bf.CmdHandler):
                 self.get_worker().get_app().get_task_worker().del_article(arts[0].wx_news_id)               
 
             pic_url = arts[0].pic_url.strip('http://')
-            pic_path = msg_params_def.PORTAL_IMG_FILE_LOCAL_PATH_PREFIX + pic_url[pic_url.find('/'):]
+            pic_path = msg_params_def.PORTAL_IMG_FILE_LOCAL_PATH_PREFIX + pic_url[pic_url.find('/'):].lstrip('/')
             self.get_worker().get_app().get_task_worker().upload_article(article_id, pic_path, arts[0].title, arts[0].description, arts[0].content, 0)               
         else:
             tracelog.warning('article upload msg has the unknown operation code %s' % op)               
@@ -607,15 +736,15 @@ class SubscriberManagerWorker(bf.CmdWorker):
         bf.CmdWorker.__init__(self, "SubscriberManagerWorker", min_task_id, max_task_id)
         
         self._state_manager = fsm_def.FsmManager()
-        self._state_manager.register_event_handler(fsm_def.INIT_STATE, fsm_def.SUBSCRIBER_MESSAGE_EVENT, subscriber_state_man.SubInitStateMessageEventHandler())
-        self._state_manager.register_event_handler(fsm_def.SESSION_STATE, fsm_def.SUBSCRIBER_MESSAGE_EVENT, subscriber_state_man.SubSessionStateMessageEventHandler())
-        #self._state_manager.register_event_handler(fsm_def.SESSION_STATE, fsm_def.DELIVERY_MENU_SELECT_EVENT, subscriber_state_man.SubSessionStateMenuSelectEventHandler())
-        #self._state_manager.register_event_handler(fsm_def.MENU_SELECT_STATE, fsm_def.SUBSCRIBER_MESSAGE_EVENT, subscriber_state_man.SubMenuSelectStateMessageEventHandler())
+        self._state_manager.register_event_handler(fsm_def.SUBSCRIBER_INIT_STATE, fsm_def.SUBSCRIBER_MESSAGE_EVENT, subscriber_state_man.SubInitStateMessageEventHandler())
+        self._state_manager.register_event_handler(fsm_def.SUBSCRIBER_SESSION_STATE, fsm_def.SUBSCRIBER_MESSAGE_EVENT, subscriber_state_man.SubSessionStateMessageEventHandler())
         
         # 欢迎词与帮助语的缓存
         self._helptips_cache = ''
         # 主题内容的缓存, key: subject_id, value: article列表
         self._articles_cache = {}
+        self.__wan_ip = None
+        self.__outer_nc_ip = None 
 
     def set_helptips(self, helptips):
         self._helptips_cache = helptips
@@ -660,6 +789,8 @@ class SubscriberManagerWorker(bf.CmdWorker):
 
         self.register_handler(SubscriberContentUpdateMsgHandler(), cmd_code_def.CLOUD_PORTAL_CONTENT_UPDATE_MSG)
         self.register_handler(SubscriberGroupAssocMsgHandler(),    cmd_code_def.CLOUD_PORTAL_SUB_GROUP_ASSOC_MSG)
+        self.register_handler(SubscriberMemberAssocMsgHandler(),   cmd_code_def.CLOUD_PORTAL_SUB_MEMBER_ASSOC_MSG)
+        self.register_handler(SubscriberAdminAssocMsgHandler(),    cmd_code_def.CLOUD_PORTAL_SUB_ADMIN_ASSOC_MSG)
         self.register_handler(SubscriberTextMsgPushHandler(),      cmd_code_def.CLOUD_PORTAL_TEXT_PUSH_MSG)
         self.register_handler(SubscriberArticlePushHandler(),      cmd_code_def.CLOUD_PORTAL_ARTICLE_PUSH_MSG)
         self.register_handler(SubscriberArticleUploadHandler(),    cmd_code_def.CLOUD_PORTAL_ARTICLE_UPLOAD_MSG)
@@ -673,7 +804,21 @@ class SubscriberManagerWorker(bf.CmdWorker):
         frame = bf.AppFrame()
         frame.set_cmd_code(cmd_code_def.CLOUD_SUBSCRIBER_MANAGER_INIT_MSG)
         self.dispatch_frame_to_worker('SubscriberManagerWorker', frame)
+        
+        self.__outer_nc_ip = msg_params_def.LOCAL_HOST_DOMAIN #self.get_app().get_device_cfg_info().get_device_external_ip()
                 
         return 0
 
+    def update_wan_ip(self, ip):
+        self.__wan_ip = ip
+        
+    def update_url(self, url):
+        if self.__wan_ip is None:
+            u = url.strip('http://')
+            new_url = 'http://' + self.__outer_nc_ip + u[u.find('/'):]
+            return new_url
+        else:
+            u = url.strip('http://')
+            new_url = 'http://' + self.__wan_ip + u[u.find('/'):]
+            return new_url
 

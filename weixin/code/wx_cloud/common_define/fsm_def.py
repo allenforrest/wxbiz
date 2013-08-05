@@ -17,17 +17,23 @@ import time
 import tracelog
 
 # 订阅者状态定义
-INIT_STATE        = 'INIT SUBSCRIBE'
-#GET_SUBSCRIBER_INFO_STATE  = 'GET SUBSCRIBER INFO'
-SESSION_STATE     = 'NORMAL SESSION'
-MENU_SELECT_STATE = 'MENU SELECT'
+SUBSCRIBER_INIT_STATE    = 'SUB.INIT SUBSCRIBE'
+SUBSCRIBER_SESSION_STATE = 'SUB.NORMAL SESSION'
 
-# 事件定义
-#SUBSCRIBE_EVENT             = 'SUBSCRIBE'
-#UNSUBSCRIBE_EVENT           = 'UNSUBSCRIBE'
-SUBSCRIBER_MESSAGE_EVENT    = 'SUBSCRIBER MESSAGE'
-DELIVERY_MENU_SELECT_EVENT  = 'DELIVERY MENU SELECT' 
+# 订阅者事件定义
+SUBSCRIBER_MESSAGE_EVENT = 'SUBSCRIBER MESSAGE'
 
+# 会员状态定义
+# 菜单定制状态：从配送日后第一天 - 配送日-2天前一天，共4天
+# 配送状态：从配送日-2天 - 配送日当天，共3天
+# e.g：配送日为周五，菜单定制状态为：周六、周日、周一、周二，配送状态为：周三、周四、周五
+MEMBER_MENU_CFG_STATE = 'MBR.MENU CFG PERIOD'
+MEMBER_DELIVERY_STATE = 'MBR.DELIVERY PERIOD'
+MEMBER_EXPIRED_STATE  = 'MBR.DELIVERY EXPIRED'
+
+# 会员事件定义
+MEMBER_DAILY_EVENT = 'MEMBER DAILY'
+MEMBER_MENU_CFG_EVENT = 'MEMBER MENU CFG'
 
 class FsmEvent(object):
     """
@@ -131,10 +137,10 @@ class BaseStateHandler(object):
         raise NotImplementedError()
     
     
-class SubscriberStateProcessor(object):
+class StateProcessor(object):
     """
-    Class: SubscriberStateProcessor
-    Description: 订阅者状态处理器类
+    Class: StateProcessor
+    Description: 状态处理器类
     Base: 
     Others: 
     """
